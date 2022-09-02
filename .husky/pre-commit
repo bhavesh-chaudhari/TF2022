@@ -1,0 +1,30 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "Inspector doge 🐕 is checking your code"
+
+npm run check-types || (
+    echo "❗❗ check-types failed ❗❗"
+    false;
+)
+
+npm run format || (
+    echo "❗❗ prettier check failed ❗❗"
+    false;
+)
+
+npm run lint || (
+    echo "❗❗ Eslint check failed ❗❗"
+    false
+)
+
+echo "🐶 Woof! Code looks good"
+echo "🛠️ Trying to build now..."
+
+npm run build ||
+(
+    echo "❗❗ Build failed ❗❗"
+    false;
+)
+
+echo "✨ Ok now i am commiting this seems fine 👍..."
