@@ -32,11 +32,12 @@ This is a github repository for the official website of TantraFiesta 2022 - The 
 - [`License`](https://github.com/bhavesh-chaudhari/TF2022/blob/master/LICENSE)
 
 ### Built With
+
 - Typescript
 - Next.js
 
-
 <!-- MARKDOWN LINKS & IMAGES -->
+
 [contributors-shield]: https://img.shields.io/github/contributors/bhavesh-chaudhari/TF2022.svg?style=for-the-badge
 [contributors-url]: https://github.com/bhavesh-chaudhari/TF2022/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/bhavesh-chaudhari/TF2022.svg?style=for-the-badge
