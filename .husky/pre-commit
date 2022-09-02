@@ -4,27 +4,27 @@
 echo "Inspector doge 🐕 is checking your code"
 
 npm run check-types || (
-    echo "check-types failed"
+    echo "❗❗ check-types failed ❗❗"
     false;
 )
 
 npm run format || (
-    echo "prettier check failed"
+    echo "❗❗ prettier check failed ❗❗"
     false;
 )
 
 npm run lint || (
-    echo "Eslint check failed"
+    echo "❗❗ Eslint check failed ❗❗"
     false
 )
 
-echo "Woof ! Code looks good"
-echo "Trying to build now..."
+echo "🐶 Woof! Code looks good"
+echo "🛠️ Trying to build now..."
 
 npm run build ||
 (
-    echo "Build failed"
+    echo "❗❗ Build failed ❗❗"
     false;
 )
 
-echo "Ok now i am commiting this seems fine...✨"
+echo "✨ Ok now i am commiting this seems fine 👍..."
