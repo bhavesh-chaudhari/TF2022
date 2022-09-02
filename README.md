@@ -1,34 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div id="top"></div>
+
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/bhavesh-chaudhari/TF2022/">
+    <img src="https://res.cloudinary.com/doraexp69/image/upload/v1662120132/tf2022/300547035_1156325745263673_5914964069821144507_n_ukmnyg.jpg" alt="Logo" width="150" height="150">
+  </a>
+
+  <h3 align="center">TantraFiesta 2022</h3>
+
+  <p align="center">
+    The Technical Fest Of IIITN
+    <br />
+  </p>
+</div>
+
+<hr>
+
+## About Project
+
+This is a github repository for the official website of TantraFiesta 2022 - The Annual Technical Fest held by [IIITN](https://twitter.com/iiitn_official?lang=en).
 
 ## Getting Started
 
-First, run the development server:
+- [`Contributing`](https://github.com/bhavesh-chaudhari/TF2022/blob/master/CONTRIBUTING.md)
+- [`License`](https://github.com/bhavesh-chaudhari/TF2022/blob/master/LICENSE)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+### Built With
+- Typescript
+- Next.js
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<!-- MARKDOWN LINKS & IMAGES -->
+[contributors-shield]: https://img.shields.io/github/contributors/bhavesh-chaudhari/TF2022.svg?style=for-the-badge
+[contributors-url]: https://github.com/bhavesh-chaudhari/TF2022/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/bhavesh-chaudhari/TF2022.svg?style=for-the-badge
+[forks-url]: https://github.com/bhavesh-chaudhari/TF2022/network/members
+[stars-shield]: https://img.shields.io/github/stars/bhavesh-chaudhari/TF2022.svg?style=for-the-badge
+[stars-url]: https://github.com/bhavesh-chaudhari/TF2022/stargazers
+[issues-shield]: https://img.shields.io/github/issues/bhavesh-chaudhari/TF2022.svg?style=for-the-badge
+[issues-url]: https://github.com/bhavesh-chaudhari/TF2022/issues
