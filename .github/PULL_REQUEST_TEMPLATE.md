@@ -21,7 +21,6 @@
 
 <!-- Remove irrelevant options and insert x into the square brackets (for example [x]) wherever the pull request seems relevant -->
 
-
 - [] My code follows the style guidelines of this project
 - [] I have performed a self-review of my own code or work. 🔎
 - [] I have written comments in the code whenever felt necessary. 🖊️
