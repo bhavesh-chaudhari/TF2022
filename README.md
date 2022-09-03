@@ -36,6 +36,8 @@ This is a github repository for the official website of TantraFiesta 2022 - The 
 - Typescript
 - Next.js
 
+### Contributors
+- [`Parth Lanjewar`](https://github.com/greninja58)
 <!-- MARKDOWN LINKS & IMAGES -->
 
 [contributors-shield]: https://img.shields.io/github/contributors/bhavesh-chaudhari/TF2022.svg?style=for-the-badge
