@@ -27,4 +27,8 @@ npm run build ||
     false;
 )
 
+echo "adding changes"
+
+git add .
+
 echo "✨ Ok now i am commiting this seems fine 👍..."
