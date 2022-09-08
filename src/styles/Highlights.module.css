@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+.Cont{
+    flex: 9;
+  height: 100vh;
+  background: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 9rem;
+  margin-right: 10rem;
+
+
+}
+.Headd{ 
+    font-size: 3.2rem;
+    margin-top: 4rem;
+    margin-bottom: -8rem;
+    font-weight: 700;
+    line-height: 2rem;
+ 
+    
+    /* border-bottom: 7px solid #EEEF20; */
+
+
+}
+.Headline{
+    border-bottom: 7px solid #EEEF20;
+    margin-top: -1.5rem;
+    height: 3.8rem;
+    width: 7rem;
+    line-height: 2rem;
+    margin-bottom: 3rem;
+
+
+}
+.Play{
+    line-height: 2rem;
+    margin-bottom: 3rem;
+    
+
+}   
+.Contet{
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.2rem;
+        margin-right: 10rem;
+        line-height: 3rem;
+
+}  

@@ -1,7 +1,7 @@
 .ContentSection {
   flex: 9;
   height: 100vh;
-  background: red;
+  background: white;
   display: flex;
   justify-content: center;
   align-items: center;
