@@ -1,7 +1,7 @@
 .NavigationSection {
   flex: 3;
   height: 100vh;
-  background: green;
+  background: rgb(65, 61, 61);
   display: flex;
   justify-content: center;
   align-items: center;
