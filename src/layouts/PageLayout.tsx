@@ -9,7 +9,7 @@ interface Props {
 const PageLayout = ({ children }: Props) => {
   return (
     <>
-      <Navbar></Navbar>
+      {/* <Navbar></Navbar> */}
       {children}
       <Footer></Footer>
     </>
