@@ -1,8 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300&display=swap');
+
+
 .ContentSection {
   flex: 9;
   height: 100vh;
-  background: red;
+
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.head1{
+position: absolute;
+width: 160px;
+height: 98px;
+left: 550px;
+top: 0px;
+margin-top:20px;
+margin-bottom: 30px;;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 60px;
+line-height: 98px;
+/* identical to box height */
+
+
+color: #1D2527;
+border-bottom: 7px solid #EEEF20;
+}
+
+
+.content1{
+  position: absolute;
+  width: 42.688rem;
+  height: 15.5rem;
+  left: 37.188rem;
+  top: 13.5rem;
+  
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.163rem;
+  line-height: 1.875rem;
+  
+  color: #1D2527;
+  left:550px;
+  margin: 9px;
+  }
