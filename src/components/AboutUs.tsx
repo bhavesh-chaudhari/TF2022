@@ -3,10 +3,10 @@ import styles from "../styles/AboutUs.module.css";
 function AboutUs() {
   return (
     <div className={styles.AboutusSection}>
-        <div>
-            <h1 className={styles.Heading}>About</h1>
-            <div className={styles.underline} />
-        </div>
+      <div>
+        <h1 className={styles.Heading}>About</h1>
+        <div className={styles.underline} />
+      </div>
 
       <div className={styles.content}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae
