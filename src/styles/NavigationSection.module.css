@@ -1,8 +1,8 @@
 .NavigationSection {
-    flex: 3;
-    height: 100vh;
-    background: green;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  flex: 3;
+  height: 100vh;
+  background: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
