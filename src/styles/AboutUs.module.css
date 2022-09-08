@@ -1,19 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,100&family=Montserrat:wght@500;600;700;900&display=swap");
+
 .AboutusSection {
-  flex: 9;
-  height: 100vh;
+  /* flex: 9; */
+  /* height: 100vh; */
   background: white;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: left;
 }
+
 .Heading {
-  position: absolute;
-  width: 27.313rem;
-  height: 6.125rem;
-  left: 37.5rem;
-  top: 2.125rem;
+  /* position: absolute; */
+  /* width: 27.313rem;
+  height: 6.125rem; */
+  /* left: 37.5rem; */
+  /* top: 2.125rem; */
+  margin: 0;
   color: #1d2527;
 
   font-family: "Montserrat", sans-serif;
@@ -21,21 +25,25 @@
   font-weight: 700;
   font-size: 5rem;
 }
+
 .underline {
-  position: relative;
-  width: 10.563rem;
+  /* position: relative; */
+  width: 10.5rem;
   height: 0.5rem;
   background: yellow;
-  margin-top: -26.75rem;
-  margin-left: 4.875rem;
+  /* margin-top: -26.75rem; */
+  /* margin-left: 4.875rem; */
   border: 0rem solid;
 }
+
 .content {
-  position: absolute;
-  width: 42.688rem;
-  height: 15.5rem;
-  left: 37.188rem;
-  top: 13.5rem;
+  /* position: absolute; */
+  margin-top: 3rem;
+  width: 41rem;
+  display: flex;
+  /* height: 15.5rem; */
+  /* left: 37.188rem; */
+  /* top: 13.5rem; */
 
   font-family: "Lato";
   font-style: normal;
