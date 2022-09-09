@@ -1,11 +1,11 @@
 import React from "react";
-import styles from "../styles/StudentPitch.module.css";
+import styles from "../styles/SponsorPitch.module.css";
 
-const StudentPitch = () => {
+const SponsorPitch = () => {
   return (
     <div className={styles.PitchSection}>
       <div>
-        <h1 className={styles.Heading}>Student Pitch</h1>
+        <h1 className={styles.Heading}> Sponsor Pitch</h1>
         <div className={styles.underline} />
       </div>
 
@@ -25,4 +25,4 @@ const StudentPitch = () => {
   );
 };
 
-export default StudentPitch;
+export default SponsorPitch;
