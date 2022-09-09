@@ -1,73 +1,68 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,100&family=Montserrat:wght@500;600;700;900&display=swap");
 
+.HighlightsSection {
+  /* flex: 9; */
+  /* height: 100vh; */
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
 
-    .HighlightsSection {
-        /* flex: 9; */
-        /* height: 100vh; */
-        background: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: left;
-    }
-
-  .Heading {
-    /* position: absolute; */
-    /* width: 27.313rem;
+.Heading {
+  /* position: absolute; */
+  /* width: 27.313rem;
     height: 6.125rem; */
-    /* left: 37.5rem; */
-    /* top: 2.125rem; */
-    margin: 0;
-    color: #1d2527;
-  
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 3rem;
-  }
-  
-    .playerWrapper {
-        /* padding: 5rem; */
-        margin-top: 1rem;
-        line-height: 2rem;
-    } 
+  /* left: 37.5rem; */
+  /* top: 2.125rem; */
+  margin: 0;
+  color: #1d2527;
 
-    .player {
-        width: 10rem;
-    }
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+}
 
-  .underline {
-    /* position: relative; */
-    width: 6.5rem;
-    height: 0.5rem;
-    background: yellow;
-    /* margin-top: -26.75rem; */
-    /* margin-left: 4.875rem; */
-    border: 0rem solid;
-  }
-  
-  .content {
-    /* position: absolute; */
-    margin-top: 1rem;
-    width: 41rem;
-    display: flex;
-    /* height: 15.5rem; */
-    /* left: 37.188rem; */
-    /* top: 13.5rem; */
-  
-    font-family: "Lato";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 1.163rem;
-    line-height: 1.875rem;
-  
-    color: #1d2527;
-  }
+.playerWrapper {
+  /* padding: 5rem; */
+  margin-top: 1rem;
+  line-height: 2rem;
+}
 
+.player {
+  width: 10rem;
+}
 
+.underline {
+  /* position: relative; */
+  width: 6.5rem;
+  height: 0.5rem;
+  background: yellow;
+  /* margin-top: -26.75rem; */
+  /* margin-left: 4.875rem; */
+  border: 0rem solid;
+}
 
+.content {
+  /* position: absolute; */
+  margin-top: 1rem;
+  width: 41rem;
+  display: flex;
+  /* height: 15.5rem; */
+  /* left: 37.188rem; */
+  /* top: 13.5rem; */
 
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.163rem;
+  line-height: 1.875rem;
+
+  color: #1d2527;
+}
 
 /* .Cont{
     flex: 9;
