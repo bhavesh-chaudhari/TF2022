@@ -2,41 +2,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,100&family=Montserrat:wght@500;600;700;900&display=swap");
 
 .PitchSection {
-    /* flex: 9; */
-    /* height: 100vh; */
-    width: 41rem;
-    background: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
+  /* flex: 9; */
+  /* height: 100vh; */
+  width: 41rem;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
 }
 
+.Heading {
+  margin: 0;
+  color: #1d2527;
 
-.Heading{
-    margin: 0;
-    color: #1d2527;
-
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 5rem;
-    /* identical to box height */
-    
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 5rem;
+  /* identical to box height */
 }
-    
+
 .underline {
-    /* position: relative; */
-    width: 10.5rem;
-    height: 0.5rem;
-    background: yellow;
-    /* margin-top: -26.75rem; */
-    /* margin-left: 4.875rem; */
-    border: 0rem solid;
+  /* position: relative; */
+  width: 10.5rem;
+  height: 0.5rem;
+  background: yellow;
+  /* margin-top: -26.75rem; */
+  /* margin-left: 4.875rem; */
+  border: 0rem solid;
 }
 
-.content{
-    
+.content {
   /* position: absolute; */
   margin-top: 3rem;
   width: 41rem;

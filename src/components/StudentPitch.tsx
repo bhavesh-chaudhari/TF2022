@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../styles/StudentPitch.module.css";
 
 const StudentPitch = () => {
-  return(
+  return (
     <div className={styles.PitchSection}>
       <div>
         <h1 className={styles.Heading}>About</h1>
@@ -26,4 +26,3 @@ const StudentPitch = () => {
 };
 
 export default StudentPitch;
-
