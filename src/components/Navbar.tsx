@@ -3,37 +3,37 @@ import { useState } from "react";
 import React from "react";
 import styles from "../styles/Navbar.module.css";
 const Navbar = () => {
-  const [isActive, setIsActive] = useState(false);
-  const handleClick = () => {
-    setIsActive((current) => !current);
-  };
+  const [isActive, setIsActive] = useState(0);
+  // const handleClick = () => {
+  //   setIsActive((current) => !current);
+  // };
   return (
     <>
-      <div className={styles.MainNav}>
+      <div className={styles.mainNav}>
         <div className={styles.elements}>
           <ul>
-            <li className={styles.links} id="About">
-              <a href="#" onClick={handleClick}>
+            <li className={styles.links} id="About" style={{color: isActive==1 ? "#2b9348" : "#ffffff" , fontSize: isActive==1 ? "2vw" : "1.5vw"}}>
+              <a href="#" onClick={()=>{setIsActive(1)}}>
                 ABOUT
               </a>
             </li>
-            <li className={styles.links} id="Pitch">
-              <a href="#" onClick={handleClick}>
+            <li className={styles.links} id="Pitch" style={{color: isActive==2 ? "#2b9348" : "#ffffff" , fontSize: isActive==2 ? "2vw" : "1.5vw"}}>
+              <a href="#" onClick={()=>{setIsActive(2)}}>
                 HIGHLIGHTS
               </a>
             </li>
-            <li className={styles.links} id="mfs">
-              <a href="#" onClick={handleClick}>
+            <li className={styles.links} id="mfs" style={{color: isActive==3 ? "#2b9348" : "#ffffff" , fontSize: isActive==3 ? "2vw" : "1.5vw"}}>
+              <a href="#" onClick={()=>{setIsActive(3)}}>
                 MESSAGE FOR <br /> STUDENTS{" "}
               </a>
             </li>
-            <li className={styles.links} id="mfsn">
-              <a href="#" onClick={handleClick}>
+            <li className={styles.links} id="mfsn" style={{color: isActive==4 ? "#2b9348" : "#ffffff" , fontSize: isActive==4 ? "2vw" : "1.5vw"}}>
+              <a href="#" onClick={()=>{setIsActive(4)}}>
                 MESSAGE FOR <br /> SPONSORS{" "}
               </a>
             </li>
-            <li className={styles.links} id="Team">
-              <a href="#" onClick={handleClick}>
+            <li className={styles.links} id="Team" style={{color: isActive==5 ? "#2b9348" : "#ffffff" , fontSize: isActive==5 ? "2vw" : "1.5vw"}}>
+              <a href="#" onClick={()=>{setIsActive(5)}}>
                 TEAM
               </a>
             </li>
@@ -42,39 +42,39 @@ const Navbar = () => {
         <div className={styles.maincontainer}>
           <div className={styles.container}></div>
           <div className={styles.circles}>
-            <div className={styles.circle1}>
+            <div className={styles.circle1} style={{ backgroundColor: isActive==1 ? "green" : "#ffffff" }}>
               <div
                 className={styles.circle2}
                 id="AboutCircle"
-                style={{ backgroundColor: isActive ? "green" : "black" }}
+                style={{ backgroundColor: isActive==1 ? "green" : "black" }}
               ></div>
             </div>
-            <div className={styles.circle1}>
+            <div className={styles.circle1} style={{ backgroundColor: isActive==2 ? "green" : "#ffffff" }}>
               <div
                 className={styles.circle2}
                 id="PitchCircle"
-                style={{ backgroundColor: isActive ? "green" : "black" }}
+                style={{ backgroundColor: isActive==2 ? "green" : "black" }}
               ></div>
             </div>
-            <div className={styles.circle1}>
+            <div className={styles.circle1} style={{ backgroundColor: isActive==3 ? "green" : "#ffffff" }}>
               <div
                 className={styles.circle2}
                 id="HighlightsCircle"
-                style={{ backgroundColor: isActive ? "green" : "black" }}
+                style={{ backgroundColor: isActive==3 ? "green" : "black" }}
               ></div>
             </div>
-            <div className={styles.circle1}>
+            <div className={styles.circle1} style={{ backgroundColor: isActive==4 ? "green" : "#ffffff" }}>
               <div
                 className={styles.circle2}
                 id="TeamCircle"
-                style={{ backgroundColor: isActive ? "green" : "black" }}
+                style={{ backgroundColor: isActive==4 ? "green" : "black" }}
               ></div>
             </div>
-            <div className={styles.circle1}>
+            <div className={styles.circle1} style={{ backgroundColor: isActive==5 ? "green" : "#ffffff" }}>
               <div
                 className={styles.circle2}
                 id="TeamCircle2"
-                style={{ backgroundColor: isActive ? "green" : "black" }}
+                style={{ backgroundColor: isActive==5 ? "green" : "black" }}
               ></div>
             </div>
           </div>
