@@ -14,7 +14,10 @@
     "test-all": "npm run check-format && npm run lint && npm run check-types && npm run build"
   },
   "dependencies": {
-    "next": "12.2.5",
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-brands-svg-icons": "^6.2.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "next": "^12.2.5",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
