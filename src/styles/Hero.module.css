@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,100&family=Montserrat:wght@500;600;700;900&display=swap");
+
+.HeroSection {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(#e8cc84, #fff8e1);
+  /* overflow: hidden; */
+  display: flex;
+  justify-content: center;
+}
+
+.ground_layer_1 {
+  position: relative;
+  width: 100vw;
+  left: 0;
+  top: 74vh;
+  z-index: 111;
+}
+
+.ground_layer_2 {
+  position: absolute;
+  width: 100vw;
+  top: 82vh;
+  left: 0;
+  z-index: 109;
+}
+
+.ground_layer_3 {
+  position: absolute;
+  width: 100vw;
+  left: 0;
+  top: 58vh;
+  z-index: 108;
+}
+
+.ground_layer_4 {
+  position: absolute;
+  width: 88vw;
+  right: 0;
+  top: 56vh;
+  z-index: 107;
+}
+
+.ground_layer_5 {
+  position: absolute;
+  width: 88vw;
+  right: 0;
+  top: 56vh;
+  z-index: 106;
+}
+
+.ground_layer_6 {
+  position: absolute;
+  width: 80vw;
+  left: -10vw;
+  top: 53vh;
+  z-index: 105;
+}
+
+.digital_tree {
+  position: absolute;
+  width: 18vw;
+  left: 40vw;
+  top: 20vh;
+  z-index: 110;
+}
+
+.tfBranding {
+  position: absolute;
+  top: 1vh;
+  display: flex;
+  width: 21vw;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tfHeading {
+  font-size: 1.5em;
+  color: #1d2527;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}

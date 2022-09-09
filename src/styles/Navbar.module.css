@@ -18,7 +18,7 @@
 } */
 
 .links {
-  font-size:1.5vw;
+  font-size: 1.5vw;
   color: #ffffff;
   padding: 5vh;
   list-style: none;
@@ -58,8 +58,8 @@
   width: 2.7vh;
   height: 2.7vh;
   border-radius: 50%;
-  left:0.08vw;
-  top:0.05vw;
+  left: 0.08vw;
+  top: 0.05vw;
   position: inherit;
 }
 .circle1 {
@@ -71,7 +71,7 @@
   top: 8vw;
   /* left: 29.2vw;
    */
-   left:25.2vw;
+  left: 25.2vw;
 }
 .circle1 {
   position: relative;
