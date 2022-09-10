@@ -29,8 +29,8 @@ const Hero = () => {
             <h2>TantraFiesta 2022</h2>
           </div>
           <div className={styles["theme"]}>
-            <h1 
-              data-aos="fade-up" 
+            <h1
+              data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-easing="ease-out"
             >
@@ -46,36 +46,36 @@ const Hero = () => {
         <div className={styles["clouds"]}>
           <div className={styles["cloud-left"]}>
             <CloudLeft
-              data-aos="fade-right" 
+              data-aos="fade-right"
               data-aos-duration="1600"
               data-aos-easing="ease-out"
-              data-aos-offset="400">
-            </CloudLeft>
+              data-aos-offset="400"
+            ></CloudLeft>
           </div>
           <div className={styles["cloud-right"]}>
             <CloudRight
-              data-aos="fade-left" 
+              data-aos="fade-left"
               data-aos-duration="1200"
               data-aos-easing="ease-out"
-              data-aos-offset="400">
-            </CloudRight>
+              data-aos-offset="400"
+            ></CloudRight>
           </div>
         </div>
         <div className={styles["landscape"]}>
           <div className={styles["layer-1"]}>
-            <Layer1 ></Layer1>
-          </div>  
+            <Layer1></Layer1>
+          </div>
           <div className={styles["layer-2"]}>
-            <Layer2 ></Layer2>
+            <Layer2></Layer2>
           </div>
           <div className={styles["layer-3"]}>
-            <Layer3 ></Layer3>
+            <Layer3></Layer3>
           </div>
           <div className={styles["layer-4-left"]}>
-            <Layer4Left ></Layer4Left>
+            <Layer4Left></Layer4Left>
           </div>
           <div className={styles["layer-4-right"]}>
-            <Layer4Right ></Layer4Right>
+            <Layer4Right></Layer4Right>
           </div>
           <div className={styles["layer-5"]}></div>
           <div className={styles["trees"]}>
@@ -88,10 +88,11 @@ const Hero = () => {
           </div>
           <div className={styles["sun"]}>
             <Sun
-              data-aos="fade-up-left" 
+              data-aos="fade-up-left"
               data-aos-duration="1000"
               data-aos-easing="ease-out"
-              data-aos-offset="400"></Sun>
+              data-aos-offset="400"
+            ></Sun>
           </div>
           <div className={styles["digital-tree"]}>
             <DigitalTree></DigitalTree>

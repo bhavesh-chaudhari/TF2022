@@ -16,7 +16,6 @@
 }
 
 .bg {
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,7 +44,7 @@ Theme Styles
 .title h2 {
   font-size: 1.5rem;
   font-weight: 500;
-  color: #1D2527;
+  color: #1d2527;
 }
 
 .title .logo {
@@ -124,20 +123,17 @@ Cloud styles
   transform: scale(0.7);
 }
 
-
 /* 
 =============
 Landscape-Layer-styles
 =============
 */
 
-
-
 .layer-1 {
   position: absolute;
   /* width: 100%; */
   bottom: -5%;
-  left:0%;
+  left: 0%;
   z-index: 124;
 }
 
@@ -148,8 +144,8 @@ Landscape-Layer-styles
 
 .layer-2 {
   position: absolute;
-  bottom:-2%;
-  left:0%;
+  bottom: -2%;
+  left: 0%;
   z-index: 120;
 }
 
@@ -164,11 +160,11 @@ Landscape-Layer-styles
   flex-direction: row-reverse;
   bottom: 0%;
   z-index: 118;
-  right:0%;
+  right: 0%;
 }
 
 .layer-3 > svg {
-  width:80%;
+  width: 80%;
   height: 100%;
 }
 
@@ -177,8 +173,8 @@ Landscape-Layer-styles
   display: flex;
   flex-direction: row-reverse;
   width: 100%;
-  bottom:-17%;
-  left:0%;
+  bottom: -17%;
+  left: 0%;
   z-index: 116;
 }
 .layer-4-right svg {
@@ -189,7 +185,7 @@ Landscape-Layer-styles
   position: absolute;
   width: 100%;
   bottom: -26%;
-  left:0%;
+  left: 0%;
   z-index: 114;
 }
 
@@ -205,8 +201,8 @@ Tree styles
 
 .left-tree {
   position: absolute;
-  bottom:20%;
-  left:0%;
+  bottom: 20%;
+  left: 0%;
   z-index: 119;
 }
 
@@ -215,11 +211,10 @@ Tree styles
   height: auto;
 }
 
-
 .right-tree {
   position: absolute;
-  bottom:12%;
-  right:0%;
+  bottom: 12%;
+  right: 0%;
   z-index: 117;
   display: flex;
   flex-direction: row-reverse;
@@ -259,7 +254,7 @@ Digital Tree styles
   position: absolute;
   bottom: 0%;
   left: 50%;
-  transform: translate(-50%,0);
+  transform: translate(-50%, 0);
   display: flex;
   justify-content: center;
   z-index: 130;
