@@ -24,6 +24,9 @@ const Navbar = () => {
             >
               <Link  to="1" spy={true} smooth={true} duration={500}
                 onSetActive={() => {
+              <a
+                href="#"
+                onClick={() => {
                   setIsActive(1);
                 }}
               >
@@ -41,6 +44,9 @@ const Navbar = () => {
               <Link  to="2" spy={true} smooth={true} duration={500}
               // add offset={(value)px} for Scroll additional px ( like padding )
                 onSetActive={() => {
+              <a
+                href="#"
+                onClick={() => {
                   setIsActive(2);
                 }}
               >
@@ -57,6 +63,9 @@ const Navbar = () => {
             >
               <Link  to="3" spy={true} smooth={true} duration={500}
                 onSetActive={() => {
+              <a
+                href="#"
+                onClick={() => {
                   setIsActive(3);
                 }}
               >
@@ -73,6 +82,9 @@ const Navbar = () => {
             >
               <Link  to="4" spy={true} smooth={true} duration={500}
                 onSetActive={() => {
+              <a
+                href="#"
+                onClick={() => {
                   setIsActive(4);
                 }}
               >
@@ -89,6 +101,9 @@ const Navbar = () => {
             >
               <Link  to="5" spy={true} smooth={true} duration={500}
                 onSetActive={() => {
+              <a
+                href="#"
+                onClick={() => {
                   setIsActive(5);
                 }}
               >
