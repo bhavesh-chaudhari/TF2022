@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../styles/AboutUs.module.css";
 
-function aboutUs(){
+function aboutUs() {
   return (
     <div className={styles.AboutusSection}>
       About
@@ -21,6 +21,6 @@ function aboutUs(){
       </div>
     </div>
   );
-};
+}
 
 export default aboutUs;

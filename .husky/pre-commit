@@ -8,7 +8,7 @@ npm run check-types || (
     false;
 )
 
-npm run format || (
+npm run check-format || (
     echo "❗❗ prettier check failed ❗❗"
     false;
 )

@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/ContentSection.module.css";
-import AboutUs from "./aboutUs";
+import AboutUs from "./AboutUs";
 
 const ContentSection = () => {
   return (
