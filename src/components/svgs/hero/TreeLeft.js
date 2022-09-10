@@ -4,6 +4,8 @@ const SvgTreeLeft = (props) => (
   <svg
     width={174}
     height={402}
+    viewBox="0 0 174 402"
+    preserveAspectRatio="none"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"

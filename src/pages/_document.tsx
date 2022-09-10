@@ -1,6 +1,8 @@
 import { Html, Head, Main, NextScript } from "next/document";
 
 const document = () => {
+  // const isDark = window.matchMedia("(prefers-color-scheme: dark)");
+  // console.log(isDark);
   return (
     <Html lang="en">
       <Head>

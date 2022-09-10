@@ -4,6 +4,8 @@ const SvgSun = (props) => (
   <svg
     width={555}
     height={880}
+    viewBox="0 0 555 880"
+    preserveAspectRatio="none"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     {...props}

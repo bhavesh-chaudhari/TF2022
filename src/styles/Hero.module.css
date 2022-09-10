@@ -5,9 +5,18 @@
   font-family: "Montserrat";
   min-height: 100vh;
   background: linear-gradient(180deg, #378fdf -108.25%, #fff8e1 81.35%);
+  position: relative;
 }
 
 .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.bg {
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,6 +45,7 @@ Theme Styles
 .title h2 {
   font-size: 1.5rem;
   font-weight: 500;
+  color: #1D2527;
 }
 
 .title .logo {
@@ -48,6 +58,7 @@ Theme Styles
 .theme {
   display: flex;
   line-height: 0;
+  overflow: hidden;
 }
 
 .theme h1 {
@@ -63,6 +74,29 @@ Theme Styles
   color: #2e692e;
   line-height: 0;
 }
+/* 
+======================
+Theme Reveal Animation
+======================
+*/
+/* 
+.theme-reveal {
+  animation: reveal-up ease-in 1s;
+}
+
+@keyframes reveal-up {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+} */
 
 /* 
 =============
@@ -79,11 +113,159 @@ Cloud styles
 }
 
 .cloud-right {
-  top: 0;
-  right: 5%;
+  top: -1%;
+  right: 2%;
+  transform: scale(0.55);
 }
 
 .cloud-left {
-  left: 9%;
-  top: -2%;
+  left: 3%;
+  top: -5%;
+  transform: scale(0.7);
+}
+
+
+/* 
+=============
+Landscape-Layer-styles
+=============
+*/
+
+
+
+.layer-1 {
+  position: absolute;
+  /* width: 100%; */
+  bottom: -5%;
+  left:0%;
+  z-index: 124;
+}
+
+.layer-1 > svg {
+  width: 100%;
+  height: 100%;
+}
+
+.layer-2 {
+  position: absolute;
+  bottom:-2%;
+  left:0%;
+  z-index: 120;
+}
+
+.layer-2 > svg {
+  width: 100%;
+  height: 100%;
+}
+
+.layer-3 {
+  position: absolute;
+  display: flex;
+  flex-direction: row-reverse;
+  bottom: 0%;
+  z-index: 118;
+  right:0%;
+}
+
+.layer-3 > svg {
+  width:80%;
+  height: 100%;
+}
+
+.layer-4-right {
+  position: absolute;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  bottom:-17%;
+  left:0%;
+  z-index: 116;
+}
+.layer-4-right svg {
+  width: 70%;
+}
+
+.layer-4-left {
+  position: absolute;
+  width: 100%;
+  bottom: -26%;
+  left:0%;
+  z-index: 114;
+}
+
+.layer-4-left svg {
+  width: 60%;
+}
+
+/* 
+=============
+Tree styles
+=============
+*/
+
+.left-tree {
+  position: absolute;
+  bottom:20%;
+  left:0%;
+  z-index: 119;
+}
+
+.left-tree > svg {
+  width: 60%;
+  height: auto;
+}
+
+
+.right-tree {
+  position: absolute;
+  bottom:12%;
+  right:0%;
+  z-index: 117;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.right-tree > svg {
+  width: 65%;
+  height: auto;
+}
+
+/* 
+=============
+Sun styles
+=============
+*/
+
+.sun {
+  position: absolute;
+  display: flex;
+  flex-direction: row-reverse;
+  bottom: 10%;
+  right: 0;
+}
+
+.sun > svg {
+  width: 60%;
+  height: auto;
+}
+
+/* 
+=============
+Digital Tree styles
+=============
+*/
+
+.digital-tree {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%,0);
+  display: flex;
+  justify-content: center;
+  z-index: 130;
+}
+
+.digital-tree > svg {
+  width: 52%;
+  height: auto;
 }

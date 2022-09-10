@@ -4,6 +4,8 @@ const SvgLayer2 = (props) => (
   <svg
     width={1920}
     height={306}
+    viewBox="0 0 1920 237"
+    preserveAspectRatio="none"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     {...props}

@@ -4,6 +4,8 @@ const SvgLayer4Right = (props) => (
   <svg
     width={1218}
     height={370}
+    viewBox="0 0 1218 370"
+    preserveAspectRatio="none"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     {...props}

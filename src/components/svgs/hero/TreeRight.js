@@ -4,6 +4,8 @@ const SvgTreeRight = (props) => (
   <svg
     width={254}
     height={532}
+    viewBox="0 0 254 532"
+    preserveAspectRatio="none"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
