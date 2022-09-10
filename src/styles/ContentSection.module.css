@@ -1,8 +1,60 @@
 .ContentSection {
   flex: 9;
-  height: 100vh;
-  background: white;
-  display: flex;
+  /* height: 100vh; */
+  background: red;
+  /* position: absolute; */
+  /* left:10px; */
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+}
+
+.aboutSection {
+  background-color: aqua;
+  width: 70.7vw;
+  height: 800px;
+  /* margin-left: 80px; */
+  margin-left: 5vw;
+  /* margin-top:400px; */
+}
+
+.lolSection {
+  background-color: orange;
+  width: 70.7vw;
+  height: 800px;
+  margin-left: 5vw;
+  /* margin-top:200px; */
+}
+
+.highlightsSection {
+  background-color: #ffffff;
+  width: 70.7vw;
+  height: 800px;
+  margin-left: 5vw;
+}
+
+.studentSection {
+  background-color: orange;
+  /* width: 1200px; */
+  width: 70.7vw;
+  height: 800px;
+  margin-left: 5vw;
+}
+
+.sponsorSection {
+  background-color: #ffffff;
+  /* width: 1200px; */
+  width: 70.7vw;
+  height: 800px;
+  /* margin-left: 80px; */
+  margin-left: 5vw;
+}
+
+.teamSection {
+  background-color: red;
+  /* width: 1200px; */
+  width: 70.7vw;
+  height: 800px;
+  /* margin-left: 80px; */
+  margin-left: 5vw;
 }

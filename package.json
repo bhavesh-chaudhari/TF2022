@@ -10,14 +10,16 @@
     "prepare": "husky install",
     "format": "prettier --write . --ignore-path .gitignore",
     "check-types": "tsc --pretty --noEmit",
-    "check-format": "prettier --check .",
+    "check-format": "prettier --check . --ignore-path .gitignore",
     "test-all": "npm run check-format && npm run lint && npm run check-types && npm run build"
   },
   "dependencies": {
+    "@types/react-scroll": "^1.8.4",
     "next": "12.2.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-player": "^2.10.1"
+    "react-player": "^2.10.1",
+    "react-scroll": "^1.8.7"
   },
   "devDependencies": {
     "@types/node": "18.7.13",
@@ -28,6 +30,6 @@
     "eslint-config-prettier": "^8.5.0",
     "husky": "^7.0.0",
     "prettier": "^2.7.1",
-    "typescript": "^4.8.2"
+    "typescript": "^4.8.3"
   }
 }
