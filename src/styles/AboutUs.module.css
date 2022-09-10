@@ -28,6 +28,7 @@
 
 .underline {
   /* position: relative; */
+  margin-left: -2px;
   width: 10.5rem;
   height: 0.5rem;
   background: yellow;
