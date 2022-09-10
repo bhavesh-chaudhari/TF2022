@@ -1,12 +1,12 @@
 //@ts-nocheck
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import React from "react";
 import styles from "../styles/Navbar.module.css";
+import { Link } from "react-scroll";
+
 const Navbar = () => {
   const [isActive, setIsActive] = useState(0);
-  // const handleClick = () => {
-  //   setIsActive((current) => !current);
-  // };
+
   return (
     <>
       <div className={styles.mainNav}>
@@ -20,14 +20,17 @@ const Navbar = () => {
                 fontSize: isActive == 1 ? "2vw" : "1.5vw",
               }}
             >
-              <a
-                href="#"
-                onClick={() => {
+              <Link
+                to="1"
+                spy={true}
+                smooth={true}
+                duration={500}
+                onSetActive={() => {
                   setIsActive(1);
                 }}
               >
                 ABOUT
-              </a>
+              </Link>
             </li>
             <li
               className={styles.links}
@@ -37,14 +40,18 @@ const Navbar = () => {
                 fontSize: isActive == 2 ? "2vw" : "1.5vw",
               }}
             >
-              <a
-                href="#"
-                onClick={() => {
+              <Link
+                to="2"
+                spy={true}
+                smooth={true}
+                duration={500}
+                // add offset={(value)px} for Scroll additional px ( like padding )
+                onSetActive={() => {
                   setIsActive(2);
                 }}
               >
                 HIGHLIGHTS
-              </a>
+              </Link>
             </li>
             <li
               className={styles.links}
@@ -54,14 +61,17 @@ const Navbar = () => {
                 fontSize: isActive == 3 ? "2vw" : "1.5vw",
               }}
             >
-              <a
-                href="#"
-                onClick={() => {
+              <Link
+                to="3"
+                spy={true}
+                smooth={true}
+                duration={500}
+                onSetActive={() => {
                   setIsActive(3);
                 }}
               >
                 MESSAGE FOR <br /> STUDENTS{" "}
-              </a>
+              </Link>
             </li>
             <li
               className={styles.links}
@@ -71,14 +81,17 @@ const Navbar = () => {
                 fontSize: isActive == 4 ? "2vw" : "1.5vw",
               }}
             >
-              <a
-                href="#"
-                onClick={() => {
+              <Link
+                to="4"
+                spy={true}
+                smooth={true}
+                duration={500}
+                onSetActive={() => {
                   setIsActive(4);
                 }}
               >
                 MESSAGE FOR <br /> SPONSORS{" "}
-              </a>
+              </Link>
             </li>
             <li
               className={styles.links}
@@ -88,14 +101,17 @@ const Navbar = () => {
                 fontSize: isActive == 5 ? "2vw" : "1.5vw",
               }}
             >
-              <a
-                href="#"
-                onClick={() => {
+              <Link
+                to="5"
+                spy={true}
+                smooth={true}
+                duration={500}
+                onSetActive={() => {
                   setIsActive(5);
                 }}
               >
                 TEAM
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
