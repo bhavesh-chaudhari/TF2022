@@ -9,12 +9,12 @@
   align-items: center; */
 }
 
-.aboutSection{
+.aboutSection {
   background-color: aqua;
-  width:70.7vw;
-  height:800px;
+  width: 70.7vw;
+  height: 800px;
   /* margin-left: 80px; */
-  margin-left:5vw;
+  margin-left: 5vw;
   /* margin-top:400px; */
 }
 
@@ -26,22 +26,19 @@
   /* margin-top:200px; */
 }
 
-.highlightsSection{
+.highlightsSection {
   background-color: #ffffff;
   width: 70.7vw;
-    height: 800px;
+  height: 800px;
   margin-left: 5vw;
-
 }
 
-.studentSection{
+.studentSection {
   background-color: orange;
-    /* width: 1200px; */
+  /* width: 1200px; */
   width: 70.7vw;
-    height: 800px;
+  height: 800px;
   margin-left: 5vw;
-    
-
 }
 
 .sponsorSection {
@@ -51,14 +48,13 @@
   height: 800px;
   /* margin-left: 80px; */
   margin-left: 5vw;
-
 }
 
-.teamSection{
+.teamSection {
   background-color: red;
-    /* width: 1200px; */
+  /* width: 1200px; */
   width: 70.7vw;
-    height: 800px;
-    /* margin-left: 80px; */
+  height: 800px;
+  /* margin-left: 80px; */
   margin-left: 5vw;
 }

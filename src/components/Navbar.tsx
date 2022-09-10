@@ -2,13 +2,11 @@
 import { useEffect, useState } from "react";
 import React from "react";
 import styles from "../styles/Navbar.module.css";
-import {Link} from 'react-scroll'
+import { Link } from "react-scroll";
 
 const Navbar = () => {
-
   const [isActive, setIsActive] = useState(0);
 
-  
   return (
     <>
       <div className={styles.mainNav}>
@@ -22,11 +20,12 @@ const Navbar = () => {
                 fontSize: isActive == 1 ? "2vw" : "1.5vw",
               }}
             >
-              <Link  to="1" spy={true} smooth={true} duration={500}
+              <Link
+                to="1"
+                spy={true}
+                smooth={true}
+                duration={500}
                 onSetActive={() => {
-              <a
-                href="#"
-                onClick={() => {
                   setIsActive(1);
                 }}
               >
@@ -41,12 +40,13 @@ const Navbar = () => {
                 fontSize: isActive == 2 ? "2vw" : "1.5vw",
               }}
             >
-              <Link  to="2" spy={true} smooth={true} duration={500}
-              // add offset={(value)px} for Scroll additional px ( like padding )
+              <Link
+                to="2"
+                spy={true}
+                smooth={true}
+                duration={500}
+                // add offset={(value)px} for Scroll additional px ( like padding )
                 onSetActive={() => {
-              <a
-                href="#"
-                onClick={() => {
                   setIsActive(2);
                 }}
               >
@@ -61,11 +61,12 @@ const Navbar = () => {
                 fontSize: isActive == 3 ? "2vw" : "1.5vw",
               }}
             >
-              <Link  to="3" spy={true} smooth={true} duration={500}
+              <Link
+                to="3"
+                spy={true}
+                smooth={true}
+                duration={500}
                 onSetActive={() => {
-              <a
-                href="#"
-                onClick={() => {
                   setIsActive(3);
                 }}
               >
@@ -80,11 +81,12 @@ const Navbar = () => {
                 fontSize: isActive == 4 ? "2vw" : "1.5vw",
               }}
             >
-              <Link  to="4" spy={true} smooth={true} duration={500}
+              <Link
+                to="4"
+                spy={true}
+                smooth={true}
+                duration={500}
                 onSetActive={() => {
-              <a
-                href="#"
-                onClick={() => {
                   setIsActive(4);
                 }}
               >
@@ -99,11 +101,12 @@ const Navbar = () => {
                 fontSize: isActive == 5 ? "2vw" : "1.5vw",
               }}
             >
-              <Link  to="5" spy={true} smooth={true} duration={500}
+              <Link
+                to="5"
+                spy={true}
+                smooth={true}
+                duration={500}
                 onSetActive={() => {
-              <a
-                href="#"
-                onClick={() => {
                   setIsActive(5);
                 }}
               >
