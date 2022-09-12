@@ -70,7 +70,6 @@ Theme Styles
   text-align: center;
 }
 
-
 .underline {
   display: none;
   width: 8rem;
@@ -176,7 +175,7 @@ Landscape-Layer-styles
 
 .layer-3 > svg {
   width: 80%;
-  height: 100%; 
+  height: 100%;
 }
 
 .layer-4-right {
@@ -277,38 +276,40 @@ Digital Tree styles
   height: auto;
 }
 
-
 /*
 ======================
 Mobile Responsive Hero
 ====================== 
 */
 
-@media screen and ( max-width:1020px) {
-  .trees, .sun, .layer-4-left, .layer-4-right {
-    display: none
+@media screen and (max-width: 1020px) {
+  .trees,
+  .sun,
+  .layer-4-left,
+  .layer-4-right {
+    display: none;
   }
 }
-@media screen and ( max-width:850px) {
+@media screen and (max-width: 850px) {
   .theme {
     flex-direction: column;
-    gap:0;
+    gap: 0;
   }
 
-  .underline{
-    display:block;
+  .underline {
+    display: block;
   }
 
   .theme > h1 {
     font-size: 3rem;
   }
 
-  .digital-tree > svg{
+  .digital-tree > svg {
     width: 50%;
   }
 }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width: 450px) {
   .cloud-right {
     display: none;
   }

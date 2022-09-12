@@ -44,7 +44,7 @@ const Hero = () => {
               Tomorrow
             </h1>
           </div>
-          <div className={styles["underline"]}></div>  
+          <div className={styles["underline"]}></div>
           <div className={styles["timing"]}>
             <p>Oct 15-16</p>
           </div>
