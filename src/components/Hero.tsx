@@ -34,9 +34,17 @@ const Hero = () => {
               data-aos-duration="1000"
               data-aos-easing="ease-out"
             >
-              Greener Tomorrow
+              Greener
+            </h1>
+            <h1
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-out"
+            >
+              Tomorrow
             </h1>
           </div>
+          <div className={styles["underline"]}></div>  
           <div className={styles["timing"]}>
             <p>Oct 15-16</p>
           </div>
@@ -91,7 +99,7 @@ const Hero = () => {
               data-aos="fade-up-left"
               data-aos-duration="1000"
               data-aos-easing="ease-out"
-              data-aos-offset="400"
+              data-aos-offset="100"
             ></Sun>
           </div>
           <div className={styles["digital-tree"]}>

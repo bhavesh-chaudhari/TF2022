@@ -56,6 +56,8 @@ Theme Styles
 
 .theme {
   display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
   line-height: 0;
   overflow: hidden;
 }
@@ -68,8 +70,17 @@ Theme Styles
   text-align: center;
 }
 
+
+.underline {
+  display: none;
+  width: 8rem;
+  height: 0.11rem;
+  background-color: #419041;
+  margin: 0.6rem;
+}
+
 .timing {
-  font-weight: 600;
+  font-weight: 500;
   color: #2e692e;
   line-height: 0;
 }
@@ -165,7 +176,7 @@ Landscape-Layer-styles
 
 .layer-3 > svg {
   width: 80%;
-  height: 100%;
+  height: 100%; 
 }
 
 .layer-4-right {
@@ -201,7 +212,8 @@ Tree styles
 
 .left-tree {
   position: absolute;
-  bottom: 20%;
+  bottom: 16%;
+  /* top: 45%; */
   left: 0%;
   z-index: 119;
 }
@@ -213,7 +225,7 @@ Tree styles
 
 .right-tree {
   position: absolute;
-  bottom: 12%;
+  bottom: 8%;
   right: 0%;
   z-index: 117;
   display: flex;
@@ -263,4 +275,65 @@ Digital Tree styles
 .digital-tree > svg {
   width: 52%;
   height: auto;
+}
+
+
+/*
+======================
+Mobile Responsive Hero
+====================== 
+*/
+
+@media screen and ( max-width:1020px) {
+  .trees, .sun, .layer-4-left, .layer-4-right {
+    display: none
+  }
+}
+@media screen and ( max-width:850px) {
+  .theme {
+    flex-direction: column;
+    gap:0;
+  }
+
+  .underline{
+    display:block;
+  }
+
+  .theme > h1 {
+    font-size: 3rem;
+  }
+
+  .digital-tree > svg{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width:450px) {
+  .cloud-right {
+    display: none;
+  }
+
+  .cloud-left {
+    transform: scale(0.4) translate(-50%, 10%);
+  }
+
+  .content {
+    margin-top: 1.5rem;
+  }
+
+  .title h2 {
+    font-size: 1.2rem;
+  }
+
+  .theme {
+    margin-top: 4rem;
+  }
+
+  .theme h1 {
+    font-size: 2.5rem;
+  }
+
+  .digital-tree > svg {
+    width: 30vh;
+  }
 }
