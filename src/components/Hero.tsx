@@ -11,7 +11,12 @@ import Layer4Right from "./svgs/hero/Layer4Right";
 import TreeLeft from "./svgs/hero/TreeLeft";
 import TreeRight from "./svgs/hero/TreeRight";
 import Sun from "./svgs/hero/Sun";
+import Moon from "./svgs/hero/Moon";
 import DigitalTree from "./svgs/hero/DigitalTree";
+import DarkCloudLeft1 from "./svgs/hero/DarkCloudLeft1";
+import DarkCloudLeft2 from "./svgs/hero/DarkCloudLeft2";
+import DarkCloudRight1 from "./svgs/hero/DarkCloudRight1";
+import DarkCloudRight2 from "./svgs/hero/DarkCloudRight2";
 
 const Hero = () => {
   return (
@@ -92,6 +97,23 @@ const Hero = () => {
             </div>
             <div className={styles["right-tree"]}>
               <TreeRight></TreeRight>
+            </div>
+          </div>
+          <div className={styles["moon"]}>
+            <Moon></Moon>
+          </div>
+          <div className={styles["dark-clouds"]}>
+            <div className={styles["dark-cloud-left-1"]}>
+              <DarkCloudLeft1></DarkCloudLeft1>
+            </div>
+            <div className={styles["dark-cloud-left-2"]}>
+              <DarkCloudLeft2></DarkCloudLeft2>
+            </div>
+            <div className={styles["dark-cloud-right-1"]}>
+              <DarkCloudRight1></DarkCloudRight1>
+            </div>
+            <div className={styles["dark-cloud-right-2"]}>
+              <DarkCloudRight2></DarkCloudRight2>
             </div>
           </div>
           <div className={styles["sun"]}>
