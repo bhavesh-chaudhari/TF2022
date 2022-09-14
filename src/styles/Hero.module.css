@@ -31,7 +31,7 @@ Theme Styles
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 1rem;
   z-index: 100;
 }
 
@@ -83,6 +83,32 @@ Theme Styles
   color: #2e692e;
   line-height: 0;
 }
+
+/* 
+======================
+Countdown Styles
+======================
+*/
+.countdown {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.countdown-heading {
+  font-size: 3.2rem;
+  text-align: center;
+  color: #81e710;
+}
+
+.countdown-para {
+  font-size: 1.1rem;
+  text-align: center;
+  color: #2e692e;
+}
+
 /* 
 ======================
 Theme Reveal Animation
@@ -263,16 +289,16 @@ Digital Tree styles
 
 .digital-tree {
   position: absolute;
-  bottom: 0%;
+  bottom: 4%;
   left: 50%;
   transform: translate(-50%, 0);
   display: flex;
   justify-content: center;
-  z-index: 130;
+  z-index: 122;
 }
 
 .digital-tree > svg {
-  width: 52%;
+  width: 42%;
   height: auto;
 }
 
