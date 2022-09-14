@@ -23,11 +23,6 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <PageLayout>
       <Component {...pageProps} />
-
-      <div className={styles.app}>
-        <NavigationSection />
-        <ContentSection />
-      </div>
     </PageLayout>
   );
 }

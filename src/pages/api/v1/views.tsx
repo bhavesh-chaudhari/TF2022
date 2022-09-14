@@ -1,4 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
+import { prisma } from "../../../utils/prisma";
 
 type Data = {
   name: string;
@@ -8,5 +9,5 @@ export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  res.status(200).json({ name: "register page" });
+  res.status(200).json({ name: "John Doe" });
 }
