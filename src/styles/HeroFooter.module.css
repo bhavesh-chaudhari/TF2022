@@ -1,0 +1,66 @@
+.footer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 100vw;
+  bottom: 0;
+  left: 0;
+  z-index: 300;
+}
+
+.contact-us {
+  margin-left: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.mail-icon {
+  font-size: 1.1rem;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #55b553;
+  padding: 0.4em;
+  border-radius: 100%;
+}
+
+.contact-us:hover {
+  cursor: pointer;
+}
+
+.social-handles {
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+
+.icon {
+  font-size: 1.2rem;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 450px) {
+  .footer {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-handle {
+    margin: 0;
+  }
+
+  .contact-us {
+    display: none;
+  }
+}
