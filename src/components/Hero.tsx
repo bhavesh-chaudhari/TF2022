@@ -17,6 +17,7 @@ import DarkCloudLeft1 from "./svgs/hero/DarkCloudLeft1";
 import DarkCloudLeft2 from "./svgs/hero/DarkCloudLeft2";
 import DarkCloudRight1 from "./svgs/hero/DarkCloudRight1";
 import DarkCloudRight2 from "./svgs/hero/DarkCloudRight2";
+import Board from "./svgs/hero/Board";
 import HeroFooter from "./HeroFooter";
 // import Countdown from "react-countdown";
 import dynamic from "next/dynamic";
@@ -85,20 +86,7 @@ const Hero = () => {
             <h2>TantraFiesta 2022</h2>
           </div>
           <div className={styles["theme"]}>
-            <h1
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-easing="ease-out"
-            >
-              Greener
-            </h1>
-            <h1
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-easing="ease-out"
-            >
-              Tomorrow
-            </h1>
+            <h1>Greener Tomorrow</h1>
           </div>
           <div className={styles["underline"]}></div>
           <div className={styles["timing"]}>
@@ -137,9 +125,26 @@ const Hero = () => {
             <Layer1></Layer1>
           </div>
           <div className={styles["layer-2"]}>
+            <div className={styles["board"]}>
+              <Board></Board>
+              <div className={styles["views"]}>
+                <span>5000</span>
+                <span>views</span>
+              </div>
+            </div>
+            <div className={styles["tree"]}>
+              <div className={styles["left-tree"]}>
+                <TreeLeft></TreeLeft>
+              </div>
+            </div>
             <Layer2></Layer2>
           </div>
           <div className={styles["layer-3"]}>
+            <div className={styles["tree"]}>
+              <div className={styles["right-tree"]}>
+                <TreeRight></TreeRight>
+              </div>
+            </div>
             <Layer3></Layer3>
           </div>
           <div className={styles["layer-4-left"]}>
@@ -149,14 +154,6 @@ const Hero = () => {
             <Layer4Right></Layer4Right>
           </div>
           <div className={styles["layer-5"]}></div>
-          <div className={styles["trees"]}>
-            <div className={styles["left-tree"]}>
-              <TreeLeft></TreeLeft>
-            </div>
-            <div className={styles["right-tree"]}>
-              <TreeRight></TreeRight>
-            </div>
-          </div>
           <div className={styles["moon"]}>
             <Moon></Moon>
           </div>

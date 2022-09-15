@@ -46,3 +46,8 @@ model participant {
   created_at     DateTime        @default(now())
   updated_at     DateTime        @updatedAt
 }
+
+model views {
+  id         Int      @id @default(autoincrement())
+  count      BigInt   @default(1)
+}

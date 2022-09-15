@@ -12,34 +12,27 @@ import { useRouter } from "next/router";
 
 const HeroFooter = () => {
   const router = useRouter();
-  const handleClick = () => {
-    router.push("mailto:ts@iiitn.ac.in");
-  };
 
   return (
     <div className={styles["footer"]}>
-      <div className={styles["contact-us"]} onClick={handleClick}>
-        <p> Contact Us</p>
-        <div className={styles["icon-container"]}>
+      <div className={styles["contact-us"]}>
+        <p>Mail us at: </p>
+        <a href="mailto:ts@iiitn.ac.in">ts@iiitn.ac.in</a>
+        {/* <div className={styles["icon-container"]}>
           <FaEnvelope className={styles["mail-icon"]} />
-        </div>
+        </div> */}
       </div>
       <div className={styles["social-handles"]}>
-        <p> Follow Us </p> |
         <a
           target="_blank"
           rel="noreferrer"
-          href="https://instagram.com/tantrafiesta?igshid=YmMyMTA2M2Y="
+          href="https://instagram.com/tantrafiesta"
         >
           <div className={styles["icon-container"]}>
             <FaInstagram className={styles["icon"]} />
           </div>
         </a>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://twitter.com/tf2k22?t=wrL0i1d3EBUTf7auZqO_qQ&s=09"
-        >
+        <a target="_blank" rel="noreferrer" href="https://twitter.com/tf2k22">
           <div className={styles["icon-container"]}>
             <FaTwitter className={styles["icon"]} />
           </div>

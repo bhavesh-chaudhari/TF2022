@@ -5,9 +5,9 @@ import type { AppProps } from "next/app";
 import PageLayout from "../layouts/PageLayout";
 import NavigationSection from "../components/NavigationSection";
 import ContentSection from "../components/ContentSection";
-
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { registerView } from "../utils/helpers";
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -18,6 +18,10 @@ function MyApp({ Component, pageProps }: AppProps) {
         );
       },
     });
+
+    if (process.env.NODE_ENV === "production") {
+      registerView();
+    }
   }, []);
 
   return (
