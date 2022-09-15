@@ -12,7 +12,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow-x: hidden;
 }
 
 .bg {
@@ -31,8 +30,8 @@ Theme Styles
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 1rem;
   z-index: 100;
+  margin-top: 7%;
 }
 
 .title {
@@ -40,6 +39,8 @@ Theme Styles
   align-items: center;
   justify-content: center;
   animation: titleAnim 1s ease 0s 1 forwards;
+  /* animation: titleAnim 1s ease 6s 1 forwards; */
+  margin-bottom: 1rem;
 }
 
 @keyframes titleAnim {
@@ -54,14 +55,14 @@ Theme Styles
 }
 
 .title h2 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 500;
   color: #1d2527;
 }
 
 .title .logo {
-  width: 35px;
-  height: 35px;
+  width: 32px;
+  height: 32px;
   position: relative;
   margin-right: 12px;
 }
@@ -70,7 +71,6 @@ Theme Styles
   display: flex;
   justify-content: space-between;
   gap: 1.5rem;
-  line-height: 0;
   overflow: hidden;
   animation: themeHeadingAnim 1s ease 0s 1 forwards;
 }
@@ -158,6 +158,34 @@ Cloud styles
   transform: scale(0.7);
 }
 
+/*
+======================
+Countdown Styles
+======================
+*/
+.countdown {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.countdown-heading {
+  font-size: 3.2rem;
+  text-align: center;
+  color: #81e710;
+  line-height: 0;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.countdown-para {
+  font-size: 1.1rem;
+  text-align: center;
+  color: #2e692e;
+}
+
 /* 
 =======================
 Landscape Layer Styles
@@ -182,6 +210,7 @@ Landscape Layer Styles
   bottom: -2%;
   left: 0%;
   z-index: 120;
+  /* background: red; */
 }
 
 .layer-2 > svg {
@@ -208,7 +237,7 @@ Landscape Layer Styles
   display: flex;
   flex-direction: row-reverse;
   width: 100%;
-  bottom: -15%;
+  bottom: -12%;
   left: 0%;
   z-index: 116;
 }
@@ -220,7 +249,7 @@ Landscape Layer Styles
 .layer-4-left {
   position: absolute;
   width: 100%;
-  bottom: -26%;
+  bottom: -22%;
   left: 0%;
   z-index: 114;
 }
@@ -230,15 +259,80 @@ Landscape Layer Styles
 }
 
 /* 
+==============
+Board styles
+==============
+*/
+.board {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 10%;
+  transform: translate(0, -56%);
+  z-index: -1;
+  /* animation: revealBoard ; */
+}
+
+.board > svg {
+  transform: scale(0.3) scaleX(1.5) scaleY(1.5);
+  fill: #c19a6b;
+}
+
+.views {
+  position: absolute;
+  transform: translate(0, -38%);
+  backface-visibility: hidden;
+  font-weight: 700;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+.views > span:nth-of-type(1) {
+  color: white;
+  display: block;
+  margin-bottom: 2px;
+  position: relative;
+}
+
+.views > span:nth-of-type(1)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #c19a6b;
+  animation: revealViews 3s ease 10s 1 forwards;
+}
+
+@keyframes revealViews {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+.views > span:nth-of-type(2) {
+  color: white;
+}
+
+/* 
 =============
 Tree styles
 =============
 */
 .left-tree {
   position: absolute;
-  bottom: 20%;
   left: 0%;
-  z-index: 119;
+  z-index: -1;
+  top: 0;
+  transform: translate(0, -65%);
 }
 
 .left-tree > svg {
@@ -248,15 +342,16 @@ Tree styles
 
 .right-tree {
   position: absolute;
-  bottom: 13%;
   right: 0%;
-  z-index: 117;
+  z-index: -1;
   display: flex;
+  top: 0;
   flex-direction: row-reverse;
+  transform: translate(0, -65%);
 }
 
 .right-tree > svg {
-  width: 65%;
+  width: 55%;
   height: auto;
 }
 /* 
@@ -268,17 +363,18 @@ Sun styles
   position: absolute;
   display: flex;
   flex-direction: row-reverse;
-  bottom: 10%;
+  bottom: 9%;
   right: 0;
 }
 
 .sun > svg {
-  width: 60%;
+  width: 58%;
   height: auto;
 }
 
 .sun-anim {
-  animation: sunAnim 2s ease 0s 1 forwards;
+  /* animation: sunAnim 2s ease 0s 1 forwards; */
+  animation: sunAnim 3s ease 9.5s 1 forwards;
 }
 
 @keyframes sunAnim {
@@ -286,7 +382,7 @@ Sun styles
     transform: translate(100%, 100%);
   }
   to {
-    transform: translate(0, 0);
+    right: 0;
   }
 }
 
@@ -306,6 +402,7 @@ Digital Tree styles
   padding-top: 1rem;
   z-index: 123;
   animation: floatTree 5s ease-in-out 6s infinite;
+  /* background: white; */
 }
 
 .digital-tree:hover {
@@ -323,9 +420,8 @@ Digital Tree styles
 }
 
 .digital-tree > svg > path {
-  fill: transparent;
-  /* stroke: url(#digital-tree_svg__a); */
-  stroke: white;
+  fill: black;
+  stroke: url(#digital-tree_svg__a);
   stroke-width: 4px;
   animation: digitalTreeAnim1 0.5s ease 7s 1 forwards,
     moveDownUp 1.5s ease-in-out 6s 1;
@@ -436,11 +532,12 @@ Layers Animation
 .layer-3-anim,
 .layer-4-left-anim,
 .layer-4-right-anim {
-  animation: moveDownUp 1.5s ease-in-out 1;
+  /* animation: moveDownUp 1.5s ease-in-out 1; */
 }
 
 .layer-1-anim > svg > path {
-  animation: layer1Anim 0.5s ease 1 forwards;
+  animation: layer1Anim 0.5s ease 1 forwards,
+  moveDownUp 1.5s ease-in-out 6s 1 forwards;
 }
 
 @keyframes layer1Anim {
@@ -450,7 +547,9 @@ Layers Animation
 }
 
 .layer-2-anim > svg > path {
-  animation: layer2Anim 0.5s ease 1 forwards;
+  /* animation: layer2Anim 0.5s ease 1 forwards; */
+  animation: layer2Anim 0.5s ease 6s 1 forwards,
+  moveDownUp 2.5s ease-in-out 6s 1 forwards;
 }
 
 @keyframes layer2Anim {
@@ -460,7 +559,9 @@ Layers Animation
 }
 
 .layer-3-anim > svg > path {
-  animation: layer3Anim 0.5s ease 1 forwards;
+  /* animation: layer3Anim 0.5s ease 1 forwards; */
+  animation: layer3Anim 0.5s ease 6s 1 forwards,
+    moveDownUp 3s ease-in-out 6s 1 forwards;
 }
 
 @keyframes layer3Anim {
@@ -470,7 +571,9 @@ Layers Animation
 }
 
 .layer-4-left-anim > svg > path {
-  animation: layer4LeftAnim 0.5s ease 1 forwards;
+  /* animation: layer4LeftAnim 0.5s ease 1 forwards; */
+  animation: layer4LeftAnim 0.5s ease 6s 1 forwards,
+    moveDownUp 3.5s ease-in-out 6s 1 forwards;
 }
 
 @keyframes layer4LeftAnim {
@@ -480,7 +583,9 @@ Layers Animation
 }
 
 .layer-4-right-anim > svg > path {
-  animation: layer4RightAnim 1.5s ease 1 forwards;
+  /* animation: layer4RightAnim 1.5s ease 1 forwards; */
+  animation: layer4RightAnim 1.5s ease 6s 1 forwards,
+    moveDownUp 3.5s ease-in-out 6s 1 forwards;
 }
 
 @keyframes layer4RightAnim {
@@ -492,14 +597,12 @@ Layers Animation
 @keyframes moveDownUp {
   0% {
     transform: translate(0, 0);
-    opacity: 0.8;
   }
   50% {
     transform: translate(0, 50%);
   }
   100% {
     transform: translate(0, 0);
-    opacity: 1;
   }
 }
 
@@ -517,6 +620,22 @@ Tress Animation
 .sun-anim {
   animation: showElements 0.1s ease 0s 1 forwards;
 }
+.clouds,
+.content {
+  animation: showElements 0.5s ease 6s 1 forwards;
+}
+
+.sun {
+  animation: showElements 0.5s ease 9.5s 1 forwards;
+}
+
+.tree {
+  animation: showElements 0.5s ease 7s 1 forwards;
+}
+
+.board {
+  animation: showElements 0.5s ease 11.5s 1 forwards;
+}
 
 @keyframes showElements {
   to {
@@ -524,9 +643,24 @@ Tress Animation
   }
 }
 
-.right-tree-anim,
+.right-tree-anim {
+  animation: treeAnim 3s ease-in-out 6s 1;
+}
+
 .left-tree-anim {
-  animation: moveDownUp 2s ease-in-out 1;
+  animation: treeAnim 2.5s ease-in-out 6s 1;
+}
+
+@keyframes treeAnim {
+  0% {
+    transform: translate(0, -65%);
+  }
+  50% {
+    transform: translate(0, 50%);
+  }
+  100% {
+    transform: translate(0, -65%);
+  }
 }
 
 /* 
@@ -544,8 +678,8 @@ Light Mode Cloud styles
 }
 
 .cloud-right {
-  top: -1%;
-  right: 2%;
+  top: 0;
+  right: 4% !important;
   transform: scale(0.55);
   animation: cloudRightAnim 3s ease 6s forwards;
 }
@@ -557,14 +691,14 @@ Light Mode Cloud styles
   }
   to {
     opacity: 1;
-    right: 2%;
+    right: 4%;
   }
 }
 
 .cloud-left {
-  left: 3%;
-  top: -5%;
-  transform: scale(0.7);
+  top: -8%;
+  left: 11% !important;
+  transform: scale(0.6) !important;
   animation: cloudLeftAnim 3s ease 6s forwards;
 }
 
@@ -575,7 +709,7 @@ Light Mode Cloud styles
   }
   to {
     opacity: 1;
-    left: 3%;
+    left: 11%;
   }
 }
 
@@ -595,6 +729,8 @@ Dark Mode Clouds
 .dark-cloud-left-1 {
   left: 0;
   top: 25%;
+  animation: moveOutCloudsLeft ease 1s 1 forwards;
+  animation-delay: 5s;
 }
 
 .dark-cloud-left-2 {
@@ -604,6 +740,7 @@ Dark Mode Clouds
 
 .move-dark-cloud-left {
   animation: moveOutCloudsLeft ease 1s 1 forwards;
+  animation-delay: 4s;
 }
 
 @keyframes moveOutCloudsLeft {
@@ -615,6 +752,8 @@ Dark Mode Clouds
 .dark-cloud-right-1 {
   right: 0;
   top: 25%;
+  animation: moveOutCloudsRight ease 1s 1 forwards;
+  animation-delay: 4.5s;
 }
 
 .dark-cloud-right-2 {
@@ -624,6 +763,7 @@ Dark Mode Clouds
 
 .move-dark-cloud-right {
   animation: moveOutCloudsRight ease 1s 1 forwards;
+  animation-delay: 5s;
 }
 
 @keyframes moveOutCloudsRight {
@@ -638,11 +778,39 @@ Mobile Responsive Hero
 ====================== 
 */
 @media screen and (max-width: 1020px) {
-  .trees,
+  .tree,
   .sun,
   .layer-4-left,
   .layer-4-right {
-    display: none;
+    /* display: none; */
+    visibility: hidden !important;
+  }
+  .cloud-right {
+    right: 1% !important;
+  }
+  .cloud-left {
+    left: -10% !important;
+    transform: scale(0.4) !important;
+  }
+  @keyframes cloudRightAnim {
+    from {
+      opacity: 0.1;
+      right: -10%;
+    }
+    to {
+      opacity: 1;
+      right: 1%;
+    }
+  }
+  @keyframes cloudLeftAnim {
+    from {
+      opacity: 0.1;
+      right: -15%;
+    }
+    to {
+      opacity: 1;
+      left: -10%;
+    }
   }
 }
 @media screen and (max-width: 850px) {

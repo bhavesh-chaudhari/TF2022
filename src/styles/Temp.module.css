@@ -1,0 +1,58 @@
+.container {
+  background: black;
+  height: 100vh;
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.heading {
+  text-align: center;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  background: white;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 1px solid white;
+}
+
+.note {
+  background: -webkit-linear-gradient(45deg, pink 40%, #00ff95 60%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    width: 35px;
+    height: 35px;
+    margin-top: 2px;
+  }
+  .heading {
+    font-size: 1rem;
+  }
+  .note {
+    font-size: 1rem;
+    top: 20%;
+  }
+}

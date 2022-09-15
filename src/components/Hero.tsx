@@ -17,6 +17,7 @@ import DarkCloudLeft1 from "./svgs/hero/DarkCloudLeft1";
 import DarkCloudLeft2 from "./svgs/hero/DarkCloudLeft2";
 import DarkCloudRight1 from "./svgs/hero/DarkCloudRight1";
 import DarkCloudRight2 from "./svgs/hero/DarkCloudRight2";
+import Board from "./svgs/hero/Board";
 import HeroFooter from "./HeroFooter";
 import HeroCountDown from "./HeroCountDown";
 
@@ -64,9 +65,26 @@ const Hero = () => {
             <div>
               <HeroCountDown />
             </div>
+            
+            {/* <h2>TantraFiesta 2022</h2>
           </div>
-        )}
-      </div>
+          <div className={styles["theme"]}>
+            <h1>Greener Tomorrow</h1>
+          </div>
+          <div className={styles["underline"]}></div>
+          <div className={styles["timing"]}>
+            <p>going live in ... </p>
+          </div>
+          <div>
+            <Countdown
+              // new Date("October 15, 2022 10:00:00")
+              date={"October 15, 2022 10:00:00"}
+              renderer={renderer}
+            />
+          </div>
+        )} */
+        }</div>)
+      }</div>
       <div className={styles["bg"]}>
         {greenState && (
           <div
@@ -100,7 +118,7 @@ const Hero = () => {
           >
             <Layer1></Layer1>
           </div>
-          <div
+          {/* <div
             className={`${styles["layer-2"]} ${
               greenState ? styles["layer-2-anim"] : ""
             }`}
@@ -111,7 +129,28 @@ const Hero = () => {
             className={`${styles["layer-3"]} ${
               greenState ? styles["layer-3-anim"] : ""
             }`}
-          >
+          > */}
+          <div className={styles["layer-2"]}>
+            <div className={styles["board"]}>
+              <Board></Board>
+              <div className={styles["views"]}>
+                <span>5000</span>
+                <span>views</span>
+              </div>
+            </div>
+            <div className={styles["tree"]}>
+              <div className={styles["left-tree"]}>
+                <TreeLeft></TreeLeft>
+              </div>
+            </div>
+            <Layer2></Layer2>
+          </div>
+          <div className={styles["layer-3"]}>
+            <div className={styles["tree"]}>
+              <div className={styles["right-tree"]}>
+                <TreeRight></TreeRight>
+              </div>
+            </div>
             <Layer3></Layer3>
           </div>
           <div

@@ -10,7 +10,6 @@
 }
 
 .contact-us {
-  margin-left: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -25,23 +24,34 @@
 .mail-icon {
   font-size: 1.1rem;
   color: #ffffff;
+  margin-left: 2%;
+  margin-bottom: 1rem;
+}
+
+.contact-us > a {
+  text-decoration: underline 2px solid #4285f4;
+}
+
+.mail-icon {
+  font-size: 1.2rem;
 }
 
 .icon-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #55b553;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: transparent;
   padding: 0.4em;
   border-radius: 100%;
+  transition: all 0.3s ease;
 }
 
-.contact-us:hover {
-  cursor: pointer;
+.icon-container > svg {
+  fill: white;
 }
 
 .social-handles {
-  margin-right: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -51,6 +61,9 @@
 
 .social-handles p {
   color: #ffffff;
+  gap: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 
 .icon {
@@ -58,8 +71,9 @@
   color: #fff;
 }
 
-.icon:hover {
+.icon-container:hover {
   cursor: pointer;
+  background: #2b502b;
 }
 
 @keyframes animateToLeft {
