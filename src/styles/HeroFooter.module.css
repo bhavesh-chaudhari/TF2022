@@ -15,10 +15,16 @@
   align-items: center;
   justify-content: space-between;
   gap: 0.5rem;
+  animation: animateToRight 1s ease 0s 1 forwards;
+}
+
+.contact-us p {
+  color: white;
 }
 
 .mail-icon {
   font-size: 1.1rem;
+  color: #ffffff;
 }
 
 .icon-container {
@@ -40,14 +46,42 @@
   align-items: center;
   justify-content: space-between;
   gap: 0.8rem;
+  animation: animateToLeft 1s ease 0s 1 forwards;
+}
+
+.social-handles p {
+  color: #ffffff;
 }
 
 .icon {
   font-size: 1.2rem;
+  color: #fff;
 }
 
 .icon:hover {
   cursor: pointer;
+}
+
+@keyframes animateToLeft {
+  from {
+    opacity: 0.6;
+    transform: translate(100px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0px);
+  }
+}
+
+@keyframes animateToRight {
+  from {
+    opacity: 0.6;
+    transform: translate(-100px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0px);
+  }
 }
 
 @media screen and (max-width: 450px) {

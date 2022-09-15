@@ -25,7 +25,7 @@ const HeroFooter = () => {
         </div>
       </div>
       <div className={styles["social-handles"]}>
-        <p> Follow Us </p> |
+        <p> Follow Us </p> <p> | </p>
         <a
           target="_blank"
           rel="noreferrer"

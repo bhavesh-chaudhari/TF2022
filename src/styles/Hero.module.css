@@ -39,7 +39,7 @@ Theme Styles
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: titleAnim 1s ease 6s 1 forwards;
+  animation: titleAnim 1s ease 0s 1 forwards;
 }
 
 @keyframes titleAnim {
@@ -72,7 +72,7 @@ Theme Styles
   gap: 1.5rem;
   line-height: 0;
   overflow: hidden;
-  animation: themeHeadingAnim 1s ease 6s 1 forwards;
+  animation: themeHeadingAnim 1s ease 0s 1 forwards;
 }
 
 .theme h1 {
@@ -106,31 +106,6 @@ Theme Styles
   font-weight: 500;
   color: #2e692e;
   line-height: 0;
-}
-
-/* 
-======================
-Countdown Styles
-======================
-*/
-.countdown {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-}
-
-.countdown-heading {
-  font-size: 3.2rem;
-  text-align: center;
-  color: #81e710;
-}
-
-.countdown-para {
-  font-size: 1.1rem;
-  text-align: center;
-  color: #2e692e;
 }
 
 /* 
@@ -300,12 +275,15 @@ Sun styles
 .sun > svg {
   width: 60%;
   height: auto;
-  animation: sunAnim 2s ease 6s 1 forwards;
+}
+
+.sun-anim {
+  animation: sunAnim 2s ease 0s 1 forwards;
 }
 
 @keyframes sunAnim {
   from {
-    transform: translate(0, 100%);
+    transform: translate(100%, 100%);
   }
   to {
     transform: translate(0, 0);
@@ -328,6 +306,10 @@ Digital Tree styles
   padding-top: 1rem;
   z-index: 123;
   animation: floatTree 5s ease-in-out 6s infinite;
+}
+
+.digital-tree:hover {
+  cursor: pointer;
 }
 
 .digital-tree > svg {
@@ -449,18 +431,16 @@ Initial Animation
 Layers Animation
 ==================
 */
-.layer-1,
-.layer-2,
-.layer-3,
-.layer-4-left,
-.layer-4-right {
+.layer-1-anim,
+.layer-2-anim,
+.layer-3-anim,
+.layer-4-left-anim,
+.layer-4-right-anim {
   animation: moveDownUp 1.5s ease-in-out 1;
-  animation-delay: 6s;
 }
 
-.layer-1 > svg > path {
+.layer-1-anim > svg > path {
   animation: layer1Anim 0.5s ease 1 forwards;
-  animation-delay: 6s;
 }
 
 @keyframes layer1Anim {
@@ -469,9 +449,8 @@ Layers Animation
   }
 }
 
-.layer-2 > svg > path {
+.layer-2-anim > svg > path {
   animation: layer2Anim 0.5s ease 1 forwards;
-  animation-delay: 6s;
 }
 
 @keyframes layer2Anim {
@@ -480,9 +459,8 @@ Layers Animation
   }
 }
 
-.layer-3 > svg > path {
+.layer-3-anim > svg > path {
   animation: layer3Anim 0.5s ease 1 forwards;
-  animation-delay: 6s;
 }
 
 @keyframes layer3Anim {
@@ -491,9 +469,8 @@ Layers Animation
   }
 }
 
-.layer-4-left > svg > path {
+.layer-4-left-anim > svg > path {
   animation: layer4LeftAnim 0.5s ease 1 forwards;
-  animation-delay: 6s;
 }
 
 @keyframes layer4LeftAnim {
@@ -502,9 +479,8 @@ Layers Animation
   }
 }
 
-.layer-4-right > svg > path {
+.layer-4-right-anim > svg > path {
   animation: layer4RightAnim 1.5s ease 1 forwards;
-  animation-delay: 6s;
 }
 
 @keyframes layer4RightAnim {
@@ -527,10 +503,8 @@ Layers Animation
   }
 }
 
-.clouds,
 .trees,
-.sun,
-.content {
+.sun {
   visibility: hidden;
 }
 
@@ -539,11 +513,9 @@ Layers Animation
 Tress Animation
 ================
 */
-.trees,
-.clouds,
-.content,
-.sun {
-  animation: showElements 0.5s ease 6s 1 forwards;
+.trees-anim,
+.sun-anim {
+  animation: showElements 0.1s ease 0s 1 forwards;
 }
 
 @keyframes showElements {
@@ -552,10 +524,9 @@ Tress Animation
   }
 }
 
-.right-tree,
-.left-tree {
+.right-tree-anim,
+.left-tree-anim {
   animation: moveDownUp 2s ease-in-out 1;
-  animation-delay: 5.5s;
 }
 
 /* 
@@ -624,15 +595,15 @@ Dark Mode Clouds
 .dark-cloud-left-1 {
   left: 0;
   top: 25%;
-  animation: moveOutCloudsLeft ease 1s 1 forwards;
-  animation-delay: 3s;
 }
 
 .dark-cloud-left-2 {
   top: 10%;
   left: 0;
+}
+
+.move-dark-cloud-left {
   animation: moveOutCloudsLeft ease 1s 1 forwards;
-  animation-delay: 3s;
 }
 
 @keyframes moveOutCloudsLeft {
@@ -644,15 +615,15 @@ Dark Mode Clouds
 .dark-cloud-right-1 {
   right: 0;
   top: 25%;
-  animation: moveOutCloudsRight ease 1s 1 forwards;
-  animation-delay: 3s;
 }
 
 .dark-cloud-right-2 {
   right: 0;
   top: 10%;
+}
+
+.move-dark-cloud-right {
   animation: moveOutCloudsRight ease 1s 1 forwards;
-  animation-delay: 3s;
 }
 
 @keyframes moveOutCloudsRight {
