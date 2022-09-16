@@ -65,7 +65,7 @@ const Hero = () => {
             <div>
               <HeroCountDown />
             </div>
-            
+
             {/* <h2>TantraFiesta 2022</h2>
           </div>
           <div className={styles["theme"]}>
@@ -82,9 +82,10 @@ const Hero = () => {
               renderer={renderer}
             />
           </div>
-        )} */
-        }</div>)
-      }</div>
+        )} */}
+          </div>
+        )}
+      </div>
       <div className={styles["bg"]}>
         {greenState && (
           <div
@@ -130,24 +131,52 @@ const Hero = () => {
               greenState ? styles["layer-3-anim"] : ""
             }`}
           > */}
-          <div className={styles["layer-2"]}>
-            <div className={styles["board"]}>
+          <div
+            className={`${styles["layer-2"]} ${
+              greenState ? styles["layer-2-anim"] : ""
+            }`}
+          >
+            <div
+              className={`${styles["board"]} ${
+                greenState ? styles["board-anim"] : ""
+              }`}
+            >
               <Board></Board>
               <div className={styles["views"]}>
                 <span>5000</span>
                 <span>views</span>
               </div>
             </div>
-            <div className={styles["tree"]}>
-              <div className={styles["left-tree"]}>
+            <div
+              className={`${styles["trees"]} ${
+                greenState ? styles["trees-anim"] : ""
+              }`}
+            >
+              <div
+                className={`${styles["left-tree"]} ${
+                  greenState ? styles["left-tree-anim"] : ""
+                }`}
+              >
                 <TreeLeft></TreeLeft>
               </div>
             </div>
             <Layer2></Layer2>
           </div>
-          <div className={styles["layer-3"]}>
-            <div className={styles["tree"]}>
-              <div className={styles["right-tree"]}>
+          <div
+            className={`${styles["layer-3"]} ${
+              greenState ? styles["layer-3-anim"] : ""
+            }`}
+          >
+            <div
+              className={`${styles["trees"]} ${
+                greenState ? styles["trees-anim"] : ""
+              }`}
+            >
+              <div
+                className={`${styles["right-tree"]} ${
+                  greenState ? styles["right-tree-anim"] : ""
+                }`}
+              >
                 <TreeRight></TreeRight>
               </div>
             </div>
@@ -168,7 +197,7 @@ const Hero = () => {
             <Layer4Right></Layer4Right>
           </div>
           <div className={styles["layer-5"]}></div>
-          <div
+          {/* <div
             className={`${styles["trees"]} ${
               greenState ? styles["trees-anim"] : ""
             }`}
@@ -187,7 +216,7 @@ const Hero = () => {
             >
               <TreeRight></TreeRight>
             </div>
-          </div>
+          </div> */}
           <div className={styles["moon"]}>
             <Moon></Moon>
           </div>
@@ -233,7 +262,12 @@ const Hero = () => {
             // data-aos-offset="100"
             ></Sun>
           </div>
-          <div onClick={handleClick} className={styles["digital-tree"]}>
+          <div
+            onClick={handleClick}
+            className={`${styles["digital-tree"]} ${
+              greenState ? styles["digital-tree-anim"] : ""
+            }`}
+          >
             <DigitalTree></DigitalTree>
           </div>
         </div>

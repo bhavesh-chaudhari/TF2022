@@ -13,11 +13,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-left: 1rem;
   gap: 0.5rem;
   animation: animateToRight 1s ease 0s 1 forwards;
 }
 
 .contact-us p {
+  color: white;
+}
+.contact-us a {
   color: white;
 }
 
@@ -55,6 +59,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
   gap: 0.8rem;
   animation: animateToLeft 1s ease 0s 1 forwards;
 }
