@@ -22,3 +22,13 @@ Countdown Styles
   text-align: center;
   color: #2e692e;
 }
+
+@media screen and (max-width: 480px) {
+  .countdown-heading {
+    font-size: 2.5rem;
+  }
+
+  .countdown-para {
+    font-size: 0.9rem;
+  }
+}

@@ -106,17 +106,17 @@
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px) {
   .footer {
     align-items: center;
     justify-content: center;
   }
 
-  .social-handle {
-    margin: 0;
-  }
-
   .contact-us {
     display: none;
+  }
+
+  .social-handles {
+    padding-top: 0.2rem;
   }
 }

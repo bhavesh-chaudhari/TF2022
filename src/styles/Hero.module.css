@@ -926,9 +926,9 @@ Mobile Responsive Hero
   }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 780px) {
   .container {
-    min-height: 93vh;
+    min-height: 94vh;
   }
 
   .cloud-right {
@@ -948,7 +948,7 @@ Mobile Responsive Hero
   }
 
   .theme {
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
 
   .theme h1 {
@@ -959,7 +959,26 @@ Mobile Responsive Hero
     display: none;
   }
 
+  .layer-1 {
+    transform: scale(1.5);
+    bottom: 0%;
+  }
+  .layer-2 > svg {
+    transform: scale(1.2);
+    bottom: 0;
+  }
+  .layer-3 > svg {
+    transform: scale(1.2);
+    bottom: 0;
+  }
+
   .digital-tree > svg {
     width: 30vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .trees {
+    display: none;
   }
 }
