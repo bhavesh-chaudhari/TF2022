@@ -15,6 +15,52 @@
   font-family: "Montserrat";
 }
 
+.click-hint {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  width: 50vw;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 25%;
+  /* background: red; */
+  z-index: 400;
+}
+
+.click-hint p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  width: 80vw;
+  text-align: center;
+  font-family: "Lato";
+  color: #581601;
+}
+
+.down-arrow {
+  margin-top: 2rem;
+  z-index: 100;
+  transform: scale(1.6);
+  /* background: red; */
+  animation: arrowAnim 2s ease-in-out 0s infinite;
+}
+
+@keyframes arrowAnim {
+  0% {
+    transform: translate(0, -40%) scale(1.2);
+  }
+  50% {
+    transform: translate(0, 40%) scale(1);
+  }
+  100% {
+    transform: translate(0, -40%) scale(1.2);
+  }
+}
+
 .bg {
   display: flex;
   justify-content: center;
@@ -39,15 +85,16 @@ Theme Styles
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: titleAnim 1s ease 0s 1 forwards;
+  opacity: 0;
+  animation: titleAnim 1s ease-out 3s 1 forwards;
   /* animation: titleAnim 1s ease 6s 1 forwards; */
   margin-bottom: 1rem;
 }
 
 @keyframes titleAnim {
   from {
-    opacity: 0.6;
-    transform: translate(0, -100px);
+    opacity: 1;
+    transform: translate(0, 200%);
   }
   to {
     opacity: 1;
@@ -73,7 +120,8 @@ Theme Styles
   justify-content: space-between;
   gap: 1.5rem;
   overflow: hidden;
-  animation: themeHeadingAnim 1s ease 0s 1 forwards;
+  opacity: 0;
+  animation: themeHeadingAnim 1s ease-out 3s 1 forwards;
 }
 
 .theme h1 {
@@ -86,13 +134,22 @@ Theme Styles
 
 @keyframes themeHeadingAnim {
   from {
-    opacity: 0.6;
-    transform: scale(0.5) translate(0, -100%);
+    opacity: 0.5;
+    transform: scale(0.9) translate(0, 10rem);
   }
   to {
     opacity: 1;
     transform: scale(1) translate(0, 0);
   }
+}
+
+.countdown {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  overflow: hidden;
+  opacity: 0;
+  animation: themeHeadingAnim 1s ease-out 3s 1 forwards;
 }
 
 .underline {
@@ -306,8 +363,9 @@ Board styles
   top: 0;
   left: 0;
   height: 100%;
+  opacity: 1;
   background: #c19a6b;
-  animation: revealViews 3s ease 10s 1 forwards;
+  animation: revealViews 3s ease 6s 1 forwards;
 }
 
 @keyframes revealViews {
@@ -366,24 +424,24 @@ Sun styles
   flex-direction: row-reverse;
   bottom: 9%;
   right: 0;
+  z-index: 115;
 }
 
 .sun > svg {
   width: 58%;
   height: auto;
-}
-
-.sun-anim {
-  /* animation: sunAnim 2s ease 0s 1 forwards; */
-  animation: sunAnim 3s ease 0s 1 forwards;
+  opacity: 0;
+  animation: sunAnim 2s ease-out 1.5s forwards;
 }
 
 @keyframes sunAnim {
-  from {
-    transform: translate(100%, 100%);
+  0% {
+    opacity: 0;
+    transform: translate(50%, 50%);
   }
-  to {
-    transform: translate(0, 0);
+  100% {
+    opacity: 1;
+    transform: translate(0%, 0%);
   }
 }
 
@@ -414,13 +472,13 @@ Digital Tree styles
   height: auto;
   stroke-dasharray: 13630;
   stroke-dashoffset: 13630;
-  /* animation: dash 6s linear forwards, dash2 10s linear 6s infinite forwards; */
+  animation: dash 20s linear infinite;
   transform: scaleX(1.3);
   overflow: visible;
 }
 
 .digital-tree > svg > path {
-  fill: black;
+  fill: #581601;
   stroke: url(#digital-tree_svg__a);
   stroke-width: 4px;
 }
@@ -429,9 +487,25 @@ Digital Tree styles
   animation: floatTree 8s ease-in-out 0s infinite;
 }
 
+.digital-tree-anim:hover {
+  cursor: default;
+}
+
 .digital-tree-anim > svg > path {
-  animation: digitalTreeAnim1 0.5s ease 0s 1 forwards,
-    moveDownUp 1.5s ease-in-out 0s 1;
+  animation: digitalTreeAnim1 0.5s ease 0.8s 1 forwards,
+    treeMoveDownUp 1.5s ease-in-out 0s 1;
+}
+
+@keyframes treeMoveDownUp {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 120%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 @keyframes floatTree {
@@ -487,10 +561,10 @@ Initial Animation
   width: 100%;
   height: 100%;
   background: linear-gradient(180deg, #e8cc84 -28.01%, #fff8e1 74.49%);
-  animation: changeOpacity 2s linear 1 forwards;
+  /* animation: changeOpacity 2s linear 1 forwards; */
 }
 
-.container::before {
+.container.container-anim::after {
   content: "";
   top: 0;
   left: 0;
@@ -543,7 +617,7 @@ Layers Animation
 }
 
 .layer-1-anim > svg > path {
-  animation: layer1Anim 0.5s ease 0.5s 1 forwards,
+  animation: layer1Anim 0.3s ease 0.6s 1 forwards,
     moveDownUp 1.5s ease-in-out 0s 1 forwards;
 }
 
@@ -567,7 +641,7 @@ Layers Animation
 
 .layer-3-anim > svg > path {
   /* animation: layer3Anim 0.5s ease 1 forwards; */
-  animation: layer3Anim 0.5s ease 1.5s 1 forwards,
+  animation: layer3Anim 0.5s ease 1.1s 1 forwards,
     moveDownUp 3s ease-in-out 0s 1 forwards;
 }
 
@@ -579,7 +653,7 @@ Layers Animation
 
 .layer-4-left-anim > svg > path {
   /* animation: layer4LeftAnim 0.5s ease 1 forwards; */
-  animation: layer4LeftAnim 0.5s ease 2s 1 forwards,
+  animation: layer4LeftAnim 0.5s ease 1.4s 1 forwards,
     moveDownUp 3.5s ease-in-out 0s 1 forwards;
 }
 
@@ -591,7 +665,7 @@ Layers Animation
 
 .layer-4-right-anim > svg > path {
   /* animation: layer4RightAnim 1.5s ease 1 forwards; */
-  animation: layer4RightAnim 1.5s ease 2s 1 forwards,
+  animation: layer4RightAnim 0.5s ease 1.7s 1 forwards,
     moveDownUp 3.5s ease-in-out 0s 1 forwards;
 }
 
@@ -625,7 +699,7 @@ Tress Animation
 ================
 */
 .trees-anim,
-.sun-anim {
+.sun {
   animation: showElements 0.1s ease 0s 1 forwards;
 }
 .clouds,
@@ -695,41 +769,43 @@ Light Mode Cloud styles
 .cloud-right,
 .cloud-left {
   position: absolute;
+  opacity: 0;
+  z-index: 1;
 }
 
 .cloud-right {
   top: 0;
-  right: 4% !important;
+  right: 4%;
   transform: scale(0.55);
-  animation: cloudRightAnim 3s ease 0s forwards;
+  animation: cloudRightAnim 2s ease-out 1.5s forwards;
 }
 
 @keyframes cloudRightAnim {
-  from {
-    opacity: 0.1;
-    right: -10%;
+  0% {
+    opacity: 0;
+    right: -50%;
   }
-  to {
+  100% {
     opacity: 1;
-    right: 4%;
+    right: 3%;
   }
 }
 
 .cloud-left {
   top: -8%;
-  left: 11% !important;
+  left: 11%;
   transform: scale(0.6) !important;
-  animation: cloudLeftAnim 3s ease 0s forwards;
+  animation: cloudLeftAnim 2s ease-out 1.5s forwards;
 }
 
 @keyframes cloudLeftAnim {
   from {
-    opacity: 0.1;
-    left: -10%;
+    opacity: 0;
+    left: -50%;
   }
   to {
     opacity: 1;
-    left: 11%;
+    left: 1%;
   }
 }
 
@@ -850,7 +926,7 @@ Mobile Responsive Hero
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 680px) {
   .container {
     min-height: 93vh;
   }
@@ -877,6 +953,10 @@ Mobile Responsive Hero
 
   .theme h1 {
     font-size: 2.5rem;
+  }
+
+  .board {
+    display: none;
   }
 
   .digital-tree > svg {

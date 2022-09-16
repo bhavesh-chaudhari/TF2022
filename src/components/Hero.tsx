@@ -20,6 +20,7 @@ import DarkCloudRight2 from "./svgs/hero/DarkCloudRight2";
 import Board from "./svgs/hero/Board";
 import HeroFooter from "./HeroFooter";
 import HeroCountDown from "./HeroCountDown";
+import { BsChevronDoubleDown } from "react-icons/bs";
 
 const Hero = () => {
   const [greenState, setGreenState] = useState(false);
@@ -28,7 +29,11 @@ const Hero = () => {
   };
 
   return (
-    <div className={`${styles["container"]}`}>
+    <div
+      className={`${styles["container"]} ${
+        greenState ? styles["container-anim"] : ""
+      }`}
+    >
       <div className={styles["content"]}>
         {greenState && (
           <div className={styles["event-theme"]}>
@@ -62,7 +67,7 @@ const Hero = () => {
             <div className={styles["timing"]}>
               {/* <p> going live in ...</p> */}
             </div>
-            <div>
+            <div className={styles["countdown"]}>
               <HeroCountDown />
             </div>
 
@@ -86,28 +91,26 @@ const Hero = () => {
           </div>
         )}
       </div>
+      {!greenState && (
+        <div className={styles["click-hint"]}>
+          <p>
+            {" "}
+            Click on the digital tree to join our movement of making our
+            tomorrow greener
+            <span role="img" className={styles["down-arrow"]}>
+              <BsChevronDoubleDown />
+            </span>
+          </p>
+        </div>
+      )}
       <div className={styles["bg"]}>
         {greenState && (
-          <div
-            className={`${styles["clouds"]} ${
-              greenState ? styles["clouds-anim"] : ""
-            }`}
-          >
+          <div className={styles["clouds"]}>
             <div className={styles["cloud-left"]}>
-              <CloudLeft
-                data-aos="fade-right"
-                data-aos-duration="1600"
-                data-aos-easing="ease-out"
-                data-aos-offset="400"
-              ></CloudLeft>
+              <CloudLeft></CloudLeft>
             </div>
             <div className={styles["cloud-right"]}>
-              <CloudRight
-                data-aos="fade-left"
-                data-aos-duration="1200"
-                data-aos-easing="ease-out"
-                data-aos-offset="400"
-              ></CloudRight>
+              <CloudRight></CloudRight>
             </div>
           </div>
         )}
@@ -250,18 +253,11 @@ const Hero = () => {
               <DarkCloudRight2></DarkCloudRight2>
             </div>
           </div>
-          <div
-            className={`${styles["sun"]} ${
-              greenState ? styles["sun-anim"] : ""
-            }`}
-          >
-            <Sun
-            // data-aos="fade-up-left"
-            // data-aos-duration="1000"
-            // data-aos-easing="ease-out"
-            // data-aos-offset="100"
-            ></Sun>
-          </div>
+          {greenState && (
+            <div className={styles["sun"]}>
+              <Sun></Sun>
+            </div>
+          )}
           <div
             onClick={handleClick}
             className={`${styles["digital-tree"]} ${
