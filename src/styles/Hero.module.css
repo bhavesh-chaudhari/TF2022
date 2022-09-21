@@ -65,22 +65,22 @@
 }
 
 .down-arrow {
-  margin-top: 0rem;
+  margin-top: 1rem;
   z-index: 100;
   transform: scale(1.6);
-  animation: arrowAnim 2s ease-in-out 0s infinite;
+  animation: arrowAnim 3s ease-in-out 0s infinite;
   /* background: red; */
 }
 
 @keyframes arrowAnim {
   0% {
-    transform: translate(0, -40%) scale(1.2);
-  }
-  50% {
     transform: translate(0, 40%) scale(1);
   }
+  50% {
+    transform: translate(0, -20%) scale(1.1);
+  }
   100% {
-    transform: translate(0, -40%) scale(1.2);
+    transform: translate(0, 40%) scale(1);
   }
 }
 
@@ -390,7 +390,7 @@ Board styles
   height: 100%;
   opacity: 1;
   background: #c19a6b;
-  animation: revealViews 3s ease 6s 1 forwards;
+  animation: revealViews 3s ease 3.5s 1 forwards;
 }
 
 @keyframes revealViews {

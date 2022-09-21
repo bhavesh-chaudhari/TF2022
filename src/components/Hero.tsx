@@ -85,8 +85,7 @@ const Hero = () => {
               </div>
               <div className={styles["mobile-board"]}>
                 <p>
-                  {" "}
-                  <ViewCounter /> views
+                  <ViewCounter state={greenState} /> views
                 </p>
               </div>
 
@@ -171,7 +170,7 @@ const Hero = () => {
                 <div className={styles["views"]}>
                   <span>
                     {" "}
-                    <ViewCounter></ViewCounter>
+                    <ViewCounter state={greenState}></ViewCounter>
                   </span>
                   <span>views</span>
                 </div>

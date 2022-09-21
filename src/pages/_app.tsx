@@ -7,9 +7,11 @@ import NavigationSection from "../components/NavigationSection";
 import ContentSection from "../components/ContentSection";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { registerView } from "../utils/helpers";
+import { useSWRConfig } from "swr";
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const { mutate } = useSWRConfig();
+
   useEffect(() => {
     AOS.init({
       disable: function () {
@@ -20,9 +22,27 @@ function MyApp({ Component, pageProps }: AppProps) {
     });
 
     if (process.env.NODE_ENV === "production") {
-      registerView();
     }
   }, []);
+
+  useEffect(() => {
+    const registerView = () => {
+      fetch(`/api/v1/views`, {
+        method: "POST",
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          // console.log(data);
+          const newViews = data.views;
+          mutate(`/api/v1/views`, { ...data, views: newViews }, false);
+        });
+    };
+
+    if (process.env.NODE_ENV === "production") {
+      //  console.log("view registered");
+      registerView();
+    }
+  }, [mutate]);
 
   return (
     <PageLayout>

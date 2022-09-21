@@ -15,7 +15,7 @@ const registerSchool = async (
   res: NextApiResponse<Data>
 ) => {
   try {
-    console.log(req.body);
+    // console.log(req.body);
     const { name, address, city } = req.body;
 
     const school = await School.findUnique({
@@ -24,7 +24,7 @@ const registerSchool = async (
       },
     });
 
-    console.log(school);
+    // console.log(school);
 
     if (school) {
       return res
@@ -42,7 +42,7 @@ const registerSchool = async (
 
     res.status(200).json({ school: newSchool, success: true });
   } catch (error: any) {
-    console.log(error);
+    // console.log(error);
     res.status(500).json({ error, success: false });
   }
 };

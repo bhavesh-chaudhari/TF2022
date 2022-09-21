@@ -22,6 +22,10 @@ const document = () => {
         />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
+        <meta
+          name="google-site-verification"
+          content="XMc85SahHk95m0SUVG_Z2nT0sz-HME_T-SGq9aMMdRA"
+        />
       </Head>
       <body>
         <Main />
