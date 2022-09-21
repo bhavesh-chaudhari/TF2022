@@ -17,7 +17,7 @@ const HeroFooter = () => {
     <div className={styles["footer"]}>
       <div className={styles["contact-us"]}>
         <p>Mail us at: </p>
-        <a href="mailto:ts@iiitn.ac.in">ts@iiitn.ac.in</a>
+        <a href="mailto:ts@iiitn.ac.in">tantrafiesta@iiitn.ac.in</a>
         {/* <div className={styles["icon-container"]}>
           <FaEnvelope className={styles["mail-icon"]} />
         </div> */}
@@ -62,6 +62,16 @@ const HeroFooter = () => {
         >
           <div className={styles["icon-container"]}>
             <FaLinkedin className={styles["icon"]} />
+          </div>
+        </a>
+        <a
+          className={styles["mobile-mail-icon"]}
+          target="_blank"
+          rel="noreferrer"
+          href="mailto:ts@iiitn.ac.in"
+        >
+          <div className={styles["icon-container"]}>
+            <FaEnvelope className={styles["icon"]} />
           </div>
         </a>
       </div>
