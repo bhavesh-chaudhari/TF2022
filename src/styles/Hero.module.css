@@ -390,7 +390,7 @@ Board styles
   height: 100%;
   opacity: 1;
   background: #c19a6b;
-  animation: revealViews 3s ease 3.5s 1 forwards;
+  animation: revealViews 5s ease 3.8s 1 forwards;
 }
 
 @keyframes revealViews {
@@ -1018,6 +1018,13 @@ Mobile Responsive Hero
 
 .underline {
   visibility: hidden;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    height: 100vh;
+    min-height: 650px;
+  }
 }
 
 @media screen and (max-width: 500px) {

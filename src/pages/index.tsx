@@ -16,14 +16,13 @@ Tantrafiesta hosts a plethora of social initiatives and outreach programs such a
         />
         <meta
           name="keywords"
-          content="Tantra, Tantrafiesta 2022, IIIT Nagpur's Techfest, Events in Nagpur"
+          content="Tantrafiesta 2022, tf2022, Tantra, HackMe Tantrafiesta, Tantrafiesta IIIT Nagpur, IIIT Nagpur's Technical fest, Events in Nagpur, technical fest, iiit tech fest"
         />
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="English"></meta>
-
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://tantrafiesta.iiitn.ac.in/" />
+        <meta property="og:url" content="https://tantrafiesta.in/" />
         <meta property="og:title" content="Tantrafiesta - 2022" />
         <meta
           property="og:description"
@@ -36,10 +35,7 @@ Tantrafiesta hosts a plethora of social initiatives and outreach programs such a
         ></meta>
 
         <meta property="twitter:card" content="summary_large_image" />
-        <meta
-          property="twitter:url"
-          content="https://tantrafiesta.iiitn.ac.in/"
-        />
+        <meta property="twitter:url" content="https://tantrafiesta.in/" />
         <meta property="twitter:title" content="Tantrafiesta - 2022" />
         <meta
           property="twitter:description"

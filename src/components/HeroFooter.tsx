@@ -17,7 +17,9 @@ const HeroFooter = () => {
     <div className={styles["footer"]}>
       <div className={styles["contact-us"]}>
         <p>Mail us at: </p>
-        <a href="mailto:ts@iiitn.ac.in">tantrafiesta@iiitn.ac.in</a>
+        <a rel="noreferrer" href="mailto:ts@iiitn.ac.in">
+          ts@iiitn.ac.in
+        </a>
         {/* <div className={styles["icon-container"]}>
           <FaEnvelope className={styles["mail-icon"]} />
         </div> */}
