@@ -3,9 +3,7 @@ const { Readable } = require("stream");
 
 const mysitemap = async (req, res) => {
   // An array with your links
-  const links = [
-    { url: "/", changefreq: "daily", priority: 1 },
-  ];
+  const links = [{ url: "/", changefreq: "daily", priority: 1 }];
 
   // Create a stream to write to
   const stream = new SitemapStream({ hostname: `https://${req.headers.host}` });
