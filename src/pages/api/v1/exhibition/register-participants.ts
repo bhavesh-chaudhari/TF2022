@@ -34,7 +34,7 @@ const registerParticipants = async (
       success: true,
     });
   } catch (error: any) {
-    console.log(error);
+    // console.log(error);
     res.status(500).json({ error, success: false });
   }
 };
