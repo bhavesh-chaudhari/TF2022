@@ -1,0 +1,34 @@
+/* 
+======================
+Countdown Styles
+======================
+*/
+.countdown {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.countdown-heading {
+  font-size: 3.2rem;
+  text-align: center;
+  color: #81e710;
+}
+
+.countdown-para {
+  font-size: 1.1rem;
+  text-align: center;
+  color: #2e692e;
+}
+
+@media screen and (max-width: 480px) {
+  .countdown-heading {
+    font-size: 2.5rem;
+  }
+
+  .countdown-para {
+    font-size: 0.9rem;
+  }
+}

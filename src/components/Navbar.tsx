@@ -2,7 +2,7 @@
 import { useState } from "react";
 import React from "react";
 import styles from "../styles/Navbar.module.css";
-const Navbar = () => {
+const Navbar1 = () => {
   const [isActive, setIsActive] = useState(0);
   // const handleClick = () => {
   //   setIsActive((current) => !current);
@@ -157,6 +157,10 @@ const Navbar = () => {
       </div>
     </>
   );
+};
+
+const Navbar = () => {
+  return <div> Navbar </div>;
 };
 
 export default Navbar;

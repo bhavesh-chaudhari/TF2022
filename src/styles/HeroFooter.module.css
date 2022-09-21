@@ -1,0 +1,159 @@
+.footer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 100vw;
+  bottom: 0;
+  left: 0;
+  z-index: 300;
+}
+
+.contact-us {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 1rem;
+  gap: 0.5rem;
+  opacity: 0;
+  animation: animateToRight 0.8s ease 2.3s 1 forwards;
+}
+
+.contact-us p {
+  color: white;
+}
+.contact-us a {
+  color: white;
+}
+
+.mail-icon {
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-left: 2%;
+  margin-bottom: 1rem;
+}
+
+.contact-us > a {
+  text-decoration: underline 2px solid #4285f4;
+}
+
+.mail-icon {
+  font-size: 1.2rem;
+}
+
+.mobile-mail-icon {
+  display: none;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: transparent;
+  padding: 0.4em;
+  border-radius: 100%;
+  transition: all 0.3s ease;
+}
+
+.icon-container > svg {
+  fill: white;
+}
+
+.social-handles {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  gap: 0.8rem;
+  opacity: 0;
+  animation: animateToLeft 0.8s ease 2.3s 1 forwards;
+}
+
+.social-handles p {
+  color: #ffffff;
+  gap: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.icon-container:hover {
+  cursor: pointer;
+  background: #2b502b;
+}
+
+@keyframes animateToLeft {
+  from {
+    opacity: 0.1;
+    transform: translate(100px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0px);
+  }
+}
+
+@keyframes animateToRight {
+  from {
+    opacity: 0.1;
+    transform: translate(-100px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0px);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer {
+    align-items: center;
+    justify-content: center;
+    bottom: 49%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .mobile-mail-icon {
+    display: block;
+  }
+
+  .contact-us {
+    display: none;
+  }
+
+  .social-handles {
+    position: absolute;
+    z-index: 1000;
+    animation: animateUp 1s ease 1.5s forwards;
+  }
+
+  @keyframes animateUp {
+    from {
+      opacity: 0.1;
+      transform: translate(0, 100px);
+    }
+    to {
+      opacity: 1;
+      transform: translate(0, 0px);
+    }
+  }
+
+  .icon-container {
+    cursor: pointer;
+    /* background: rgb(207, 207, 248); */
+    background: linear-gradient(to bottom, #57c1eb 50%, #246fa8 50%);
+    border: none;
+    opacity: 0.8;
+  }
+
+  .icon-container:hover {
+    cursor: pointer;
+    background: rgb(176, 176, 255);
+  }
+}
