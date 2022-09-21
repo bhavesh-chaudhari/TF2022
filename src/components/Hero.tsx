@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import styles from "../styles/Hero.module.css";
 import NextImage from "next/image";
 import CloudLeft from "./svgs/hero/CloudLeft";
@@ -29,9 +29,20 @@ const Hero = () => {
     setGreenState(true);
   };
 
+  const containerRef = useRef<any>(null);
+
+  useEffect(() => {
+    const deviceWidth = window.matchMedia("(max-width: 500px)");
+
+    if (deviceWidth.matches) {
+      containerRef.current.style.minHeight = (window as any).innerHeight + "px";
+    }
+  }, []);
+
   return (
     <>
       <div
+        ref={containerRef}
         className={`${styles["container"]} ${
           greenState ? styles["container-anim"] : ""
         }`}
@@ -55,14 +66,14 @@ const Hero = () => {
                 // data-aos-duration="1000"
                 // data-aos-easing="ease-out"
                 >
-                  Greener
+                  Greener Tomorrow
                 </h1>
                 <h1
                 // data-aos="fade-up"
                 // data-aos-duration="1000"
                 // data-aos-easing="ease-out"
                 >
-                  Tomorrow
+                  {/* Tomorrow */}
                 </h1>
               </div>
               <div className={styles["underline"]}></div>
@@ -75,7 +86,7 @@ const Hero = () => {
               <div className={styles["mobile-board"]}>
                 <p>
                   {" "}
-                  <ViewCounter /> visitors
+                  <ViewCounter /> views
                 </p>
               </div>
 

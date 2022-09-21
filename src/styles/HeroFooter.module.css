@@ -114,7 +114,9 @@
   .footer {
     align-items: center;
     justify-content: center;
-    bottom: 1rem;
+    bottom: 49%;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
 
   .mobile-mail-icon {
@@ -128,10 +130,30 @@
   .social-handles {
     position: absolute;
     z-index: 1000;
+    animation: animateUp 1s ease 1.5s forwards;
+  }
+
+  @keyframes animateUp {
+    from {
+      opacity: 0.1;
+      transform: translate(0, 100px);
+    }
+    to {
+      opacity: 1;
+      transform: translate(0, 0px);
+    }
   }
 
   .icon-container {
     cursor: pointer;
-    background: #2b502b;
+    /* background: rgb(207, 207, 248); */
+    background: linear-gradient(to bottom, #57c1eb 50%, #246fa8 50%);
+    border: none;
+    opacity: 0.8;
+  }
+
+  .icon-container:hover {
+    cursor: pointer;
+    background: rgb(176, 176, 255);
   }
 }

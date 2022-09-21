@@ -25,7 +25,7 @@ const ViewCounter = () => {
     }
   }, [mutate]);
 
-  return <span> {`${views! > 0 ? views!.toLocaleString() : "***"}`}</span>;
+  return <span> {`${views! > 0 ? views!.toLocaleString() : "0"}`}</span>;
 };
 
 export default ViewCounter;
