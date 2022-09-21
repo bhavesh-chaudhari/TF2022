@@ -1,0 +1,6 @@
+# robots.txt file for TantraFiesta
+
+User-agent: *
+Allow: /
+
+Sitemap: https://tantrafiesta.in/api/sitemap

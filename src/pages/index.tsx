@@ -11,11 +11,12 @@ const Home: NextPage = () => {
         <title>Tantrafiesta - 2022</title>
         <meta
           name="description"
-          content="IIIT Nagpur's Annual Technical Festival"
+          content="Tantrafiesta is the annual science and technology festival of the Indian Institute of Information Technology, Nagpur.
+Tantrafiesta hosts a plethora of social initiatives and outreach programs such as hackathons, coding contests, robo-races, debates, and seminars that help inspire the next generation of scientists and engineers."
         />
         <meta
           name="keywords"
-          content="Tantra, Tantrafiesta 2022, IIIT Nagpur's Techfest, "
+          content="Tantra, Tantrafiesta 2022, IIIT Nagpur's Techfest, Events in Nagpur"
         />
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
@@ -26,11 +27,12 @@ const Home: NextPage = () => {
         <meta property="og:title" content="Tantrafiesta - 2022" />
         <meta
           property="og:description"
-          content="IIIT Nagpur's Annual Technical Festival"
+          content="Tantrafiesta is the annual science and technology festival of the Indian Institute of Information Technology, Nagpur.
+                Tantrafiesta hosts a plethora of social initiatives and outreach programs such as hackathons, coding contests, robo-races, debates, and seminars that help inspire the next generation of scientists and engineers."
         ></meta>
         <meta
           property="og:image"
-          content="https://res.cloudinary.com/doraexp69/image/upload/v1663171026/tf2022/tantrafiesta-2022-logo.png"
+          content="https://res.cloudinary.com/doraexp69/image/upload/v1663765902/tf2022/tantrafiesta-logo.png"
         ></meta>
 
         <meta property="twitter:card" content="summary_large_image" />
@@ -41,11 +43,12 @@ const Home: NextPage = () => {
         <meta property="twitter:title" content="Tantrafiesta - 2022" />
         <meta
           property="twitter:description"
-          content="IIIT Nagpur's Annual Technical Festival"
+          content="Tantrafiesta is the annual science and technology festival of the Indian Institute of Information Technology, Nagpur.
+            Tantrafiesta hosts a plethora of social initiatives and outreach programs such as hackathons, coding contests, robo-races, debates, and seminars that help inspire the next generation of scientists and engineers."
         />
         <meta
           property="twitter:image"
-          content="https://res.cloudinary.com/doraexp69/image/upload/v1663171026/tf2022/tantrafiesta-2022-logo.png"
+          content="https://res.cloudinary.com/doraexp69/image/upload/v1663765902/tf2022/tantrafiesta-logo.png"
         ></meta>
       </Head>
       <>
