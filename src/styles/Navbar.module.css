@@ -1,87 +1,69 @@
-.mainNav {
-  background-color: black;
-  /* width: 33%;
-   */
-  width: 33vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-}
-/* .elements ul::after {
-  content: " ";
-  width: 3px;
-  position: absolute;
-  height: calc(100% -58px);
-  left: 40px;
-  top: 0px;
-  background: rgb(5, 114, 60);
-} */
-
-.links {
-  font-size: 1.5vw;
-  color: #ffffff;
-  padding: 5vh;
-  list-style: none;
-  left: 1px;
-  transform-origin: 100% 50%;
+.navbar-wrapper {
+  height: 10vh;
+  min-width: 100vw;
+  background: red;
+  position: fixed;
+  top: 0;
+  z-index: 2000;
 }
 
-.links:hover {
-  font-size: 2vw;
-  /* transform: scaleX(1.8); */
-  /* transform: scale(1.6); */
-  /* transform: scaleX(1.6); */
-  transform: scaleY(1.3);
-  /* left: 0; */
-  color: #2b9348;
-  /* transform-origin: 100% 50%; */
-}
-
-.elements {
-  position: absolute;
-  top: 8vh;
-  left: 6.5vw;
-  /* display: flex;
-    flex-direction: column; */
-  /* align-items: center; */
-}
-.container {
-  background-color: white;
-  width: 0.1vw;
-  height: 69vh;
-  position: relative;
-  top: 14vh;
-  left: 26vw;
-}
-.circle2 {
-  background-color: #000000;
-  width: 2.7vh;
-  height: 2.7vh;
-  border-radius: 50%;
-  left: 0.08vw;
-  top: 0.05vw;
-  position: inherit;
-}
-.circle1 {
-  width: 3vh;
-  height: 3vh;
-  background-color: rgb(255, 255, 255);
-  border-radius: 50%;
-  position: relative;
-  top: 8vw;
-  /* left: 29.2vw;
-   */
-  left: 25.2vw;
-}
-.circle1 {
-  position: relative;
-}
-.maincontainer {
+.navbar {
+  background: #0c1618;
+  /* background: blue; */
+  color: white;
+  height: 8vh;
   display: flex;
-}
-.circles {
-  display: flex;
-  flex-direction: column;
-  height: 65vh;
+  align-items: center;
   justify-content: space-between;
+}
+
+.branding {
+  margin-left: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.branding-img {
+  width: 20px;
+  height: auto;
+}
+
+.branding-text {
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  /* font-family: "Lato"; */
+  font-size: 1.5rem;
+}
+
+.navbar-links {
+  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.navbar-link {
+  font-family: "Lato";
+}
+
+.navbar-link:hover {
+  text-decoration: underline 3px #eeef20;
+  text-underline-offset: 0.5em;
+}
+
+.yellow-line {
+  /* position: relative; */
+  height: 1vh;
+  min-width: 100vw;
+  background: #eeef20;
+}
+
+.green-line {
+  /* position: relative; */
+  height: 1vh;
+  min-width: 100vw;
+  background: #2b9348;
 }
