@@ -1,6 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import AboutTantra from "../components/AboutTantra";
+import BgWrapper from "../components/BgWrapper";
 import Hero from "../components/Hero";
 import styles from "../styles/Home.module.css";
 
@@ -49,6 +51,9 @@ Tantrafiesta hosts a plethora of social initiatives and outreach programs such a
       </Head>
       <>
         <Hero />
+        <BgWrapper>
+          <AboutTantra />
+        </BgWrapper>
       </>
     </div>
   );

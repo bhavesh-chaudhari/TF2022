@@ -1,171 +1,51 @@
-//@ts-nocheck
-import { useState } from "react";
 import React from "react";
+import NextImage from "next/image";
+import NextLink from "next/link";
+import tfLogo from "../../public/favicons/tantrafiesta-logo.png";
 import styles from "../styles/Navbar.module.css";
-const Navbar1 = () => {
-  const [isActive, setIsActive] = useState(0);
-  // const handleClick = () => {
-  //   setIsActive((current) => !current);
-  // };
+
+const Navbar = () => {
   return (
-    <>
-      <div className={styles.mainNav}>
-        <div className={styles.elements}>
-          <ul>
-            <li
-              className={styles.links}
-              id="About"
-              style={{
-                color: isActive == 1 ? "#2b9348" : "#ffffff",
-                fontSize: isActive == 1 ? "2vw" : "1.5vw",
-              }}
-            >
-              <a
-                href="#"
-                onClick={() => {
-                  setIsActive(1);
-                }}
-              >
-                ABOUT
-              </a>
-            </li>
-            <li
-              className={styles.links}
-              id="Pitch"
-              style={{
-                color: isActive == 2 ? "#2b9348" : "#ffffff",
-                fontSize: isActive == 2 ? "2vw" : "1.5vw",
-              }}
-            >
-              <a
-                href="#"
-                onClick={() => {
-                  setIsActive(2);
-                }}
-              >
-                HIGHLIGHTS
-              </a>
-            </li>
-            <li
-              className={styles.links}
-              id="mfs"
-              style={{
-                color: isActive == 3 ? "#2b9348" : "#ffffff",
-                fontSize: isActive == 3 ? "2vw" : "1.5vw",
-              }}
-            >
-              <a
-                href="#"
-                onClick={() => {
-                  setIsActive(3);
-                }}
-              >
-                MESSAGE FOR <br /> STUDENTS{" "}
-              </a>
-            </li>
-            <li
-              className={styles.links}
-              id="mfsn"
-              style={{
-                color: isActive == 4 ? "#2b9348" : "#ffffff",
-                fontSize: isActive == 4 ? "2vw" : "1.5vw",
-              }}
-            >
-              <a
-                href="#"
-                onClick={() => {
-                  setIsActive(4);
-                }}
-              >
-                MESSAGE FOR <br /> SPONSORS{" "}
-              </a>
-            </li>
-            <li
-              className={styles.links}
-              id="Team"
-              style={{
-                color: isActive == 5 ? "#2b9348" : "#ffffff",
-                fontSize: isActive == 5 ? "2vw" : "1.5vw",
-              }}
-            >
-              <a
-                href="#"
-                onClick={() => {
-                  setIsActive(5);
-                }}
-              >
-                TEAM
-              </a>
-            </li>
-          </ul>
+    <div className={styles["navbar-wrapper"]}>
+      <div className={styles["navbar"]}>
+        <div className={styles["branding"]}>
+          <NextImage
+            className={styles["branding-img"]}
+            src={tfLogo}
+            alt="TantraFiesta logo"
+            width={40}
+            height={40}
+          />
+          <h1 className={styles["branding-text"]}> TantraFiesta 2022</h1>
         </div>
-        <div className={styles.maincontainer}>
-          <div className={styles.container}></div>
-          <div className={styles.circles}>
-            <div
-              className={styles.circle1}
-              style={{ backgroundColor: isActive == 1 ? "green" : "#ffffff" }}
-            >
-              <div
-                className={styles.circle2}
-                id="AboutCircle"
-                style={{ backgroundColor: isActive == 1 ? "green" : "black" }}
-              ></div>
-            </div>
-            <div
-              className={styles.circle1}
-              style={{ backgroundColor: isActive == 2 ? "green" : "#ffffff" }}
-            >
-              <div
-                className={styles.circle2}
-                id="PitchCircle"
-                style={{ backgroundColor: isActive == 2 ? "green" : "black" }}
-              ></div>
-            </div>
-            <div
-              className={styles.circle1}
-              style={{ backgroundColor: isActive == 3 ? "green" : "#ffffff" }}
-            >
-              <div
-                className={styles.circle2}
-                id="HighlightsCircle"
-                style={{ backgroundColor: isActive == 3 ? "green" : "black" }}
-              ></div>
-            </div>
-            <div
-              className={styles.circle1}
-              style={{ backgroundColor: isActive == 4 ? "green" : "#ffffff" }}
-            >
-              <div
-                className={styles.circle2}
-                id="TeamCircle"
-                style={{ backgroundColor: isActive == 4 ? "green" : "black" }}
-              ></div>
-            </div>
-            <div
-              className={styles.circle1}
-              style={{ backgroundColor: isActive == 5 ? "green" : "#ffffff" }}
-            >
-              <div
-                className={styles.circle2}
-                id="TeamCircle2"
-                style={{ backgroundColor: isActive == 5 ? "green" : "black" }}
-              ></div>
-            </div>
+        <div className={styles["navbar-links"]}>
+          <div>
+            <NextLink href="/">
+              <a className={styles["navbar-link"]}>Home</a>
+            </NextLink>
+          </div>
+          <div>
+            <NextLink href="/">
+              <a className={styles["navbar-link"]}>About TF</a>
+            </NextLink>
+          </div>
+          <div>
+            <NextLink href="/">
+              <a className={styles["navbar-link"]}>Events</a>
+            </NextLink>
+          </div>
+          <div>
+            <NextLink href="/">
+              <a className={styles["navbar-link"]}>Timeline</a>
+            </NextLink>
           </div>
         </div>
       </div>
-    </>
+
+      <div className={styles["yellow-line"]} />
+      <div className={styles["green-line"]} />
+    </div>
   );
 };
 
-const Navbar = () => {
-  return <div> Navbar </div>;
-};
-
 export default Navbar;
-
-// about
-// highlights
-// message for students
-// message for sponsors

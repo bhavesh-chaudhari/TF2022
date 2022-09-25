@@ -1,0 +1,42 @@
+.bg-wrapper {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(#0c1618, #333940);
+  color: #ffffff;
+  overflow: hidden;
+  z-index: -10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.stars-wrapper {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: -50vh;
+  bottom: 10vh;
+  mix-blend-mode: screen;
+}
+
+.content-wrapper {
+  margin-top: 10vh;
+  height: 80vh;
+  width: 80vw;
+  overflow-y: scroll;
+  /* background: blue; */
+}
+
+.earth-wrapper {
+  /* background: red; */
+  /* position: absolute; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 10vh;
+  width: 100vw;
+  /* top:90vh; */
+  overflow: hidden;
+  z-index: 1000;
+}
