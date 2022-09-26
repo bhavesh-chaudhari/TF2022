@@ -1,6 +1,6 @@
 .tf-in-past {
-  width: 80vw;
-  min-height: 80vh;
+  width: 100vw;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
