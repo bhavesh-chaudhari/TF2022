@@ -1,6 +1,6 @@
 .highlighted-events {
   width: 80vw;
-  height: auto;
+  min-height: 80vh;
 }
 
 .header {

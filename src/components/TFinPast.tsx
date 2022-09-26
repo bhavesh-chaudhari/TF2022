@@ -4,10 +4,8 @@ import styles from "../styles/TFinPast.module.css";
 const TFinPast = () => {
   return (
     <div className={styles["tf-in-past"]}>
-      <div className={styles["Heading"]}>
-        TANTRAFIESTA IN PAST
-        <hr className={styles["horizontalline"]} />
-      </div>
+      <h1 className={styles["heading"]}>TANTRAFIESTA IN PAST</h1>
+      <div className={styles["underline"]} />
       <div className={styles["container"]}>
         <div className={styles["video"]}>
           <iframe
