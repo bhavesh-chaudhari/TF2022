@@ -12,7 +12,7 @@ const PageLayout = ({ children }: Props) => {
     <>
       <Navbar></Navbar>
       {children}
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
       {/* <Temp></Temp> */}
     </>
   );
