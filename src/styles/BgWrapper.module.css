@@ -11,16 +11,20 @@
   justify-content: center;
 }
 
+.star-image-container {
+  transform: scale(1.2);
+}
+
 .stars-wrapper {
   position: absolute;
-  height: 90vh;
+  height: 100vh;
   width: 100vw;
   z-index: 10;
   overflow: hidden;
 }
 
-.rotate-stars {
-  animation: rotateStars 100s ease 0s infinite;
+.stars {
+  animation: rotateStars 100s linear 0s infinite;
 }
 
 @keyframes rotateStars {
@@ -28,7 +32,7 @@
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(359deg);
+    transform: rotate(-359deg);
   }
 }
 
@@ -60,8 +64,8 @@
   transform: translate(0, -30vh);
 }
 
-.earth-wrapper {
-  
+.earth {
+  animation: rotateEarth 30s linear 0s infinite;
 }
 
 @keyframes rotateEarth {
@@ -69,6 +73,6 @@
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(-359deg);
+    transform: rotate(359deg);
   }
 }

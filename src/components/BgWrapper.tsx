@@ -13,10 +13,12 @@ const BgWrapper = ({ children }: Props) => {
     <div className={styles["bg-wrapper"]}>
       <div className={styles["content-wrapper"]}>{children}</div>
       <div className={styles["earth-wrapper"]}>
-        <NextImage className={styles["rotate-earth"]} src={earth} alt="earth" />
+        <NextImage className={styles["earth"]} src={earth} alt="earth" />
       </div>
       <div className={styles["stars-wrapper"]}>
-        <NextImage className={styles["rotate-stars"]} alt="stars" src={stars} />
+        <div className={styles["star-image-container"]}>
+          <NextImage className={styles["stars"]} alt="stars" src={stars}/>
+        </div>
       </div>
     </div>
   );
