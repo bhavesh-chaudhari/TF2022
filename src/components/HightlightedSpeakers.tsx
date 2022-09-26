@@ -21,7 +21,7 @@ const HighlightedSpeakers = () => {
           <img src={robo.src} alt="robo-rumble" className={styles["logo"]} />
         </div>
         <div className={styles["img"]}>
-          <img src={cf.src} alt="hackme" className={styles["logo"]} />
+          <img src={cf.src} alt="cf" className={styles["logo"]} />
         </div>
       </div>
     </div>
