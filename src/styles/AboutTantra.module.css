@@ -1,77 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;700;800;900&display=swap');
-
-@media (min-width:1200px){
 .about-tantra {
   width: 80vw;
-  height: 80vh;
-  
-}
-.heading{
-text-align: center;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 50rem;
-font-size: 3.125rem;
-line-height: 6.125rem;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.horizontalline{
-  
-  background-color: #EEEF20;
-  width: 33.125rem;
-  height: 0.563rem;
-  left: 45.313rem;
-  top: 19.063rem;
-  margin: auto;
-  border: 0;
-}
-
-.content{
-  position: flex;
-  padding-top: 2.5rem;
+.heading {
   text-align: center;
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 25rem;
-  font-size: 1.563rem;
-  line-height: 2.375rem;
-  text-align: justify;
-  padding-left: 9.375rem;
-  padding-right:9.375rem ;
-  
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-top: 3rem;
 }
+
+.underline {
+  margin-top: 0.5rem;
+  min-height: 0.5rem;
+  width: 40%;
+  background: #eeff20;
 }
-@media (min-width:320px) and (max-width:480px){
-  .horizontalline{
-  
-    background-color: #EEEF20;
-    width: 12.5rem;
-    height: 0.563rem;
-    left: 45.313rem;
-    top: 19.063rem;
-    margin: auto;
-    margin-top: 0.625rem;
-    border: 0;
-    margin-bottom: 1.563rem;
+
+.content {
+  position: flex;
+  width: 75%;
+  margin-top: 2rem;
+  font-family: "Lato";
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+@media (max-width: 550px) {
+  .underline {
+    width: 50%;
   }
-  .heading{
-    text-align: center;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 43.75rem;
-    font-size: 2rem;
-    line-height: 2.438rem;
-    padding-top: 1.25rem;
-    }
-  .content{
-      font-family: 'Lato';
-      font-style: normal;
-      font-weight: 25rem;
-      font-size: 1.375rem;
-      line-height: 1.65rem;
-      
-      text-align: center;
-      padding-bottom: 2.5rem;
-    
-    }
+  .heading {
+    font-size: 1.5rem;
+  }
+  .content {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    width: 90%;
+  }
 }
