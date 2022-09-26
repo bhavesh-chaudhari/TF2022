@@ -1,5 +1,63 @@
-.highlighted-speakers {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+.highlighted-events {
   width: 80vw;
-  height: 80vh;
-  background: cyan;
+  height: auto;
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
+
+.h1{
+  margin: 1rem;
+  padding-top: 3rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  position: relative;
+  text-align: center;
+}  
+
+.line{
+  border-top: 9px solid #EEEF20;
+  width: 30%;
+  position: relative;
+}
+
+.components{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 2rem;
+}
+
+.logo{
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+}
+
+@media (max-width:1200px) {
+  .h1{
+    font-size: 1.5rem;
+  }
+
+  .line{
+    width: 200px;
+  }
+
+  .components{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .logo{
+    position: relative;
+    width: 18rem;
+    height: 18rem;
+  }
 }
