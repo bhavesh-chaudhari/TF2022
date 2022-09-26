@@ -3,7 +3,7 @@
   justify-content: center;
   align-self: center;
   z-index: 1000;
-  background: linear-gradient(180deg, #0C1618 0%, #1D2527 75%, #333940 100%);;
+  background: linear-gradient(180deg, #0c1618 0%, #1d2527 75%, #333940 100%);
   padding: 5px;
   height: 65px;
   width: 100%;
@@ -15,30 +15,30 @@
   transition: all 0.2s ease;
 }
 
-.fadeIn{
+.fadeIn {
   display: flex;
   opacity: 1;
   visibility: visible;
 }
 
-.navbar-container::after{
+.navbar-container::after {
   content: "";
   position: absolute;
   width: 100%;
   height: 3px;
-  background: #EEEF20;
+  background: #eeef20;
   bottom: 0;
   transform: translate(0, 90%);
 }
 
-.navbar-container::before{
+.navbar-container::before {
   content: "";
   position: absolute;
   width: 100%;
   height: 3px;
-  background: #2B9348;
+  background: #2b9348;
   bottom: -3px;
-  transform: translate(0, 100%)
+  transform: translate(0, 100%);
 }
 
 .navbar {
@@ -61,12 +61,12 @@
   position: relative;
 }
 
-.title{
+.title {
   margin-left: 8px;
   color: white;
 }
 
-.title > h2{
+.title > h2 {
   font-weight: 500;
   font-size: 24px;
 }
@@ -78,7 +78,7 @@
 
 .nav-links a {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.7);;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .active a {
@@ -110,8 +110,8 @@
   }
 }
 
-@media screen and (min-width: 600px){
-  .nav-links::after{
+@media screen and (min-width: 600px) {
+  .nav-links::after {
     display: none;
   }
 }
@@ -120,14 +120,14 @@
   .navbar-container {
     min-height: 60px;
   }
-  .img{
+  .img {
     width: 35px;
     height: 35px;
   }
-  .title{
+  .title {
     margin-left: 8px;
   }
-  .title > h2{
+  .title > h2 {
     font-size: 19px;
   }
   .nav-links a {
@@ -149,20 +149,20 @@
     z-index: 100;
   }
 
-  .nav-links::after{
+  .nav-links::after {
     content: "";
     width: 25vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.5);;
+    background: rgba(0, 0, 0, 0.5);
     position: absolute;
     transform: translate(-100%, 0);
     opacity: 1;
     transition: transform 0.4s ease, opacity 0.6s ease;
   }
 
-  .nav-links.hide::after{
+  .nav-links.hide::after {
     opacity: 0;
-    transform: translate(0, 0)
+    transform: translate(0, 0);
   }
   .hide {
     transform: translate(100%);
@@ -178,11 +178,12 @@
     padding: 2rem;
     /* margin-bottom: 1rem; */
   }
-  .mobile-menu-logo-content{
+  .mobile-menu-logo-content {
     flex-direction: column;
     justify-content: space-between;
   }
-  .mobile-menu-logo-content p, .mobile-menu-logo-content hr{
+  .mobile-menu-logo-content p,
+  .mobile-menu-logo-content hr {
     margin-top: 1rem;
     color: rgba(255, 255, 255, 0.7);
   }
