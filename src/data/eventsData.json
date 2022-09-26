@@ -1,31 +1,31 @@
 {
-    "events": [
-        {
-            "id": 1,
-            "name": "CodeFiesta",
-            "path": "codefiesta",
-            "description": "There were about twenty people on the dam. Most of them were simply walking and getting exercise. There were a few who were fishing. There was a family who had laid down a blanket and they were having a picnic. It was like this most days and nothing seemed out of the ordinary. The problem was that nobody noticed the water leaking through the dam wall.",
-            "imgPath": "",
-            "unstopLink": "",
-            "registrationLink": "https://practice.geeksforgeeks.org/contest/codefiesta-by-iiit-nagpur"
-        },
-        {
-            "id": 2,
-            "name": "HackMe",
-            "path": "hackme",
-            "description": "The desert wind blew the tumbleweed in front of the car. Alex swerved to avoid the tumbleweed, but he turned the wheel a bit too strong and the car left the road and skidded onto the dirt median. He instantly slammed on the brakes and the car stopped in a cloud of dirt. When the dust cloud had settled and he could see around him again, he realized that he'd somehow crossed over into an entirely new dimension.",
-            "imgPath": "",
-            "unstopLink": "https://unstop.com/hackathon/hackme-tantrafiesta-2022-indian-institute-of-information-technology-iiit-nagpur-434729",
-            "registrationLink": ""
-        },
-        {
-            "id": 3,
-            "name": "RoboRumble",
-            "path": "robo-rumble",
-            "description": "Puppies are soft, cute, funny, and make a big mess. Every month or two our family fosters 6-12 week old puppies for a puppy rescue nonprofit organization. We all enjoy cuddling their furry bodies after a clean bath. Fresh puppy smell is great. The puppies play with each other and our adult dog. They look so funny when they lay on top of each other and sleep. While puppies can be great fun, they also can make big messes. 4-6 puppies can make a lot of puppy pee and poop. It's a challenge to keep the puppies and the puppy pen clean.",
-            "imgPath": "",
-            "unstopLink": "https://unstop.com/competition/robo-rumble-tantrafiesta-2022-indian-institute-of-information-technology-iiit-nagpur-439597",
-            "registrationLink": ""
-        }
-    ]
+  "events": [
+    {
+      "id": 1,
+      "name": "CodeFiesta",
+      "path": "codefiesta",
+      "description": "There were about twenty people on the dam. Most of them were simply walking and getting exercise. There were a few who were fishing. There was a family who had laid down a blanket and they were having a picnic. It was like this most days and nothing seemed out of the ordinary. The problem was that nobody noticed the water leaking through the dam wall.",
+      "imgPath": "",
+      "unstopLink": "",
+      "registrationLink": "https://practice.geeksforgeeks.org/contest/codefiesta-by-iiit-nagpur"
+    },
+    {
+      "id": 2,
+      "name": "HackMe",
+      "path": "hackme",
+      "description": "The desert wind blew the tumbleweed in front of the car. Alex swerved to avoid the tumbleweed, but he turned the wheel a bit too strong and the car left the road and skidded onto the dirt median. He instantly slammed on the brakes and the car stopped in a cloud of dirt. When the dust cloud had settled and he could see around him again, he realized that he'd somehow crossed over into an entirely new dimension.",
+      "imgPath": "",
+      "unstopLink": "https://unstop.com/hackathon/hackme-tantrafiesta-2022-indian-institute-of-information-technology-iiit-nagpur-434729",
+      "registrationLink": ""
+    },
+    {
+      "id": 3,
+      "name": "RoboRumble",
+      "path": "robo-rumble",
+      "description": "Puppies are soft, cute, funny, and make a big mess. Every month or two our family fosters 6-12 week old puppies for a puppy rescue nonprofit organization. We all enjoy cuddling their furry bodies after a clean bath. Fresh puppy smell is great. The puppies play with each other and our adult dog. They look so funny when they lay on top of each other and sleep. While puppies can be great fun, they also can make big messes. 4-6 puppies can make a lot of puppy pee and poop. It's a challenge to keep the puppies and the puppy pen clean.",
+      "imgPath": "",
+      "unstopLink": "https://unstop.com/competition/robo-rumble-tantrafiesta-2022-indian-institute-of-information-technology-iiit-nagpur-439597",
+      "registrationLink": ""
+    }
+  ]
 }

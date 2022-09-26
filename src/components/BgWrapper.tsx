@@ -17,7 +17,7 @@ const BgWrapper = ({ children }: Props) => {
       </div>
       <div className={styles["stars-wrapper"]}>
         <div className={styles["star-image-container"]}>
-          <NextImage className={styles["stars"]} alt="stars" src={stars}/>
+          <NextImage className={styles["stars"]} alt="stars" src={stars} />
         </div>
       </div>
     </div>

@@ -4,9 +4,8 @@ import { useRouter } from "next/router";
 import eventsData from "../../data/eventsData.json";
 
 const index = ({ event }: any) => {
+  console.log(event);
 
-  console.log(event)
-  
   return (
     <>
       <Head>
