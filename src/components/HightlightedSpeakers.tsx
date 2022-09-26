@@ -3,7 +3,7 @@ import styles from "../styles/HighlightedSpeakers.module.css";
 import hackme from "../images/hackme.png";
 import robo from "../images/robo-rumble.png";
 import cf from "../images/codefiesta.png";
-import { copyFile } from "fs/promises";
+
 const HighlightedSpeakers = () => {
   return (
     <div className={styles["highlighted-events"]}>
