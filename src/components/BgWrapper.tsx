@@ -1,7 +1,7 @@
 import React, { ReactNode, useEffect } from "react";
 import NextImage from "next/image";
 import stars from "../../public/media/stars.png";
-import earth from "../../public/media/earth3.png";
+import earth from "../../public/media/earth.png";
 import styles from "../styles/BgWrapper.module.css";
 
 interface Props {
