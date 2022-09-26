@@ -53,9 +53,22 @@
   align-items: flex-start;
   justify-content: center;
   height: 10vh;
-  width: 100vw;
+  width: 80vw;
   /* top:90vh; */
   /* overflow: hidden; */
   z-index: 1000;
-  transform: translate(5vw, -10vh);
+  transform: translate(0, -30vh);
+}
+
+.earth-wrapper {
+  
+}
+
+@keyframes rotateEarth {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-359deg);
+  }
 }
