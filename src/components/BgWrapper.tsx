@@ -1,7 +1,7 @@
 import React, { ReactNode, useEffect } from "react";
 import NextImage from "next/image";
 import stars from "../../public/media/stars.png";
-import earth from "../../public/media/earth.png";
+import earth from "../../public/media/earth2.png";
 import styles from "../styles/BgWrapper.module.css";
 
 interface Props {
@@ -11,12 +11,12 @@ interface Props {
 const BgWrapper = ({ children }: Props) => {
   return (
     <div className={styles["bg-wrapper"]}>
-      <div className={styles["stars-wrapper"]}>
-        {/* <NextImage src={stars}/> */}
-      </div>
       <div className={styles["content-wrapper"]}>{children}</div>
       <div className={styles["earth-wrapper"]}>
         <NextImage src={earth} />
+      </div>
+      <div className={styles["stars-wrapper"]}>
+        <NextImage className={styles["rotate-stars"]} alt="stars" src={stars} />
       </div>
     </div>
   );
