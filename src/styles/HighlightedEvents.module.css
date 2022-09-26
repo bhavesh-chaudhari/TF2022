@@ -42,7 +42,7 @@
 
 @media (max-width: 700px) {
   .h1 {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .line {
@@ -58,7 +58,7 @@
 
   .logo {
     position: relative;
-    width: 18rem;
-    height: 18rem;
+    width: 17rem;
+    height: 17rem;
   }
 }
