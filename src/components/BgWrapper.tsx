@@ -11,12 +11,14 @@ interface Props {
 const BgWrapper = ({ children }: Props) => {
   return (
     <div className={styles["bg-wrapper"]}>
-      <div className={styles["stars-wrapper"]}>
-        <NextImage src={stars} />
-      </div>
       <div className={styles["content-wrapper"]}>{children}</div>
       <div className={styles["earth-wrapper"]}>
-        <NextImage src={earth} />
+        <NextImage className={styles["earth"]} src={earth} alt="earth" />
+      </div>
+      <div className={styles["stars-wrapper"]}>
+        <div className={styles["star-image-container"]}>
+          <NextImage className={styles["stars"]} alt="stars" src={stars} />
+        </div>
       </div>
     </div>
   );

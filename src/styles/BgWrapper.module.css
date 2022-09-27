@@ -11,20 +11,43 @@
   overflow: hidden;
 }
 
+.star-image-container {
+  transform: scale(1.2);
+}
+
 .stars-wrapper {
   position: absolute;
   height: 100vh;
   width: 100vw;
-  top: -50vh;
-  bottom: 10vh;
-  mix-blend-mode: screen;
+  z-index: 10;
   overflow: hidden;
 }
 
+.stars {
+  animation: rotateStars 100s linear 0s infinite;
+}
+
+@keyframes rotateStars {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-359deg);
+  }
+}
+
 .content-wrapper {
-  height: 100%;
-  width: 100%;
+  margin-top: 10vh;
+  height: 90vh;
+  width: 100vw;
   overflow-y: scroll;
+  z-index: 100;
+  /* background: blue; */
+  scrollbar-width: none;
+}
+
+.content-wrapper::-webkit-scrollbar {
+  display: none;
 }
 
 .earth-wrapper {
@@ -33,9 +56,41 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  height: 10vh;
+  height: 0vh;
   width: 100vw;
   /* top:90vh; */
-  overflow: hidden;
+  /* overflow: hidden; */
   z-index: 1000;
+  transform: translate(0, -42vh);
+}
+
+.earth {
+  animation: rotateEarth 30s linear 0s infinite;
+}
+
+@keyframes rotateEarth {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .earth-wrapper {
+    transform: translate(0, -20vh);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .earth-wrapper {
+    transform: translate(0, -13vh);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .earth-wrapper {
+    transform: translate(0, -7vh);
+  }
 }
