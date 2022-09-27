@@ -38,8 +38,8 @@
 
 .content-wrapper {
   margin-top: 10vh;
-  height: 80vh;
-  width: 80vw;
+  height: 90vh;
+  width: 100vw;
   overflow-y: scroll;
   z-index: 100;
   /* background: blue; */
@@ -56,12 +56,12 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  height: 10vh;
+  height: 0vh;
   width: 100vw;
   /* top:90vh; */
   /* overflow: hidden; */
   z-index: 1000;
-  transform: translate(0, -35vh);
+  transform: translate(0, -42vh);
 }
 
 .earth {
@@ -74,5 +74,23 @@
   }
   to {
     transform: rotate(359deg);
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .earth-wrapper {
+    transform: translate(0, -20vh);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .earth-wrapper {
+    transform: translate(0, -13vh);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .earth-wrapper {
+    transform: translate(0, -7vh);
   }
 }

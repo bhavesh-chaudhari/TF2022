@@ -1,6 +1,6 @@
 .tf-in-past {
-  width: 80vw;
-  min-height: 80vh;
+  width: 100vw;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,27 +22,26 @@
 }
 
 .container {
+  width: 85%;
   margin-top: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 5rem;
+  gap: 3rem;
 }
 
 .video {
-  background: red;
   display: flex;
 }
 
 .Video2 {
-  width: 35rem;
-  height: 20rem;
+  width: 38vw;
+  height: 45vh;
 }
 
 .content {
   position: flex;
   /* width: 100%; */
-  margin-top: 2rem;
   font-family: "Lato";
   font-weight: 500;
   font-size: 1.2rem;
@@ -64,13 +63,14 @@
   }
 
   .Video2 {
-    width: 30rem;
-    height: 20rem;
+    width: 80vw;
+    height: 30vh;
   }
 
   .content {
     font-size: 1.1rem;
     line-height: 1.8rem;
     width: 100%;
+    margin-top: 2rem;
   }
 }

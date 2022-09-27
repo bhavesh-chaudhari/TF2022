@@ -25,6 +25,19 @@ import ViewCounter from "./ViewCounter";
 
 const Hero = () => {
   const [greenState, setGreenState] = useState(false);
+
+  useEffect(() => {
+    // setGreenState(sessionStorage.getItem('hasAnimated') === 'true')
+
+    if (sessionStorage.getItem("hasAnimated")) {
+      sessionStorage.setItem("hasAnimated", greenState!.toString());
+      console.log(greenState);
+    } else {
+      console.log(greenState);
+      sessionStorage.setItem("hasAnimated", greenState!.toString());
+    }
+  }, [greenState]);
+
   const handleClick = () => {
     setGreenState(true);
   };

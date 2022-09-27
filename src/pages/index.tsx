@@ -4,6 +4,8 @@ import Image from "next/image";
 import AboutTantra from "../components/AboutTantra";
 import BgWrapper from "../components/BgWrapper";
 import Hero from "../components/Hero";
+import HighlightedEvents from "../components/HighlightedEvents";
+import TFinPast from "../components/TFinPast";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
@@ -53,6 +55,8 @@ Tantrafiesta hosts a plethora of social initiatives and outreach programs such a
         <Hero />
         <BgWrapper>
           <AboutTantra />
+          <HighlightedEvents />
+          <TFinPast />
         </BgWrapper>
       </>
     </div>
