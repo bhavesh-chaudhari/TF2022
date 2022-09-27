@@ -29,13 +29,12 @@ const Navbar = () => {
   ];
 
   useEffect(() => {
+    console.log("navbar", window.scrollY, window.innerHeight);
 
-    console.log("navbar", window.scrollY, window.innerHeight)
-    
     if (router.pathname === "/") {
       (navEl as any).current.style.visibility = "hidden";
       (navEl as any).current.style.opacity = 0;
-      
+
       const onScroll = (event: Event) => {
         if (window.scrollY > window.innerHeight) {
           (navEl as any).current.style.visibility = "visible";
@@ -53,8 +52,7 @@ const Navbar = () => {
       return () => {
         window.removeEventListener("scroll", onScroll);
       };
-    }
-    else{
+    } else {
       (navEl as any).current.style.visibility = "visible";
       (navEl as any).current.style.opacity = 1;
     }

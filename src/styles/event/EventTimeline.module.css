@@ -1,0 +1,190 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.heading {
+  width: 80%;
+  text-align: center;
+}
+
+.heading > h2 {
+  font-size: 35px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 3rem;
+}
+
+.heading > h2::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #eeef20;
+  bottom: -3px;
+  left: 0;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+}
+
+.timeline {
+  position: relative;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background: #eeef20;
+  background: white;
+  z-index: 0;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card {
+  position: relative;
+  padding: 1rem;
+  z-index: 1;
+  border: 1px solid #eeef20;
+}
+
+.cards > div:nth-child(odd) {
+  background: #2b9348;
+  transform: translate(-58%, 0);
+  text-align: end;
+  border-radius: 10px 40px 0px 50px;
+  padding-right: 2rem;
+}
+
+.cards > div:nth-child(odd)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 102%;
+  width: 8%;
+  height: 3px;
+  transform: translate(100%, -50%) rotate(10deg);
+  background: #eeef20;
+}
+
+.cards > div:nth-child(odd)::before {
+  content: "";
+  position: absolute;
+  right: -8.2%;
+  top: 103%;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  transform: translate(52%, -50%);
+  background: white;
+  z-index: 1;
+  border: 5px solid #2b9348;
+}
+
+.cards > div:nth-child(even) {
+  background: #2b9348;
+  transform: translate(58%, 0);
+  border-radius: 40px 10px 50px 0;
+  padding-left: 2rem;
+}
+
+.cards > div:nth-child(even)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 8%;
+  height: 3px;
+  transform: translate(-100%, 0) rotate(-10deg);
+  background: #eeef20;
+}
+
+.cards > div:nth-child(even)::before {
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: -8.2%;
+  top: 102%;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  transform: translate(-52%, -50%);
+  background: white;
+  z-index: 1000;
+  border: 5px solid #2b9348;
+}
+
+.card > h3 {
+  margin-bottom: 10px;
+}
+
+.over::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "✓" !important;
+  color: #2b9348;
+  font-size: 10px;
+  border: 3px solid #2b9348 !important;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+@media screen and (min-width: 600px) {
+  .card {
+    min-width: 250px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .heading {
+    text-align: left;
+    width: 90%;
+  }
+  .heading > h2 {
+    font-size: 28px;
+  }
+  .timeline {
+    transform: translate(-50%, 0);
+  }
+  .cards {
+    gap: 2rem;
+    width: 100%;
+  }
+  .cards > div:nth-child(odd) {
+    transform: translate(58%, 0);
+    border-radius: 40px 10px 50px 0;
+    padding-left: 2rem;
+    text-align: start;
+  }
+  .cards > div:nth-child(odd)::after {
+    left: 0;
+    top: 100%;
+    width: 8%;
+    transform: translate(-100%, 0) rotate(-10deg);
+  }
+  .cards > div:nth-child(odd)::before {
+    left: -8.2%;
+    top: 102%;
+    transform: translate(-52%, -50%);
+  }
+}

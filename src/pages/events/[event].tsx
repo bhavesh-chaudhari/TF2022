@@ -1,20 +1,24 @@
 import React from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import eventsData from "../../data/eventsData.json";
+import EventLayout from "../../layouts/EventLayout";
+import EventDescription from "../../components/event/EventDescription";
+import EventTimeline from "../../components/event/EventTimeline";
+import EventCriteria from "../../components/event/EventCriteria";
+import EventPrizes from "../../components/event/EventPrizes";
+import events from "../../data/eventsData";
 
 const index = ({ event }: any) => {
+  console.log(event);
 
-  console.log(event)
-  
   return (
     <>
-      <Head>
-        <title>{event.name} - Tantrafiesta 2022</title>
-      </Head>
-      <div>
-        <h1>{event.name}</h1>
-      </div>
+      <EventLayout event={event}>
+        <EventDescription {...event}></EventDescription>
+        <EventTimeline {...event}></EventTimeline>
+        <EventPrizes {...event}></EventPrizes>
+        {/* <EventCriteria {...event} ></EventCriteria> */}
+      </EventLayout>
     </>
   );
 };
@@ -22,9 +26,9 @@ const index = ({ event }: any) => {
 export default index;
 
 export const getStaticProps = async ({ params }: any) => {
-  const event = eventsData.events.filter(
-    (event) => event.path === params.event
-  )[0];
+  let event = events.filter((event: any) => event.path === params.event)[0];
+
+  event = JSON.parse(JSON.stringify(event));
 
   return {
     props: {
@@ -34,7 +38,7 @@ export const getStaticProps = async ({ params }: any) => {
 };
 
 export const getStaticPaths = () => {
-  const paths = eventsData.events.map((event) => `/events/${event.path}`);
+  const paths = events.map((event: any) => `/events/${event.path}`);
 
   return {
     paths,

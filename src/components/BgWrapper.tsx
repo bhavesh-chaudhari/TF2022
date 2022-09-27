@@ -12,7 +12,7 @@ const BgWrapper = ({ children }: Props) => {
   return (
     <div className={styles["bg-wrapper"]}>
       <div className={styles["stars-wrapper"]}>
-        {/* <NextImage src={stars}/> */}
+        <NextImage src={stars} />
       </div>
       <div className={styles["content-wrapper"]}>{children}</div>
       <div className={styles["earth-wrapper"]}>
