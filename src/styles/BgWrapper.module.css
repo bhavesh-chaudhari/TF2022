@@ -3,12 +3,12 @@
   width: 100vw;
   background: linear-gradient(#0c1618, #333940);
   color: #ffffff;
-  overflow: hidden;
   z-index: -10;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .star-image-container {
