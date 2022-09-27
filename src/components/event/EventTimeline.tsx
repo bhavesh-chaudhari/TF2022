@@ -7,9 +7,8 @@ const EventTimeline = ({ timeline }: { timeline: any }) => {
 
   return (
     <div className={styles["container"]}>
-      <div className={styles["heading"]}>
-        <h2>Timeline</h2>
-      </div>
+      <h2 className={styles["heading"]}>Timeline</h2>
+      <div className={styles["underline"]} />
       <div className={styles["content"]}>
         <div className={styles["timeline"]}>
           <div className={styles["cards"]}>

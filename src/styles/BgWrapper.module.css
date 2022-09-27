@@ -51,8 +51,6 @@
 }
 
 .earth-wrapper {
-  /* background: red; */
-  /* position: absolute; */
   display: flex;
   align-items: flex-start;
   justify-content: center;

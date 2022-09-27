@@ -19,30 +19,31 @@ const EventDescription = ({
 }: Props) => {
   return (
     <div className={styles["container"]}>
-      <div className={styles["heading"]}>
-        <h1>{name}</h1>
-      </div>
+      <h1 className={styles["heading"]}>{name}</h1>
+      <div className={styles["underline"]} />
       <div className={styles["content"]}>
-        <div className={styles["img"]}>
+        <div>
           <Image
+            className={styles["img"]}
             src={imgPath}
-            layout="fill"
+            height={1800}
+            width={1800}
             alt={`${name} organized by ${organizer}`}
             draggable={"false"}
           ></Image>
         </div>
-        <a
-          className={styles["registration-link"]}
-          href={registrationLink}
-          target="_blank"
-          rel="noreferrer"
-        >
-          Register Now
-        </a>
         <div className={styles["desc"]}>
           <p>{description}</p>
         </div>
       </div>
+      <a
+        className={styles["registration-link"]}
+        href={registrationLink}
+        target="_blank"
+        rel="noreferrer"
+      >
+        Register
+      </a>
     </div>
   );
 };

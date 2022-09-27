@@ -14,9 +14,7 @@ const EventLayout = ({ children, event }: EventProps) => {
       <Head>
         <title>{event.name} - Tantrafiesta 2022</title>
       </Head>
-      <BgWrapper>
-        <div className={styles["container"]}>{children}</div>
-      </BgWrapper>
+      <BgWrapper>{children}</BgWrapper>
     </>
   );
 };

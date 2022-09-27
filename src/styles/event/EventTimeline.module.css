@@ -1,4 +1,5 @@
 .container {
+  margin-top: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,28 +7,22 @@
 }
 
 .heading {
-  width: 80%;
-  text-align: center;
-}
-
-.heading > h2 {
-  font-size: 35px;
+  font-size: 2.5rem;
   position: relative;
-  display: inline-block;
-  margin-bottom: 3rem;
+  font-family: "Montserrat";
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
-.heading > h2::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 3px;
-  background: #eeef20;
-  bottom: -3px;
-  left: 0;
+.underline {
+  margin-top: 0.5rem;
+  min-height: 0.5rem;
+  width: 10%;
+  background: #eeff20;
 }
 
 .content {
+  margin-top: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,7 +42,7 @@
   top: 0;
   left: 50%;
   transform: translate(-50%, 0);
-  background: #eeef20;
+  /* background: #eeef20; */
   background: white;
   z-index: 0;
 }
@@ -55,14 +50,13 @@
 .cards {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.6rem;
 }
 
 .card {
   position: relative;
   padding: 1rem;
   z-index: 1;
-  border: 1px solid #eeef20;
 }
 
 .cards > div:nth-child(odd) {
@@ -70,6 +64,7 @@
   transform: translate(-58%, 0);
   text-align: end;
   border-radius: 10px 40px 0px 50px;
+  box-shadow: #eeef20 3px 3px 0px 0px;
   padding-right: 2rem;
 }
 
@@ -77,10 +72,10 @@
   content: "";
   position: absolute;
   right: 0;
-  top: 102%;
+  top: 108%;
   width: 8%;
   height: 3px;
-  transform: translate(100%, -50%) rotate(10deg);
+  transform: translate(100%, -50%) rotate(20deg);
   background: #eeef20;
 }
 
@@ -88,7 +83,7 @@
   content: "";
   position: absolute;
   right: -8.2%;
-  top: 103%;
+  top: 115%;
   height: 10px;
   width: 10px;
   border-radius: 50%;
@@ -102,6 +97,7 @@
   background: #2b9348;
   transform: translate(58%, 0);
   border-radius: 40px 10px 50px 0;
+  box-shadow: #eeef20 -3px 3px 0px 0px;
   padding-left: 2rem;
 }
 
@@ -109,10 +105,10 @@
   content: "";
   position: absolute;
   left: 0;
-  top: 100%;
+  top: 105%;
   width: 8%;
   height: 3px;
-  transform: translate(-100%, 0) rotate(-10deg);
+  transform: translate(-100%, 0) rotate(-20deg);
   background: #eeef20;
 }
 
@@ -123,7 +119,7 @@
   justify-content: center;
   position: absolute;
   left: -8.2%;
-  top: 102%;
+  top: 115%;
   height: 10px;
   width: 10px;
   border-radius: 50%;
@@ -134,7 +130,9 @@
 }
 
 .card > h3 {
+  font-family: "Montserrat";
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .over::before {
@@ -143,7 +141,7 @@
   align-items: center;
   content: "✓" !important;
   color: #2b9348;
-  font-size: 10px;
+  font-size: 15px;
   border: 3px solid #2b9348 !important;
   width: 16px !important;
   height: 16px !important;
@@ -156,13 +154,6 @@
 }
 
 @media screen and (max-width: 600px) {
-  .heading {
-    text-align: left;
-    width: 90%;
-  }
-  .heading > h2 {
-    font-size: 28px;
-  }
   .timeline {
     transform: translate(-50%, 0);
   }
@@ -175,16 +166,17 @@
     border-radius: 40px 10px 50px 0;
     padding-left: 2rem;
     text-align: start;
+    box-shadow: #eeef20 -3px 3px 0px 0px;
   }
   .cards > div:nth-child(odd)::after {
     left: 0;
-    top: 100%;
+    top: 105%;
     width: 8%;
-    transform: translate(-100%, 0) rotate(-10deg);
+    transform: translate(-100%, 0) rotate(-20deg);
   }
   .cards > div:nth-child(odd)::before {
     left: -8.2%;
-    top: 102%;
+    top: 115%;
     transform: translate(-52%, -50%);
   }
 }
