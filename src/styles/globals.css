@@ -14,3 +14,19 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.yellow-bottom{
+  position: relative;
+  display: inline-block;
+}
+
+.yellow-bottom::after{
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 4px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: -6px;
+  background: yellow;
+}

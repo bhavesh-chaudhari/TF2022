@@ -1,47 +1,60 @@
 .about-tantra {
   width: 100vw;
-  min-height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 4rem 0;
+}
+
+.content{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .heading {
   text-align: center;
   font-family: "Montserrat";
   font-weight: 700;
-  font-size: 2.5em;
-  margin-top: 3rem;
+  margin-bottom: 2.5rem;
 }
 
-.underline {
-  margin-top: 0.5rem;
-  min-height: 0.5rem;
-  width: 40%;
-  background: #eeff20;
+.heading > h2{
+  font-size: 40px;
 }
 
-.content {
+.description {
   position: flex;
-  width: 60%;
   margin-top: 2rem;
   font-family: "Lato";
   font-weight: 500;
   font-size: 1.2rem;
   line-height: 2rem;
+  border: 3px solid #eeef20;
+  border-top: none;
+  border-bottom: none;
+  padding: 2rem 2rem;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
 }
-@media (max-width: 550px) {
-  .underline {
-    min-height: 0.2rem;
-    width: 50%;
+
+@media screen and (max-width: 1200px) {
+  .content{
+    width: 90%;
   }
-  .heading {
-    margin-top: 1.5rem;
-    font-size: 2em;
+  
+}
+
+@media (max-width: 600px) {
+  .heading > h2{
+    font-size: 28px;
   }
-  .content {
-    font-size: 1.1rem;
-    line-height: 1.8rem;
-    width: 80%;
+  .description {
+    font-size: 1rem;
+  }
+  .about-tantra{
+    padding-bottom: 2rem;
   }
 }

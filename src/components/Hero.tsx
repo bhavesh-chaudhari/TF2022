@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import styles from "../styles/Hero.module.css";
 import NextImage from "next/image";
 import CloudLeft from "./svgs/hero/CloudLeft";
@@ -24,25 +24,26 @@ import { BsChevronDoubleDown } from "react-icons/bs";
 import ViewCounter from "./ViewCounter";
 
 const Hero = () => {
-  const [greenState, setGreenState] = useState(false);
+  const [greenState, setGreenState] = useState<any>(false);
+  const containerRef = useRef<any>(null);
 
   useEffect(() => {
-    // setGreenState(sessionStorage.getItem('hasAnimated') === 'true')
+    const hasAnimated = sessionStorage.getItem("hasAnimated");
 
-    if (sessionStorage.getItem("hasAnimated")) {
-      sessionStorage.setItem("hasAnimated", greenState!.toString());
-      console.log(greenState);
+    if (hasAnimated === "true") {
+      setGreenState(true);
     } else {
-      console.log(greenState);
-      sessionStorage.setItem("hasAnimated", greenState!.toString());
+      setGreenState(false);
     }
-  }, [greenState]);
+  }, []);
 
   const handleClick = () => {
     setGreenState(true);
-  };
 
-  const containerRef = useRef<any>(null);
+    // set hasAnimated to true in sessionStorage
+    // when clicked
+    sessionStorage.setItem("hasAnimated", "true");
+  };
 
   useEffect(() => {
     const deviceWidth = window.matchMedia("(max-width: 500px)");

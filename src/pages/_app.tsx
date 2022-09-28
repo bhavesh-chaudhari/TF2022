@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import "../styles/globals.css";
-import styles from "../styles/App.module.css";
+import "../styles/slider.css"
 import type { AppProps } from "next/app";
 import PageLayout from "../layouts/PageLayout";
 import NavigationSection from "../components/NavigationSection";
@@ -20,12 +20,14 @@ function MyApp({ Component, pageProps }: AppProps) {
         );
       },
     });
-
-    if (process.env.NODE_ENV === "production") {
-    }
   }, []);
 
   useEffect(() => {
+    console.log("App rendered")
+    // set hasAnimated to false in sessionStorage
+    sessionStorage.setItem("hasAnimated", "false")
+
+    
     const registerView = () => {
       fetch(`/api/v1/views`, {
         method: "POST",
@@ -38,8 +40,8 @@ function MyApp({ Component, pageProps }: AppProps) {
         });
     };
 
+    // register view in production
     if (process.env.NODE_ENV === "production") {
-      //  console.log("view registered");
       registerView();
     }
   }, [mutate]);

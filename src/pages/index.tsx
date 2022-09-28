@@ -6,6 +6,8 @@ import BgWrapper from "../components/BgWrapper";
 import Hero from "../components/Hero";
 import HighlightedEvents from "../components/HighlightedEvents";
 import TFinPast from "../components/TFinPast";
+import VenueAndForm from "../components/VenueAndForm";
+import ContactForm from "../components/ContactForm";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
@@ -57,6 +59,8 @@ Tantrafiesta hosts a plethora of social initiatives and outreach programs such a
           <AboutTantra />
           <HighlightedEvents />
           <TFinPast />
+          {/* <VenueAndForm></VenueAndForm> */}
+          {/* <ContactForm></ContactForm> */}
         </BgWrapper>
       </>
     </div>

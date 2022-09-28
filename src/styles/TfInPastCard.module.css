@@ -1,0 +1,164 @@
+.card-container {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-height: 432px;
+  margin-top: 3rem;
+  z-index: 100;
+  border-radius: 8px;
+}
+.card-container .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 100%;
+  cursor: grab;
+  border: 1px solid #eeef20;
+  background: rgba(229, 229, 229, 0.1);
+}
+.card-container .card .card-media {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  min-height: 380px;
+}
+.card-container .card .card-media img {
+  height: 100%;
+  width: 100%;
+}
+.card-container .card .card-media iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 10px;
+  width: 100%;
+}
+.card-container .card .card-content {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 2rem;
+  position: relative;
+  font-weight: 400;
+  cursor: pointer;
+}
+.card-container .card .card-content .read-btn {
+  display: none;
+}
+.card-container .card .card-content h2 {
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.card-container .card .card-content p {
+  line-height: 2rem;
+  font-size: 16px;
+}
+@media screen and (max-width: 1422px) {
+  .card-container .card {
+    width: 100%;
+  }
+  .card-container .card .card-content p {
+    font-size: 1.1rem;
+    line-height: 1.77rem;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .card-container .card .card-content p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .card-container .card .card-content {
+    padding: 1rem;
+  }
+  .card-container .card .card-content h2 {
+    margin-bottom: 0.3rem;
+  }
+}
+@media screen and (max-width: 980px) {
+  .card-container .card {
+    flex-direction: column;
+    width: 80%;
+    height: 500px;
+  }
+  .card-container .card .card-media {
+    width: 100%;
+    height: 40%;
+    transition: all 0.5s ease;
+	min-height: 0;
+  }
+  .card-container .card .card-content {
+    width: 100%;
+    height: 60%;
+    transition: all 0.5s ease;
+    padding: 2rem;
+  }
+  .card-container .card .card-content p {
+    line-height: 1.6em;
+    transition: all 0.5s ease;
+    height: 8em;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    padding-right: 3px;
+    font-size: 1rem;
+  }
+  .card-container .card .card-content h2 {
+    margin-bottom: 2rem;
+  }
+  .card-container .card .card-content .read-btn {
+    display: block;
+    position: absolute;
+    bottom: 2.8rem;
+    right: 2rem;
+    background: transparent;
+    border: none;
+    font-weight: 600;
+    color: rgba(229, 229, 229, 0.9);
+    line-height: 11.73px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .card-container .card .card-content .read-btn {
+    bottom: 2rem;
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .card-container .card {
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+  }
+  .card-container .card .card-content h2 {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+  .card-container .card .card-content .read-btn {
+    bottom: 1rem;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .card-container .card .card-content p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+  .card-container .card .card-content h2 {
+    font-size: 2rem;
+  }
+}
