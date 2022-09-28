@@ -36,7 +36,7 @@ const TfinPastCad = (props: any) => {
         <div ref={media} className={styles["card-media"]}>
           {hasVideo ? (
             <iframe
-              src="https://www.youtube.com/embed/0v4iftGneYk?autoplay=1"
+              src="https://www.youtube.com/embed/0v4iftGneYk?autoplay=0"
               title="Glimpse of TF2K21 | IIIT Nagpur | Throwback"
               frameBorder="0"
               allowFullScreen

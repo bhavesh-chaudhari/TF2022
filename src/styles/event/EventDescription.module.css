@@ -12,13 +12,23 @@
   font-family: "Montserrat";
   font-weight: 800;
   text-transform: uppercase;
+  text-align: center;
 }
 
-.underline {
-  margin-top: 0.5rem;
-  min-height: 0.5rem;
-  width: 10%;
+.heading{
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.heading::after{
+  position: absolute;
+  content: "";
+  width: 80%;
+  height: 3px;
+  bottom: -10px;
   background: #eeff20;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .content {
@@ -40,6 +50,7 @@
 }
 
 .desc {
+  width: 290rem;
   font-size: 18px;
   line-height: 1.8rem;
 }
@@ -70,6 +81,14 @@
   .container {
     padding: 3rem 0;
   }
+  .heading {
+    font-size: 2rem;
+    position: relative;
+    font-family: "Montserrat";
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+  }
   .content {
     width: 80%;
     flex-direction: column;
@@ -80,6 +99,7 @@
     text-align: start;
     font-size: 16px;
     line-height: 1.7rem;
+    width: auto;
   }
   .img {
     min-height: 320px;

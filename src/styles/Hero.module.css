@@ -6,6 +6,7 @@
   position: relative;
   overflow: hidden;
   cursor: default;
+  z-index: 1;
 }
 
 .content {

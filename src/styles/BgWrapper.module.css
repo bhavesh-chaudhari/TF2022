@@ -1,14 +1,13 @@
 .bg-wrapper {
-  height: 100vh;
   width: 100vw;
   background: linear-gradient(#0c1618, #333940);
+  background: #0c1618;
   color: #ffffff;
   z-index: -10;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 }
 
 .star-image-container {
@@ -16,11 +15,13 @@
 }
 
 .stars-wrapper {
-  position: absolute;
   height: 100vh;
   width: 100vw;
-  z-index: 10;
   overflow: hidden;
+  left: 0;
+  top: 0;
+  position: fixed;
+  z-index: 0;
 }
 
 .stars {
@@ -37,10 +38,10 @@
 }
 
 .content-wrapper {
-  margin-top: 10vh;
-  height: 90vh;
+  /* margin-top: 10vh; */
+  /* height: 90vh; */
   width: 100vw;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   z-index: 100;
   /* background: blue; */
   scrollbar-width: none;
@@ -82,6 +83,11 @@
 }
 
 @media screen and (max-width: 700px) {
+  .star-image-container {
+    height: 100vh;
+    width: 100vh;
+  }
+
   .earth-wrapper {
     transform: translate(0, -13vh);
   }

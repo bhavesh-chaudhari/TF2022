@@ -52,9 +52,9 @@ const FromTheTeam = () => {
   };
 
   return (
-    <div className={styles["container"]}>
+    <div id="past-glimpse" className={styles["container"]}>
       <div className={styles["heading"]}>
-        <h2 className="yellow-bottom" >TantraFiesta In Past</h2>
+        <h2 className="yellow-bottom" >Past Glimpse</h2>
       </div>
       <div className={styles["from-carousel-container"]}>
         <Slider {...settings}>

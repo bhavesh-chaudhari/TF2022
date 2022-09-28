@@ -13,18 +13,19 @@ const Navbar = () => {
   const links = [
     {
       id: 1,
-      path: "/",
-      name: "home",
+      path: "/#about-tantra",
+      name: "About TF",
     },
     {
       id: 2,
       path: "/events",
       name: "Events",
+      type: "page"
     },
     {
       id: 3,
-      path: "/about-us",
-      name: "About Us",
+      path: "/#past-glimpse",
+      name: "Past Glimpse",
     },
   ];
 
@@ -105,9 +106,13 @@ const Navbar = () => {
                     router.pathname === link.path ? styles["active"] : ""
                   }
                 >
-                  <Link scroll={true} href={link.path} passHref>
-                    <a>{link.name}</a>
-                  </Link>
+                  {link.type === "page" ? (
+                    <Link scroll={true} href={link.path} passHref>
+                      <a>{link.name}</a>
+                    </Link>
+                  ) : (
+                      <a href={link.path} >{link.name}</a>
+                  )}
                 </li>
               );
             })}

@@ -1,4 +1,4 @@
-import React, { ReactNode, useEffect } from "react";
+import React, { ReactNode, useEffect, useRef } from "react";
 import NextImage from "next/image";
 import stars from "../../public/media/stars.png";
 import earth from "../../public/media/earth.png";
@@ -9,8 +9,11 @@ interface Props {
 }
 
 const BgWrapper = ({ children }: Props) => {
+
+  const wrapperRef = useRef<any>(null)
+
   return (
-    <div className={styles["bg-wrapper"]}>
+    <div ref={wrapperRef} className={styles["bg-wrapper"]}>
       <div className={styles["content-wrapper"]}>{children}</div>
       {/* <div className={styles["earth-wrapper"]}>
         <NextImage className={styles["earth"]} src={earth} alt="earth" />

@@ -14,11 +14,19 @@
   text-transform: uppercase;
 }
 
-.underline {
-  margin-top: 0.5rem;
-  min-height: 0.5rem;
-  width: 10%;
+.heading {
+  position: relative;
+}
+
+.heading::after {
+  position: absolute;
+  content: "";
+  width: 80%;
+  height: 3px;
+  bottom: -10px;
   background: #eeff20;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .content {
@@ -38,7 +46,7 @@
   content: "";
   position: absolute;
   width: 3px;
-  height: 100%;
+  height: 102%;
   top: 0;
   left: 50%;
   transform: translate(-50%, 0);
@@ -157,6 +165,14 @@
   .timeline {
     transform: translate(-50%, 0);
   }
+  .heading {
+    font-size: 2rem;
+    position: relative;
+    font-family: "Montserrat";
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+  }
   .cards {
     gap: 2rem;
     width: 100%;
@@ -178,5 +194,8 @@
     left: -8.2%;
     top: 115%;
     transform: translate(-52%, -50%);
+  }
+  .card > h3 {
+    font-size: 16px;
   }
 }

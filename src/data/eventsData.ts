@@ -102,6 +102,61 @@ cover some of the most interesting concepts involved in problem-solving.
   },
   {
     id: 3,
+    name: "Design-A-Thon",
+    organizer: "Strokes",
+    path: "designathon",
+    description: `A designer knows he has achieved perfection, not when there is nothing left to add, but when there is nothing left to take away.
+    Designathon is a two-round design hackathon organized by
+    Strokes, the design club under the hood of TantraFiesta, our annual tech-fest. 
+    This event consists of 2 rounds, The UX round ( Knockout Round ) and the UI round ( Finale ). `,
+    imgPath: "/media/events/tantrafiesta-designathon.png",
+    registrationLink:
+      "https://unstop.com/hackathon/design-a-thon-tantrafiesta-2022-indian-institute-of-information-technology-iiit-nagpur-440534",
+    timeline: [
+      {
+        id: 1,
+        title: "Registration begins",
+        date: new Date(YEAR, 8, 25, 12, 0, 0, 0),
+      },
+      {
+        id: 2,
+        title: "Registration ends",
+        date: new Date(YEAR, 9, 8, 12, 0, 0, 0),
+      },
+      {
+        id: 3,
+        title: "Problem Statement Reveal",
+        date: new Date(YEAR, 9, 8, 18, 0, 0, 0),
+      },
+      {
+        id: 4,
+        title: "UX Round Submission",
+        date: new Date(YEAR, 9, 9, 24, 0, 0, 0),
+      },
+      {
+        id: 5,
+        title: "UX Round Results",
+        date: new Date(YEAR, 9, 11, 12, 0, 0, 0),
+      },
+      {
+        id: 6,
+        title: "UI Round Submission",
+        date: new Date(YEAR, 9, 13, 12, 0, 0, 0),
+      },
+      {
+        id: 7,
+        title: "Results",
+        date: new Date(YEAR, 9, 16, 12, 0, 0, 0),
+      },
+    ],
+    prizes: [
+      "Prize pool of Rs. 21000/-",
+      "Winning Team will be awarded Rs. 12000/-",
+      "Runner-up Team will be awarded 9000/-",
+    ],
+  },
+  {
+    id: 4,
     name: "RoboRumble",
     organizer: "Iotics",
     path: "robo-rumble",
@@ -157,6 +212,60 @@ cover some of the most interesting concepts involved in problem-solving.
       "Winning Team will be awarded Rs. 15000/-",
       "Runner-up Team will be awarded 7500/-",
     ],
+  },
+  {
+    id: 5,
+    name: "Clash of Words",
+    organizer: "Orator",
+    path: "clash-of-words",
+    description: `It is easy to think about technology but isn't it harder to put it into words? Nevertheless, none of them ever mentioned that it’s impossible! 
+    The Orator Club at IIIT Nagpur presents to you one of the most requested events of the Fest, ‘Clash Of Words’ to be conducted under the hood of Tantra Fiesta 2k22, the biggest annual Tech event of IIIT Nagpur.`,
+    imgPath: "/media/events/tantrafiesta-clash-of-words.png",
+    registrationLink:
+      "https://unstop.com/competition/clash-of-words-tech-debate-tantrafiesta-2022-indian-institute-of-information-technology-iiit-nagpur-438532",
+    timeline: [
+      {
+        id: 1,
+        title: "Registration begins",
+        date: new Date(YEAR, 8, 17, 12, 0, 0, 0),
+      },
+      {
+        id: 2,
+        title: "Registration ends",
+        date: new Date(YEAR, 8, 24, 12, 0, 0, 0),
+      },
+      {
+        id: 3,
+        title: "Topic Reveal",
+        date: new Date(YEAR, 8, 25, 18, 0, 0, 0),
+      },
+      {
+        id: 4,
+        title: "Round 1 Submission",
+        date: new Date(YEAR, 8, 28, 24, 0, 0, 0),
+      },
+      {
+        id: 5,
+        title: "Round 1 Results",
+        date: new Date(YEAR, 8, 30, 12, 0, 0, 0),
+      },
+      {
+        id: 6,
+        title: "Topic Reveal for Round 2",
+        date: new Date(YEAR, 9, 1, 12, 0, 0, 0),
+      },
+      {
+        id: 7,
+        title: "Offline Rounds",
+        date: new Date(YEAR, 9, 15, 12, 0, 0, 0),
+      },
+      {
+        id: 8,
+        title: "Closing Ceremony",
+        date: new Date(YEAR, 9, 16, 12, 0, 0, 0),
+      },
+    ],
+    prizes: ["Prize pool of Rs. 11000/-"],
   },
 ];
 
