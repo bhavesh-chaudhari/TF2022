@@ -25,9 +25,11 @@ const Footer = () => {
                   layout="fill"
                 ></NextImage>
               </div>
+              {/* <p>TantraFiesta 2022</p> */}
             </a>
           </NextLink>
-          <div className={styles["vl"]} />
+          <p>Proudly Presented By</p>
+          {/* <div className={styles["vl"]} /> */}
           <NextLink href={"https://www.iiitn.ac.in/"} passHref>
             <a className={styles["footer-logo"]}>
               <div className={`${styles["img"]} ${styles["iiitn-logo"]}`}>
@@ -37,6 +39,7 @@ const Footer = () => {
                   layout="fill"
                 ></NextImage>
               </div>
+              <p>IIIT Nagpur</p>
             </a>
           </NextLink>
         </div>
