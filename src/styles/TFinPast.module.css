@@ -10,6 +10,7 @@
 .heading {
   text-align: center;
   font-family: "Montserrat";
+  text-transform: uppercase;
   font-weight: 700;
   font-size: 2.5rem;
   margin-top: 3rem;
@@ -18,7 +19,7 @@
 .underline {
   margin-top: 0.5rem;
   min-height: 0.5rem;
-  width: 40%;
+  width: 20%;
   background: #eeff20;
 }
 

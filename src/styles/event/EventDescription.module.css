@@ -81,6 +81,7 @@
     text-align: start;
     font-size: 16px;
     line-height: 1.7rem;
+    width: auto;
   }
   .img {
     min-height: 320px;
