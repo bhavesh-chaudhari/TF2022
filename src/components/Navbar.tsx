@@ -13,18 +13,18 @@ const Navbar = () => {
   const links = [
     {
       id: 1,
-      path: "/",
-      name: "home",
+      path: "/#about-tantra",
+      name: "About TF",
     },
     {
       id: 2,
-      path: "/events",
+      path: "/#events",
       name: "Events",
     },
     {
       id: 3,
-      path: "/about-us",
-      name: "About Us",
+      path: "/#past-glimpse",
+      name: "Past Glimpse",
     },
   ];
 

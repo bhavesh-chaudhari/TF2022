@@ -3,7 +3,7 @@ import styles from "../styles/AboutTantra.module.css";
 
 const AboutTantra = () => {
   return (
-    <div className={styles["about-tantra"]}>
+    <div id="about-tantra" className={styles["about-tantra"]}>
       <h1 className={styles["heading"]}>ABOUT TANTRAFIESTA</h1>
       <div className={styles["underline"]} />
 
