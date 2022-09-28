@@ -3,9 +3,10 @@
   justify-content: center;
   align-self: center;
   z-index: 1000;
-  background: linear-gradient(180deg, #0c1618 0%, #1d2527 75%, #333940 100%);
+  /* background: linear-gradient(180deg, #0c1618 0%, #1d2527 75%, #333940 100%); */
+  background: #101a1c;
   padding: 5px;
-  height: 65px;
+  height: 60px;
   width: 100%;
   box-shadow: 0 8px 5px -8px #000;
   font-family: "Montserrat";
@@ -79,6 +80,11 @@
 .nav-links a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.7);
+}
+
+.nav-links a:hover {
+  color: white;
+  transition: all ease 0.2s;
 }
 
 .active a {

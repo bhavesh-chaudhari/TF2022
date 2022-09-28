@@ -7,7 +7,7 @@ import cf from "../images/codefiesta.png";
 
 const HighlightedEvents = () => {
   return (
-    <div className={styles["highlighted-events"]}>
+    <div id="events" className={styles["highlighted-events"]}>
       <h1 className={styles["heading"]}>EVENTS IN TF2022</h1>
       <div className={styles["underline"]}></div>
       <div className={styles["components"]}>
