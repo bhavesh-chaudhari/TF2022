@@ -11,6 +11,11 @@ const HighlightedEvents = () => {
     <div id="events" className={styles["highlighted-events"]}>
       <h1 className={styles["heading"]}>EVENTS IN TF2022</h1>
       <div className={styles["underline"]}></div>
+      <span className={styles["view-all-btn"]}>
+      <NextLink 
+        href="/events"
+        > View All → </NextLink>
+      </span>
       <div className={styles["components"]}>
         <NextLink
           href="/events/codefiesta"

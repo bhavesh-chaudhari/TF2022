@@ -22,6 +22,10 @@
   background: #eeff20;
 }
 
+.view-all-btn {
+  margin-left: 80%;
+}
+
 .components {
   display: flex;
   justify-content: space-between;
