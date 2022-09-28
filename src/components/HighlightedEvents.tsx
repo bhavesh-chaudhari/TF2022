@@ -3,7 +3,7 @@ import NextImage from "next/image";
 import NextLink from "next/link";
 import styles from "../styles/HighlightedEvents.module.css";
 import hackme from "../images/hackme.png";
-import robo from "../images/robo-rumble.png";
+import designathon from "../images/designathon.png";
 import cf from "../images/codefiesta.png";
 
 const HighlightedEvents = () => {
@@ -22,10 +22,14 @@ const HighlightedEvents = () => {
           <NextImage src={hackme} className={styles["logo"]} alt="hackme" />
         </NextLink>
         <NextLink
-          href="/events/robo-rumble"
+          href="/events/designathon"
           className={styles["logo-container"]}
         >
-          <NextImage src={robo} className={styles["logo"]} alt="robo-rumble" />
+          <NextImage
+            src={designathon}
+            className={styles["logo"]}
+            alt="robo-rumble"
+          />
         </NextLink>
       </div>
     </div>
