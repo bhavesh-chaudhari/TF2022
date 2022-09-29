@@ -38,11 +38,15 @@
 .form > button{
     padding: 4px 1.5rem;
     font-size: 1rem;
-    margin-top: 0.7rem;
+    min-height: 30px;
+    margin-top: 1.5rem;
     background: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .note{

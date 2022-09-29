@@ -10,9 +10,9 @@ const HighlightedSpeakers = () => {
       <h1 className={styles["heading"]}>SPEAKERS AT TF2022</h1>
       <div className={styles["underline"]}></div>
       <div className={styles["components"]}>
-        <img src={hackme.src} alt="hackme" className={styles["logo"]} />
+        {/* <img src={hackme.src} alt="hackme" className={styles["logo"]} />
         <img src={robo.src} alt="robo-rumble" className={styles["logo"]} />
-        <img src={cf.src} alt="cf" className={styles["logo"]} />
+        <img src={cf.src} alt="cf" className={styles["logo"]} /> */}
       </div>
     </div>
   );

@@ -106,13 +106,9 @@ const Navbar = () => {
                     router.pathname === link.path ? styles["active"] : ""
                   }
                 >
-                  {link.type === "page" ? (
-                    <Link scroll={true} href={link.path} passHref>
+                  <Link scroll={true} href={link.path} passHref>
                       <a>{link.name}</a>
                     </Link>
-                  ) : (
-                      <a href={link.path} >{link.name}</a>
-                  )}
                 </li>
               );
             })}

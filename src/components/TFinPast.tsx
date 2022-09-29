@@ -52,7 +52,7 @@ const FromTheTeam = () => {
   };
 
   return (
-    <div id="past-glimpse" className={styles["container"]}>
+    <div data-aos="fade-up" data-aos-duration="800" id="past-glimpse" className={styles["container"]}>
       <div className={styles["heading"]}>
         <h2 className="yellow-bottom" >Past Glimpse</h2>
       </div>

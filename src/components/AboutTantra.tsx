@@ -8,7 +8,7 @@ const AboutTantra = () => {
         <div className={styles["heading"]}>
           <h2 className={"yellow-bottom"}>ABOUT TANTRAFIESTA</h2>
         </div>
-        <div className={styles["description"]}>
+        <div data-aos="fade-up" data-aos-duration="800" className={styles["description"]}>
           <p>
             Tantrafiesta is the annual science and technology festival of the
             Indian Institute of Information Technology, Nagpur. Tantrafiesta

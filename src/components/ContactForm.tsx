@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "../styles/ContactForm.module.css";
+import { PulseLoader } from "react-spinners";
 
 const initialFormValues = {
   name: "",
@@ -28,6 +29,8 @@ const ContactForm = () => {
       }
       setLoading(false)
     });
+
+    setFormValues(initialFormValues)
   };
 
   const handleChange = (e: any) => {
@@ -52,6 +55,7 @@ const ContactForm = () => {
               id="name"
               name="name"
               required
+              value={formValues.name}
             />
           </div>
           <div className={styles["field"]}>
@@ -62,6 +66,7 @@ const ContactForm = () => {
               id="email"
               name="email"
               required
+              value={formValues.email}
             />
           </div>
           <div className={styles["field"]}>
@@ -72,12 +77,24 @@ const ContactForm = () => {
               id="message"
               name="message"
               required
+              value={formValues.message}
             />
           </div>
           {loading ? (
-            <button>Loading...</button>
+            <button>
+              <PulseLoader size="8px"></PulseLoader>
+            </button>
           ) : (
-            <button>{submitted ? "Sent" : "Send"}</button>
+            <button
+              style={
+                submitted
+                  ? { cursor: "not-allowed" }
+                  : { cursor: "pointer" }
+              }
+              disabled={submitted ? true : false}
+            >
+              {submitted ? "Sent ✓" : "Send"}
+            </button>
           )}
         </form>
         <div className={styles["note"]}>
