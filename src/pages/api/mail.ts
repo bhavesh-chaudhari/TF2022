@@ -9,11 +9,13 @@ const mail = async (req: NextApiRequest, res: NextApiResponse) => {
         <p><strong>Email: </strong> ${userFeedback?.email} </p><br>
         <p><strong>Message: </strong> ${userFeedback?.message} </p><br>`;
 
+  console.log(process.env.EMAIL, process.env.EMAIL_PASSWORD);
+        
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
       user: process.env.EMAIL, // generated ethereal user
-      pass: process.env.PASSWORD, // generated ethereal password
+      pass: process.env.EMAIL_PASSWORD, // generated ethereal password
     },
   });
 

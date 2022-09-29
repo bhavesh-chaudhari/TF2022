@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import NextImage from "next/image";
+import NextLink from "next/link";
 import styles from "../styles/HighlightedEvents.module.css";
 
 const HighlightedEvents = () => {

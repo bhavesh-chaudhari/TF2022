@@ -36,9 +36,9 @@
   content: "";
   position: absolute;
   width: 100%;
-  height: 3px;
+  height: 4px;
   background: #2b9348;
-  bottom: -3px;
+  bottom: -2px;
   transform: translate(0, 100%);
 }
 

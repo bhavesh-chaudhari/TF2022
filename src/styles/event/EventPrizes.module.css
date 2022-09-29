@@ -4,7 +4,6 @@
   align-items: center;
   flex-direction: column;
   padding: 4rem 0;
-  margin-bottom: 4rem;
 }
 
 .content {
@@ -105,13 +104,17 @@
 @media screen and (max-width: 600px) {
   .container {
     padding: 3rem 0;
-    margin-bottom: 3rem;
+    padding-bottom: 7rem;
   }
   .heading {
-    width: 90%;
+    font-size: 28px;
+    position: relative;
+    font-family: "Montserrat";
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
   }
   .heading > h2 {
     font-size: 28px;
-    margin-bottom: 2rem;
   }
 }

@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import AboutTantra from "../components/AboutTantra";
 import BgWrapper from "../components/BgWrapper";
+import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import HighlightedEvents from "../components/HighlightedEvents";
 import TFinPast from "../components/TFinPast";
@@ -60,6 +61,7 @@ Tantrafiesta hosts a plethora of social initiatives and outreach programs such a
           <TFinPast />
           <VenueAndForm></VenueAndForm>
         </BgWrapper>
+        {/* <Footer /> */}
       </>
     </div>
   );

@@ -162,11 +162,15 @@
 }
 
 @media screen and (max-width: 600px) {
+  .container{
+    padding: 2rem 0;
+    margin-top: 0;
+  }
   .timeline {
     transform: translate(-50%, 0);
   }
   .heading {
-    font-size: 2rem;
+    font-size: 28px;
     position: relative;
     font-family: "Montserrat";
     font-weight: 800;

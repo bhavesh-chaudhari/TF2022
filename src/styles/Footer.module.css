@@ -1,0 +1,205 @@
+.footer {
+  min-width: 100vw;
+  min-height: 250px;
+  background: #0c1618;
+  display: flex;
+  padding: 1rem 0;
+  z-index: 10;
+  transform: translate(0, 0);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.logo-container {
+  min-width: 33vw;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.logos > p {
+  font-size: 18px;
+  margin-bottom: 6px;
+  margin-top: 1.5rem;
+}
+
+.vl {
+  min-height: 85px;
+  width: 2px;
+  background: white;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 5px;
+  gap: 10px;
+}
+
+.footer-logo > p {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.img {
+  height: 100px;
+  width: 100px;
+  position: relative;
+}
+
+.iiitn-logo {
+  transform: scale(1.1) translate(-2%, 0%);
+  height: 40px;
+  width: 40px;
+}
+
+.logos > a:nth-of-type(2) > p {
+  transform: translate(0, 3px);
+}
+
+.contact-container {
+  min-width: 33vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5rem;
+}
+
+.contact > h3 {
+  color: #eeef20;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.contact > p {
+  color: white;
+  font-family: "Lato";
+  font-size: 1rem;
+}
+
+.contact > a {
+  color: white;
+  font-family: "Lato";
+  font-size: 1rem;
+}
+
+.socials-container {
+  min-width: 33vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-handles {
+  display: grid;
+  /* flex-direction: column;
+  align-items: start;
+  justify-content: space-between; */
+  grid-template-columns: auto auto;
+  margin-right: 1rem;
+  gap: 1rem;
+  row-gap: 2rem;
+}
+
+.social-handles > a:nth-of-type(5) {
+  transform: translate(50%, 0);
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.link > p {
+  color: white;
+  font-family: "Lato";
+  font-size: 1.1rem;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: transparent;
+  padding: 0.4em;
+  border-radius: 100%;
+  transition: all 0.3s ease;
+}
+
+.icon-container > svg {
+  fill: white;
+}
+
+.icon {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.link:hover .icon-container {
+  cursor: pointer;
+  background: #333940;
+}
+
+@media screen and (max-width: 800px) {
+  .footer {
+    flex-direction: column;
+    padding: 4rem 0;
+  }
+
+  .logo-container {
+    min-height: 9rem;
+    padding-bottom: 2rem;
+  }
+
+  .contacts {
+    margin-bottom: 3rem;
+    flex-direction: row;
+    text-align: center;
+  }
+
+  .social-handles {
+    display: flex;
+    margin-right: 0;
+  }
+
+  .icon-text {
+    display: none;
+  }
+  .social-handles > a:nth-of-type(5) {
+    transform: translate(0, 0);
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .footer{
+    padding: 3rem 0;
+  }
+  .logos {
+    margin-bottom: 1rem;
+  }
+  .social-handles {
+    gap: 0.7rem;
+  }
+  .contacts {
+    margin-bottom: 3rem;
+    flex-direction: column;
+  }
+}

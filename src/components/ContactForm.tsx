@@ -9,18 +9,25 @@ const initialFormValues = {
 
 const ContactForm = () => {
   const [formValues, setFormValues] = useState(initialFormValues);
+  const [submitted, setSubmitted] = useState(false)
+  const [loading, setLoading]  = useState(false)
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
 
     console.log(formValues);
+    setLoading(true)
 
-    // fetch("/api/mail", {
-    //   method: "POST",
-    //   body: JSON.stringify(formValues),
-    // }).then((res) => {
-    //   console.log(res);
-    // });
+    fetch("/api/mail", {
+      method: "POST",
+      body: JSON.stringify(formValues),
+    }).then((res) => {
+      console.log(res);
+      if(res.status === 200){
+        setSubmitted(true)
+      }
+      setLoading(false)
+    });
   };
 
   const handleChange = (e: any) => {
@@ -39,7 +46,13 @@ const ContactForm = () => {
         <form onSubmit={handleSubmit} className={styles["form"]}>
           <div className={styles["field"]}>
             <label htmlFor="name">Name</label>
-            <input onChange={handleChange} type="text" id="name" name="name" required />
+            <input
+              onChange={handleChange}
+              type="text"
+              id="name"
+              name="name"
+              required
+            />
           </div>
           <div className={styles["field"]}>
             <label htmlFor="email">Email</label>
@@ -53,9 +66,19 @@ const ContactForm = () => {
           </div>
           <div className={styles["field"]}>
             <label htmlFor="message">Message</label>
-            <textarea spellCheck="false" onChange={handleChange} id="message" name="message" required/>
+            <textarea
+              spellCheck="false"
+              onChange={handleChange}
+              id="message"
+              name="message"
+              required
+            />
           </div>
-          <button>Send</button>
+          {loading ? (
+            <button>Loading...</button>
+          ) : (
+            <button>{submitted ? "Sent" : "Send"}</button>
+          )}
         </form>
         <div className={styles["note"]}>
           <p>We will reach out to you soon</p>
