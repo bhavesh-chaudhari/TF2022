@@ -1,26 +1,30 @@
 .bg-wrapper {
-  height: 100vh;
   width: 100vw;
   background: linear-gradient(#0c1618, #333940);
+  background: #0c1618;
   color: #ffffff;
   z-index: -10;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 }
 
 .star-image-container {
   transform: scale(1.2);
+  position: relative;
+  width: 100%;
+  height: 100vw;
 }
 
 .stars-wrapper {
-  position: absolute;
   height: 100vh;
   width: 100vw;
-  z-index: 10;
   overflow: hidden;
+  left: 0;
+  top: 0;
+  position: fixed;
+  z-index: 0;
 }
 
 .stars {
@@ -37,12 +41,8 @@
 }
 
 .content-wrapper {
-  margin-top: 10vh;
-  height: 90vh;
   width: 100vw;
-  overflow-y: scroll;
   z-index: 100;
-  /* background: blue; */
   scrollbar-width: none;
 }
 
@@ -56,8 +56,6 @@
   justify-content: center;
   height: 0vh;
   width: 100vw;
-  /* top:90vh; */
-  /* overflow: hidden; */
   z-index: 1000;
   transform: translate(0, -42vh);
 }

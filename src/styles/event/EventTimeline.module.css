@@ -14,11 +14,19 @@
   text-transform: uppercase;
 }
 
-.underline {
-  margin-top: 0.5rem;
-  min-height: 0.5rem;
-  width: 10%;
+.heading {
+  position: relative;
+}
+
+.heading::after {
+  position: absolute;
+  content: "";
+  width: 80%;
+  height: 3px;
+  bottom: -10px;
   background: #eeff20;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .content {
@@ -42,7 +50,6 @@
   top: 0;
   left: 50%;
   transform: translate(-50%, 0);
-  /* background: #eeef20; */
   background: white;
   z-index: 0;
 }
@@ -153,13 +160,29 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 810px) {
+  .container{
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    margin-top: 0;
+  }
   .timeline {
     transform: translate(-50%, 0);
   }
+  .heading {
+    font-size: 28px;
+    position: relative;
+    font-family: "Montserrat";
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+  }
   .cards {
-    gap: 2rem;
+    gap: 3rem;
     width: 100%;
+  }
+  .card{
+    min-width: 300px;
   }
   .cards > div:nth-child(odd) {
     transform: translate(58%, 0);
@@ -178,5 +201,8 @@
     left: -8.2%;
     top: 115%;
     transform: translate(-52%, -50%);
+  }
+  .card > h3 {
+    font-size: 16px;
   }
 }

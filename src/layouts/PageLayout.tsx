@@ -1,7 +1,16 @@
-import React, { ReactNode, useEffect } from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import Temp from "../components/Temp";
+import React, { ReactNode} from "react";
+import dynamic from "next/dynamic";
+
+const Navbar = dynamic(
+  () => {
+    return import("../components/Navbar");
+  });
+
+const Footer = dynamic(
+  () => {
+    return import("../components/Footer");
+  }
+);
 
 interface Props {
   children?: ReactNode;
@@ -13,7 +22,6 @@ const PageLayout = ({ children }: Props) => {
       <Navbar></Navbar>
       {children}
       <Footer></Footer>
-      {/* <Temp></Temp> */}
     </>
   );
 };

@@ -2,13 +2,15 @@
   min-width: 100vw;
   min-height: 250px;
   background: #0c1618;
-  /* background: #333940; */
   display: flex;
   padding: 1rem 0;
+  z-index: 10;
+  transform: translate(0, 0);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .logo-container {
-  min-width: 35vw;
+  min-width: 33vw;
   min-height: 250px;
   display: flex;
   align-items: center;
@@ -64,7 +66,7 @@
 }
 
 .contact-container {
-  min-width: 35vw;
+  min-width: 33vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -74,7 +76,7 @@
 .contacts {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   gap: 1.5rem;
 }
 
@@ -98,7 +100,7 @@
 }
 
 .socials-container {
-  min-width: 30vw;
+  min-width: 33vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,9 +108,6 @@
 
 .social-handles {
   display: grid;
-  /* flex-direction: column;
-  align-items: start;
-  justify-content: space-between; */
   grid-template-columns: auto auto;
   margin-right: 1rem;
   gap: 1rem;

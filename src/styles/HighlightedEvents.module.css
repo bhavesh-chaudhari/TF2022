@@ -1,64 +1,108 @@
 .highlighted-events {
-  padding-top: 5vh;
-  width: 100vw;
-  min-height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 4rem 0;
+}
+
+.content{
+  width: 80%;
 }
 
 .heading {
   text-align: center;
   font-family: "Montserrat";
   font-weight: 700;
-  font-size: 2.5em;
-  margin-top: 3rem;
+  margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
-.underline {
-  margin-top: 0.5rem;
-  min-height: 0.5rem;
-  width: 20%;
-  background: #eeff20;
+.heading > h2{
+  font-size: 40px;
+}
+
+.view-all{
+  position: absolute;
+  right: 0;
+  top: 40%;
+  transform: translate(0, -50%);
+  font-size: 14px;
 }
 
 .components {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
   position: relative;
-  margin: 2rem 5rem;
-  gap: 5rem;
+  min-height: 360px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
 }
 
-.logo {
-  width: 100%;
+.components > div{
+  position: relative;
+}
+
+.image-container{
+  transition: all 0.3s ease;
+  position: relative;
+  cursor: pointer;
+  border-radius: 6px;
+  overflow: hidden;
   height: 100%;
 }
 
-.logo-container:hover {
-  transform: translate(-0.5rem, -0.5rem);
-  cursor: pointer;
+.components > div > a{
+  width: 100%;
+  display: inline-block;
+}
+
+
+.image-container:hover {
+  transform: translate(-10px, 0rem) !important;
   box-shadow: 0.5rem 0.5rem 0px #b8c70f;
 }
 
-@media (max-width: 700px) {
-  .underline {
-    min-height: 0.2rem;
-    width: 50%;
-  }
-
-  .heading {
-    margin-top: 1.5rem;
-    font-size: 2em;
-  }
-
-  .components {
-    flex-direction: column;
-  }
-
-  .logo {
+@media screen and (max-width: 1200px) {
+  .content{
     width: 90%;
-    height: 90%;
+  }
+  .components{
+    min-height: 340px;
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .components{
+    min-height: 250px;
+  }
+  
+}
+
+@media (max-width: 750px) {
+  .view-all{
+    bottom: -2.5rem;
+    top: auto;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .heading{
+    margin-bottom: 6rem;
+  }
+  .heading > h2{
+    font-size: 28px;
+  }
+  .components{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .image-container{
+    min-height: 350px;
+  }
+  .highlighted-events{
+    padding-bottom: 2rem;
   }
 }

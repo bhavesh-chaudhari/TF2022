@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import styles from "../styles/Hero.module.css";
 import NextImage from "next/image";
 import CloudLeft from "./svgs/hero/CloudLeft";
@@ -11,7 +11,6 @@ import Layer4Right from "./svgs/hero/Layer4Right";
 import TreeLeft from "./svgs/hero/TreeLeft";
 import TreeRight from "./svgs/hero/TreeRight";
 import Sun from "./svgs/hero/Sun";
-import Moon from "./svgs/hero/Moon";
 import DigitalTree from "./svgs/hero/DigitalTree";
 import DarkCloudLeft1 from "./svgs/hero/DarkCloudLeft1";
 import DarkCloudLeft2 from "./svgs/hero/DarkCloudLeft2";
@@ -24,25 +23,26 @@ import { BsChevronDoubleDown } from "react-icons/bs";
 import ViewCounter from "./ViewCounter";
 
 const Hero = () => {
-  const [greenState, setGreenState] = useState(false);
+  const [greenState, setGreenState] = useState<any>(false);
+  const containerRef = useRef<any>(null);
 
   useEffect(() => {
-    // setGreenState(sessionStorage.getItem('hasAnimated') === 'true')
+    const hasAnimated = sessionStorage.getItem("hasAnimated");
 
-    if (sessionStorage.getItem("hasAnimated")) {
-      sessionStorage.setItem("hasAnimated", greenState!.toString());
-      console.log(greenState);
+    if (hasAnimated === "true") {
+      setGreenState(true);
     } else {
-      console.log(greenState);
-      sessionStorage.setItem("hasAnimated", greenState!.toString());
+      setGreenState(false);
     }
-  }, [greenState]);
+  }, []);
 
   const handleClick = () => {
     setGreenState(true);
-  };
 
-  const containerRef = useRef<any>(null);
+    // set hasAnimated to true in sessionStorage
+    // when clicked
+    sessionStorage.setItem("hasAnimated", "true");
+  };
 
   useEffect(() => {
     const deviceWidth = window.matchMedia("(max-width: 500px)");
@@ -238,29 +238,6 @@ const Hero = () => {
               <Layer4Right></Layer4Right>
             </div>
             <div className={styles["layer-5"]}></div>
-            {/* <div
-            className={`${styles["trees"]} ${
-              greenState ? styles["trees-anim"] : ""
-            }`}
-          >
-            <div
-              className={`${styles["left-tree"]} ${
-                greenState ? styles["left-tree-anim"] : ""
-              }`}
-            >
-              <TreeLeft></TreeLeft>
-            </div>
-            <div
-              className={`${styles["right-tree"]} ${
-                greenState ? styles["right-tree-anim"] : ""
-              }`}
-            >
-              <TreeRight></TreeRight>
-            </div>
-          </div> */}
-            <div className={styles["moon"]}>
-              <Moon></Moon>
-            </div>
             <div className={styles["dark-clouds"]}>
               <div
                 className={`${styles["dark-cloud-left-1"]} ${

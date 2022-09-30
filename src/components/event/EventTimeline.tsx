@@ -6,14 +6,14 @@ const EventTimeline = ({ timeline }: { timeline: any }) => {
   const currentDate = new Date();
 
   return (
-    <div className={styles["container"]}>
+    <div id="timeline" className={styles["container"]}>
       <h2 className={styles["heading"]}>Timeline</h2>
       <div className={styles["underline"]} />
       <div className={styles["content"]}>
         <div className={styles["timeline"]}>
           <div className={styles["cards"]}>
             {timeline.map((item: any) => {
-              console.log(currentDate > new Date(item.date));
+              // console.log(currentDate > new Date(item.date));
               return (
                 <div
                   className={

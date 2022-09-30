@@ -1,23 +1,43 @@
 import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
-import AboutTantra from "../components/AboutTantra";
-import BgWrapper from "../components/BgWrapper";
-import Footer from "../components/Footer";
 import Hero from "../components/Hero";
-import HighlightedEvents from "../components/HighlightedEvents";
-import TFinPast from "../components/TFinPast";
-import styles from "../styles/Home.module.css";
+import Head from "next/head";
+import dynamic from "next/dynamic";
+
+const AboutTantra = dynamic(() => {
+  return import("../components/AboutTantra");
+});
+
+const BgWrapper = dynamic(
+  () => {
+    return import("../components/BgWrapper");
+  }
+);
+
+const HighlightedEvents = dynamic(
+  () => {
+    return import("../components/HighlightedEvents");
+  });
+
+const TFinPast = dynamic(
+  () => {
+    return import("../components/TFinPast");
+  }
+);
+
+const VenueAndForm = dynamic(
+  () => {
+    return import("../components/VenueAndForm");
+  }
+);
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Tantrafiesta - 2022</title>
         <meta
           name="description"
-          content="Tantrafiesta is the annual science and technology festival of the Indian Institute of Information Technology, Nagpur.
-Tantrafiesta hosts a plethora of social initiatives and outreach programs such as hackathons, coding contests, robo-races, debates, and seminars that help inspire the next generation of scientists and engineers."
+          content="Tantrafiesta is the annual science and technology festival of the Indian Institute of Information Technology, Nagpur."
         />
         <meta
           name="keywords"
@@ -31,8 +51,7 @@ Tantrafiesta hosts a plethora of social initiatives and outreach programs such a
         <meta property="og:title" content="Tantrafiesta - 2022" />
         <meta
           property="og:description"
-          content="Tantrafiesta is the annual science and technology festival of the Indian Institute of Information Technology, Nagpur.
-                Tantrafiesta hosts a plethora of social initiatives and outreach programs such as hackathons, coding contests, robo-races, debates, and seminars that help inspire the next generation of scientists and engineers."
+          content="Tantrafiesta is the annual science and technology festival of the Indian Institute of Information Technology, Nagpur. "
         ></meta>
         <meta
           property="og:image"
@@ -44,8 +63,7 @@ Tantrafiesta hosts a plethora of social initiatives and outreach programs such a
         <meta property="twitter:title" content="Tantrafiesta - 2022" />
         <meta
           property="twitter:description"
-          content="Tantrafiesta is the annual science and technology festival of the Indian Institute of Information Technology, Nagpur.
-            Tantrafiesta hosts a plethora of social initiatives and outreach programs such as hackathons, coding contests, robo-races, debates, and seminars that help inspire the next generation of scientists and engineers."
+          content="Tantrafiesta is the annual science and technology festival of the Indian Institute of Information Technology, Nagpur. "
         />
         <meta
           property="twitter:image"
@@ -58,8 +76,8 @@ Tantrafiesta hosts a plethora of social initiatives and outreach programs such a
           <AboutTantra />
           <HighlightedEvents />
           <TFinPast />
+          <VenueAndForm></VenueAndForm>
         </BgWrapper>
-        {/* <Footer /> */}
       </>
     </div>
   );

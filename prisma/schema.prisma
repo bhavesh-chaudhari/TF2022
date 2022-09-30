@@ -1,5 +1,3 @@
-// prototype based on initial info
-
 generator client {
   provider        = "prisma-client-js"
   previewFeatures = ["referentialIntegrity"]
@@ -9,42 +7,6 @@ datasource db {
   provider             = "mysql"
   url                  = env("DATABASE_URL")
   referentialIntegrity = "prisma"
-}
-
-enum ParticipantType {
-  LEAD
-  MEMBER
-}
-
-model registration {
-  id           Int           @id @default(autoincrement())
-  school       school        @relation(fields: [schoolId], references: [id])
-  schoolId     Int
-  participants participant[]
-  created_at   DateTime      @default(now())
-  updated_at   DateTime      @updatedAt
-}
-
-model school {
-  id            Int            @id @default(autoincrement())
-  name          String         @unique
-  city          String
-  address       String
-  registrations registration[]
-  created_at    DateTime       @default(now())
-  updated_at    DateTime       @updatedAt
-}
-
-model participant {
-  id             Int             @id @default(autoincrement())
-  registration   registration    @relation(fields: [registrationId], references: [id])
-  registrationId Int
-  name           String
-  email          String          @unique
-  instagram_link String?
-  type           ParticipantType @default(MEMBER)
-  created_at     DateTime        @default(now())
-  updated_at     DateTime        @updatedAt
 }
 
 model views {

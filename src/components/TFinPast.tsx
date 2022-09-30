@@ -1,33 +1,73 @@
-import React, { useState } from "react";
-import styles from "../styles/TFinPast.module.css";
+import React from "react";
+import styles from "../styles/TFinPast.module.css"
+import Slider from "react-slick";
+import LeftActive  from "./svgs/LeftActive";
+import RightActive from "./svgs/RightActive";
+import tfInPastData from "../data/tfInPastData";
+import dynamic from "next/dynamic";
 
-const TFinPast = () => {
+const TfinPastCard = dynamic(()=>{
+  return import("./TfInPastCard")
+})
+
+const ArrowLeft = (props: any) => {
+  const { className, style, onClick } = props;
   return (
-    <div id="past-glimpse" className={styles["tf-in-past"]}>
-      <h1 className={styles["heading"]}>Past Glimpse</h1>
-      <div className={styles["underline"]} />
-      <div className={styles["container"]}>
-        <div className={styles["video"]}>
-          <iframe
-            className={styles["Video2"]}
-            src="https://www.youtube.com/embed/0v4iftGneYk?autoplay=1"
-            title="Glimpse of TF2K21 | IIIT Nagpur | Throwback"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          ></iframe>
-        </div>
-        <div className={styles["content"]}>
-          An eternal legacy, Tantrafiesta 2021, the annual flagship technical
-          event of IIIT Nagpur provided a platform for the under-grad students
-          to showcase their technical prowess. The entire event was a
-          conglomeration of various innovative segments from enlightening
-          speaker sessions to e-Sport tournaments spanning 9 days full of the
-          hustle and bustle of competitions, comprising 27 events and
-          enthusiastic participation of 4800+ participants.
-        </div>
+    <LeftActive
+      className={className}
+      style={{ ...style, display: "block" }}
+      onClick={onClick}
+    />
+  );
+};
+
+const ArrowRight = (props: any) => {
+  const { className, style, onClick } = props;
+  return (
+    <RightActive
+      className={className}
+      style={{ ...style, display: "block" }}
+      onClick={onClick}
+    />
+  );
+};
+
+const FromTheTeam = () => {
+  const settings = {
+    dots: true,
+    swipeToSlide: true,
+    variableWidth: true,
+    adaptiveHeight: true,
+    infinite: false,
+    slidesToShow: 1,
+    initialSlide: 0,
+    slidesToScroll: 1,
+    arrow: true,
+    autoplay: false,
+    speed: 400,
+    nextArrow: <ArrowRight />,
+    prevArrow: <ArrowLeft />,
+    appendDots: (dots: any) => (
+      <div>
+        <ul style={{ marginTop: "0px" }}> {dots} </ul>
+      </div>
+    ),
+  };
+
+  return (
+    <div data-aos="fade-up" data-aos-duration="800" id="past-glimpse" className={styles["container"]}>
+      <div className={styles["heading"]}>
+        <h2 className="yellow-bottom" >Past Glimpse</h2>
+      </div>
+      <div className={styles["from-carousel-container"]}>
+        <Slider {...settings}>
+          {tfInPastData.map((card: any) => {
+            return <TfinPastCard key={card.id} {...card}></TfinPastCard>;
+          })}
+        </Slider>
       </div>
     </div>
   );
 };
 
-export default TFinPast;
+export default FromTheTeam;

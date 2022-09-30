@@ -1,8 +1,6 @@
 import { Html, Head, Main, NextScript } from "next/document";
 
 const document = () => {
-  // const isDark = window.matchMedia("(prefers-color-scheme: dark)");
-  // console.log(isDark);
   return (
     <Html lang="en">
       <Head>
@@ -13,11 +11,7 @@ const document = () => {
           crossOrigin={"true"}
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;500;700;900&display=swap"
           rel="stylesheet"
         />
         <link
@@ -48,6 +42,16 @@ const document = () => {
         <meta
           name="google-site-verification"
           content="XMc85SahHk95m0SUVG_Z2nT0sz-HME_T-SGq9aMMdRA"
+        />
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+        />
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
       </Head>
       <body>

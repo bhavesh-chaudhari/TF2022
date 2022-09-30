@@ -1,9 +1,0 @@
-.ContentSection {
-  flex: 9;
-  height: 100vh;
-  background: red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 400;
-}

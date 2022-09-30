@@ -1,0 +1,58 @@
+.container{
+    width: 100%;
+  z-index: 1000;
+}
+
+.heading{
+    margin-bottom: 1.6rem;
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.field > label{
+    font-size: 18px;
+}
+
+.field > input, .field > textarea{
+    border: none;
+    outline: none;
+    padding: 7px 10px;
+    border-radius: 2px;
+    border: 1px solid #d2d41f;
+    color: white;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.field > textarea{
+    min-height: 100px;
+    resize: vertical;
+    max-height: 150px;
+}
+
+.form > button{
+    padding: 4px 1.5rem;
+    font-size: 1rem;
+    min-height: 30px;
+    margin-top: 1.5rem;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.note{
+    margin-top: 1rem;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: wheat;
+    display: none;
+}

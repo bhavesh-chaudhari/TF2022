@@ -6,6 +6,7 @@
   position: relative;
   overflow: hidden;
   cursor: default;
+  z-index: 1;
 }
 
 .content {
@@ -16,7 +17,6 @@
 }
 
 .mobile-board {
-  /* background: red; */
   margin-top: 1.5rem;
   opacity: 0;
   animation: themeHeadingAnim 1s ease-out 3s 1 forwards;
@@ -30,8 +30,6 @@
 
 .click-hint {
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
   width: 80vw;
   text-align: center;
   position: absolute;
@@ -192,30 +190,6 @@ Theme Styles
 }
 
 /* 
-======================
-Theme Reveal Animation
-======================
-*/
-/* 
-.theme-reveal {
-  animation: reveal-up ease-in 1s;
-}
-
-@keyframes reveal-up {
-  0% {
-    opacity: 0;
-    transform: translateY(5rem);
-  }
-  30% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-} */
-
-/* 
 =============
 Cloud styles
 =============
@@ -293,7 +267,6 @@ Landscape Layer Styles
   bottom: -2%;
   left: 0%;
   z-index: 120;
-  /* background: red; */
 }
 
 .layer-2 > svg {
@@ -357,7 +330,6 @@ Board styles
   left: 10%;
   transform: translate(0, -56%);
   z-index: -1;
-  /* animation: revealBoard ; */
 }
 
 .board > svg {
@@ -485,7 +457,6 @@ Digital Tree styles
   z-index: 130;
   padding-top: 1rem;
   z-index: 123;
-  /* background: white; */
 }
 
 .digital-tree:hover {
@@ -558,21 +529,6 @@ Digital Tree styles
   }
 }
 
-.moon {
-  transform: scale(1);
-  position: absolute;
-  left: 0;
-  z-index: 1;
-  animation: moonAnim 6s ease 1s forwards;
-  display: none;
-}
-
-/* 
-=============
-Before anim
-=============
-*/
-
 /* 
 ===================
 Initial Animation
@@ -586,7 +542,6 @@ Initial Animation
   width: 100%;
   height: 100%;
   background: linear-gradient(180deg, #e8cc84 -28.01%, #fff8e1 74.49%);
-  /* animation: changeOpacity 2s linear 1 forwards; */
 }
 
 .container.container-anim::after {
@@ -633,12 +588,6 @@ Initial Animation
 Layers Animation
 ==================
 */
-/* .layer-1-anim,
-.layer-2-anim,
-.layer-3-anim,
-.layer-4-left-anim,
-.layer-4-right-anim {
-} */
 
 .layer-1-anim > svg > path {
   animation: layer1Anim 0.3s ease 0.6s 1 forwards,
@@ -652,7 +601,6 @@ Layers Animation
 }
 
 .layer-2-anim > svg > path {
-  /* animation: layer2Anim 0.5s ease 1 forwards; */
   animation: layer2Anim 0.5s ease 1s 1 forwards,
     moveDownUp 2.5s ease-in-out 0s 1 forwards;
 }
@@ -664,7 +612,6 @@ Layers Animation
 }
 
 .layer-3-anim > svg > path {
-  /* animation: layer3Anim 0.5s ease 1 forwards; */
   animation: layer3Anim 0.5s ease 1.1s 1 forwards,
     moveDownUp 3s ease-in-out 0s 1 forwards;
 }
@@ -676,7 +623,6 @@ Layers Animation
 }
 
 .layer-4-left-anim > svg > path {
-  /* animation: layer4LeftAnim 0.5s ease 1 forwards; */
   animation: layer4LeftAnim 0.5s ease 1.4s 1 forwards,
     moveDownUp 3.5s ease-in-out 0s 1 forwards;
 }
@@ -688,7 +634,6 @@ Layers Animation
 }
 
 .layer-4-right-anim > svg > path {
-  /* animation: layer4RightAnim 1.5s ease 1 forwards; */
   animation: layer4RightAnim 0.5s ease 1.7s 1 forwards,
     moveDownUp 3.5s ease-in-out 0s 1 forwards;
 }
@@ -730,14 +675,6 @@ Tress Animation
 .content {
   animation: showElements 0.1s ease 0s 1 forwards;
 }
-
-/* .sun {
-  animation: showElements 0.5s ease 9.5s 1 forwards;
-} */
-
-/* .tree {
-  animation: showElements 0.5s ease 7s 1 forwards;
-} */
 
 .board-anim {
   animation: showElements 0.1s ease 0s 1 forwards, boardAnim 3s ease-in-out 0s 1;
