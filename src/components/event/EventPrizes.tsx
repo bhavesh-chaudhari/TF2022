@@ -3,7 +3,7 @@ import styles from "../../styles/event/EventPrizes.module.css";
 
 const EventPrizes = ({ prizes }: { prizes: string[] }) => {
   return (
-    <div className={styles["container"]}>
+    <div id="prizes" className={styles["container"]}>
       <div className={styles["heading"]}>
         <h2>Prizes</h2>
       </div>

@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, []);
 
   useEffect(() => {
-    console.log("App rendered")
+    // console.log("App rendered")
     // set hasAnimated to false in sessionStorage
     sessionStorage.setItem("hasAnimated", "false")
 

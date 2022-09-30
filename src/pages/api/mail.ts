@@ -9,7 +9,7 @@ const mail = async (req: NextApiRequest, res: NextApiResponse) => {
         <p><strong>Email: </strong> ${userFeedback?.email} </p>
         <p><strong>Message: </strong> ${userFeedback?.message} </p>`;
 
-  console.log(process.env.EMAIL, process.env.EMAIL_PASSWORD);
+  // console.log(process.env.EMAIL, process.env.EMAIL_PASSWORD);
         
   const transporter = nodemailer.createTransport({
     service: "gmail",
@@ -22,10 +22,10 @@ const mail = async (req: NextApiRequest, res: NextApiResponse) => {
   await new Promise((resolve, reject) => {
     transporter.verify(function (error, success) {
       if (error) {
-        console.log(error);
+        // console.log(error);
         reject(error);
       } else {
-        console.log("Server is ready to take our messages");
+        // console.log("Server is ready to take our messages");
         resolve(success);
       }
     });
@@ -49,10 +49,10 @@ const mail = async (req: NextApiRequest, res: NextApiResponse) => {
   await new Promise((resolve, reject) => {
     transporter.sendMail(mailData, (err, info) => {
       if (err) {
-        console.log(err);
+        // console.log(err);
         reject(err);
       } else {
-        console.log(info);
+        // console.log(info);
         resolve(info);
       }
     });

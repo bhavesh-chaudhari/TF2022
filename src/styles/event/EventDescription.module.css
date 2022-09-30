@@ -15,12 +15,12 @@
   text-align: center;
 }
 
-.heading{
+.heading {
   position: relative;
   margin-bottom: 1.5rem;
 }
 
-.heading::after{
+.heading::after {
   position: absolute;
   content: "";
   width: 80%;
@@ -33,48 +33,234 @@
 
 .content {
   margin-top: 1rem;
-  padding-left: 5rem;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   width: 80%;
   align-items: center;
   gap: 3rem;
 }
 
-.img {
+.img-bg {
+  width: 100%;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: transparent;
+  background-image: url("https://www.transparenttextures.com/patterns/hoffman.png");
+}
+
+.quick-details{
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.3);
+  padding-top: 3rem;
+}
+
+.quick-details > h3{
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
   position: relative;
-  min-width: 100rem;
-  min-height: 100rem;
-  border: 1px solid #2b9348;
-  border-bottom: none;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.quick-details > h3::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #eeff20;
+  height: 1px;
+  bottom: -10px;
+  left: 0;
+}
+
+.quick-details > ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  list-style-type: square;
+  padding: 0 15%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.quick-details > ul > li{
+  font-size: 18px;
+}
+
+.quick-details > ul > li > a >  span{
+  font-size: 14px;
+}
+
+.quick-details > ul > li > a{
+  transition: all 0.3s ease;
+}
+
+.quick-details > ul > li > a:hover{
+  color: #eeef20;
+}
+
+.img-container {
+  position: relative;
+  width: 100%;
+  min-width: 400px;
+  height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: #eeef20 0px 1px 2px 0px, #2b9348 0px 1px 3px 1px;
 }
 
 .desc {
-  width: 290rem;
   font-size: 18px;
+  width: 100%;
   line-height: 1.8rem;
+  text-align: center;
 }
 
-.registration-link {
+.link-container{
+  display: flex;
+  flex-direction: column;
+   background: rgba(0, 0, 0, 0.3);
+   padding-top: 3rem;
+}
+
+.link-container > h3{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+  text-align: center;
+}
+
+.link-container > h3::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #eeff20;
+  height: 1px;
+  bottom: -10px;
+  left: 0;
+}
+
+.links > h4{
+  margin-top: 1rem;
+}
+
+.links{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
   margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.link {
   z-index: 10;
-  background: #2b9348;
-  padding: 0.8rem 1.5rem;
-  border-radius: 8px;
+  border-radius: 2px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: #eeef20 3px 3px 0px 0px;
   font-family: "Montserrat";
-  font-size: 1.2rem;
+  border: 1px solid #2b9348;
   text-transform: uppercase;
   font-weight: 500;
   transition: all 0.2s ease;
+  line-height: 2rem;
+  text-align: center;
 }
 
-.registration-link:hover {
-  transform: translate(3px, 3px);
-  box-shadow: none;
+.link a, .link button{
+  padding: 5px 1rem !important;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link button svg{
+  transform: scale(0.9);
+  margin-right: 10px;
+}
+
+.link:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: #eeef20 3px 3px 0px 0px;
+}
+
+.registration-link{
+  background: #2b9348;
+}
+
+.share{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.share > .link{
+  width: 40%;
+}
+
+@media screen and (max-width: 1200px){
+  .img-bg{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+  .img-container{
+    grid-area: 1/1/span 1/ span 2;
+    max-width: 500px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .link-container{
+    grid-area: 2/2/span 1/ span 1;
+  }
+  .quick-details{
+    grid-area: 2/1/span 1/ span 1;
+  }
+  .quick-details > ul{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 800px){
+  .content{
+    width: 90%;
+  }
+  .img-bg{
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+  }
+ .img-container{
+    grid-area: 1/1/span 1/ span 1;
+    max-width: 500px;
+    min-width: 230px;
+    height: 300px;
+  }
+  .link-container{
+    grid-area: 2/1/span 1/ span 1;
+  }
+  .links{
+    margin-bottom: 0;
+  }
+  .quick-details{
+    grid-area: 3/1/span 1/ span 1;
+  }
+  .quick-details > ul{
+    padding: 0;
+    text-align: left;
+    padding-left: 3rem;
+    margin-bottom: 2rem;
+  }
+  .quick-details > h3{
+    text-align: left;
+    padding-left: 2rem;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -89,22 +275,15 @@
     text-transform: uppercase;
     text-align: center;
   }
-  .content {
-    width: 80%;
-    flex-direction: column;
-    gap: 1rem;
+  .content{
+    width: 90%;
+  }
+  .img-bg{
+    padding: 2rem 1rem;
     padding: 0;
   }
-  .desc {
-    text-align: start;
-    font-size: 16px;
-    line-height: 1.7rem;
-    width: auto;
-  }
-  .img {
-    min-height: 320px;
-  }
-  .registration-link{
-    transform: translate(0, 0.5rem);
+  .desc{
+    width: 97%;
+    text-align: left;
   }
 }

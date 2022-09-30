@@ -83,6 +83,12 @@
 }
 
 @media screen and (max-width: 600px){
+  .content{
+    width: 90%;
+  }
+  .main{
+    gap: 4rem;
+  }
   .map{
     min-height: 300px;
   }

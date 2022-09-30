@@ -30,7 +30,7 @@ const Navbar = () => {
   ];
 
   useEffect(() => {
-    console.log("navbar", window.scrollY, window.innerHeight);
+    // console.log("navbar", window.scrollY, window.innerHeight);
 
     if (router.pathname === "/") {
       (navEl as any).current.style.visibility = "hidden";

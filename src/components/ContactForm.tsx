@@ -16,14 +16,14 @@ const ContactForm = () => {
   const handleSubmit = (e: any) => {
     e.preventDefault();
 
-    console.log(formValues);
+    // console.log(formValues);
     setLoading(true)
 
     fetch("/api/mail", {
       method: "POST",
       body: JSON.stringify(formValues),
     }).then((res) => {
-      console.log(res);
+      // console.log(res);
       if(res.status === 200){
         setSubmitted(true)
       }

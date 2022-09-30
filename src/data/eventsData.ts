@@ -32,6 +32,17 @@ cover some of the most interesting concepts involved in problem-solving.
       },
     ],
     prizes: ["Cash Prizes worth INR 75,000"],
+    registration_deadline: [
+      new Date(YEAR, 8, 15, 0, 0, 0, 0),
+      new Date(YEAR, 9, 11, 10, 0, 0, 0),
+    ],
+    meta: {
+      description: `The CodeFiesta is organized under the banner of TantraFiesta 2022 on the
+GeeksforGeeks Platform(Event Sponsor), presented by DotSlash Community.`,
+      keywords: "CodeFiesta, TantraFiesta, DotSlash Community",
+      image:
+        "https://res.cloudinary.com/doraexp69/image/upload/v1663765902/tf2022/tantrafiesta-logo.png",
+    },
   },
   {
     id: 2,
@@ -99,6 +110,16 @@ cover some of the most interesting concepts involved in problem-solving.
       `Finalist teams will get exclusive HackMe goodies.`,
       `Participation Certificate to all the Greener Tomorrow Tech Quiz qualifying teams`,
     ],
+    registration_deadline: [
+      new Date(YEAR, 8, 12, 24, 0, 0, 0),
+      new Date(YEAR, 8, 18, 10, 0, 0, 0),
+    ],
+    meta: {
+      description: `HackMe is a national-level hackathon aiming to spark original and fruitful thinking under the banner of TantraFiesta 2022.`,
+      keywords: "HackMe, Tantrafiesta, Skills Nights IIITN",
+      image:
+        "https://res.cloudinary.com/doraexp69/image/upload/v1664477847/tf2022/631e28d79621a_hackme_pcsehb.webp",
+    },
   },
   {
     id: 3,
@@ -154,6 +175,17 @@ cover some of the most interesting concepts involved in problem-solving.
       "Winning Team will be awarded Rs. 12000/-",
       "Runner-up Team will be awarded 9000/-",
     ],
+    registration_deadline: [
+      new Date(YEAR, 8, 25, 12, 0, 0, 0),
+      new Date(YEAR, 9, 8, 12, 0, 0, 0),
+    ],
+    meta: {
+      description: ` Designathon is a two-round design hackathon organized by
+    Strokes, the design club under the hood of TantraFiesta.`,
+      keywords: "Designathon, Tantrafiesta, Strokes IIITN",
+      image:
+        "https://res.cloudinary.com/doraexp69/image/upload/v1664477943/tf2022/63301ea2aa567_design-a-thon_kff0cs.webp",
+    },
   },
   {
     id: 4,
@@ -212,6 +244,16 @@ cover some of the most interesting concepts involved in problem-solving.
       "Winning Team will be awarded Rs. 15000/-",
       "Runner-up Team will be awarded 7500/-",
     ],
+    registration_deadline: [
+      new Date(YEAR, 8, 20, 12, 0, 0, 0),
+      new Date(YEAR, 8, 25, 12, 0, 0, 0),
+    ],
+    meta: {
+      description: `Robo Rumble is a flagship robot competition organized by the Iotics Club of IIITN, under the banner of TantraFiesta 2k22`,
+      keywords: "Robo Rumble, Tantrafiesta, iotics iiitn",
+      image:
+        "https://res.cloudinary.com/doraexp69/image/upload/v1664477947/tf2022/632a041a85107_robo-rumble_fo81eg.webp",
+    },
   },
   {
     id: 5,
@@ -266,6 +308,16 @@ cover some of the most interesting concepts involved in problem-solving.
       },
     ],
     prizes: ["Prize pool of Rs. 11000/-"],
+    registration_deadline: [
+      new Date(YEAR, 8, 17, 12, 0, 0, 0),
+      new Date(YEAR, 8, 24, 12, 0, 0, 0),
+    ],
+    meta: {
+      description: `The Orator Club at IIIT Nagpur presents one of the most requested events, ‘Clash Of Words’ to be conducted under the hood of Tantra Fiesta 2k22.`,
+      keywords: "Clash Of Words, TantraFiesta, Orator Club IIITN",
+      image:
+        "https://res.cloudinary.com/doraexp69/image/upload/v1663765902/tf2022/tantrafiesta-logo.png",
+    },
   },
 ];
 

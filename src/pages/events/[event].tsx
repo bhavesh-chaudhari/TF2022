@@ -9,7 +9,7 @@ import EventPrizes from "../../components/event/EventPrizes";
 import events from "../../data/eventsData";
 
 const index = ({ event }: any) => {
-  console.log(event);
+  // console.log(event);
 
   return (
     <>

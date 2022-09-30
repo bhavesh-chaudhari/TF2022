@@ -11,6 +11,10 @@ body {
   scroll-behavior: smooth;
 }
 
+:target {
+  scroll-margin-top: 160px;
+}
+
 a {
   color: inherit;
   text-decoration: none;

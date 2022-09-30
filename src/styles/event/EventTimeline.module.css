@@ -50,7 +50,6 @@
   top: 0;
   left: 50%;
   transform: translate(-50%, 0);
-  /* background: #eeef20; */
   background: white;
   z-index: 0;
 }
@@ -161,9 +160,10 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 810px) {
   .container{
-    padding: 2rem 0;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
     margin-top: 0;
   }
   .timeline {
@@ -178,8 +178,11 @@
     text-align: center;
   }
   .cards {
-    gap: 2rem;
+    gap: 3rem;
     width: 100%;
+  }
+  .card{
+    min-width: 300px;
   }
   .cards > div:nth-child(odd) {
     transform: translate(58%, 0);
