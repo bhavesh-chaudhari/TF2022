@@ -6,6 +6,11 @@ const nextConfig = {
   compiler: {
     removeConsole: process.env.NODE_ENV !== "development",
   },
+  images: {
+    domains: [
+      "res.cloudinary.com",
+    ],
+  },
 };
 
 const withPWA = require("next-pwa")({
@@ -14,4 +19,8 @@ const withPWA = require("next-pwa")({
   register: true,
 });
 
-module.exports = withPWA(nextConfig);
+const withBundleAnalyzer = require("@next/bundle-analyzer")({
+  enabled: process.env.ANALYZE === "true",
+});
+
+module.exports = withBundleAnalyzer(withPWA(nextConfig));

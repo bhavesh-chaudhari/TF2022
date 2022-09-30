@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
-import Head from "next/head";
 import styles from "../styles/event/EventLayout.module.css";
 import BgWrapper from "../components/BgWrapper";
+import Head from "next/head";
 
 interface EventProps {
   children: ReactNode;

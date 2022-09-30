@@ -1,6 +1,16 @@
-import React, { ReactNode, useEffect } from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import React, { ReactNode} from "react";
+import dynamic from "next/dynamic";
+
+const Navbar = dynamic(
+  () => {
+    return import("../components/Navbar");
+  });
+
+const Footer = dynamic(
+  () => {
+    return import("../components/Footer");
+  }
+);
 
 interface Props {
   children?: ReactNode;

@@ -21,18 +21,26 @@ const HighlightedEvents = () => {
             <Link href="/events/codefiesta" passHref>
               <a className={styles["image-container"]}>
                 <NextImage
-                  src={"/media/events/tantrafiesta-codefiesta.png"}
+                  src={
+                    "https://res.cloudinary.com/doraexp69/image/upload/v1664543140/tf2022/tantrafiesta-codefiesta_ignxkf.png"
+                  }
                   layout={"fill"}
                   alt="CodeFiesta Organized by Dot Slash Community at TantraFiesta"
                 />
               </a>
             </Link>
           </div>
-          <div data-aos={"fade-right"} data-aos-duration="1000" data-aos-delay="200">
+          <div
+            data-aos={"fade-right"}
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
             <Link href="/events/hackme" passHref>
               <a className={styles["image-container"]}>
                 <NextImage
-                  src={"/media/events/tantrafiesta-hackme.png"}
+                  src={
+                    "https://res.cloudinary.com/doraexp69/image/upload/v1664543139/tf2022/tantrafiesta-hackme_g9zaef.png"
+                  }
                   className={styles["image"]}
                   layout={"fill"}
                   alt="Hackme Organized by Skills Nights Club at TantraFiesta"
@@ -40,11 +48,17 @@ const HighlightedEvents = () => {
               </a>
             </Link>
           </div>
-          <div data-aos={"fade-right"} data-aos-duration="1000" data-aos-delay="400">
+          <div
+            data-aos={"fade-right"}
+            data-aos-duration="1000"
+            data-aos-delay="400"
+          >
             <Link href="/events/robo-rumble" passHref>
               <a className={styles["image-container"]}>
                 <NextImage
-                  src={"/media/events/tantrafiesta-robo-rumble.png"}
+                  src={
+                    "https://res.cloudinary.com/doraexp69/image/upload/v1664543141/tf2022/tantrafiesta-robo-rumble_nz6rxi.png"
+                  }
                   className={styles["image"]}
                   layout={"fill"}
                   alt="Robo Rumble Organized by IoTics Club at TantraFiesta"

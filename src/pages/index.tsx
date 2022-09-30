@@ -1,11 +1,34 @@
 import type { NextPage } from "next";
-import Head from "next/head";
-import AboutTantra from "../components/AboutTantra";
-import BgWrapper from "../components/BgWrapper";
 import Hero from "../components/Hero";
-import HighlightedEvents from "../components/HighlightedEvents";
-import TFinPast from "../components/TFinPast";
-import VenueAndForm from "../components/VenueAndForm";
+import Head from "next/head";
+import dynamic from "next/dynamic";
+
+const AboutTantra = dynamic(() => {
+  return import("../components/AboutTantra");
+});
+
+const BgWrapper = dynamic(
+  () => {
+    return import("../components/BgWrapper");
+  }
+);
+
+const HighlightedEvents = dynamic(
+  () => {
+    return import("../components/HighlightedEvents");
+  });
+
+const TFinPast = dynamic(
+  () => {
+    return import("../components/TFinPast");
+  }
+);
+
+const VenueAndForm = dynamic(
+  () => {
+    return import("../components/VenueAndForm");
+  }
+);
 
 const Home: NextPage = () => {
   return (

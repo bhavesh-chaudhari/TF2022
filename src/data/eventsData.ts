@@ -14,7 +14,8 @@ GeeksforGeeks Platform(Event Sponsor). The contest consists of problems
 based on Algorithmic Skills, Logic Building and Data Structures, and will
 cover some of the most interesting concepts involved in problem-solving.
 `,
-    imgPath: "/media/events/tantrafiesta-codefiesta.png",
+    imgPath:
+      "https://res.cloudinary.com/doraexp69/image/upload/v1664543140/tf2022/tantrafiesta-codefiesta_ignxkf.png",
     registrationLink:
       "https://practice.geeksforgeeks.org/contest/codefiesta-by-iiit-nagpur",
     timeline: [
@@ -50,7 +51,8 @@ GeeksforGeeks Platform(Event Sponsor), presented by DotSlash Community.`,
     organizer: "Skills Nights",
     path: "hackme",
     description: `HackMe is a national-level hackathon aiming to spark original and fruitful thinking for a more efficient and uncomplicated lifestyle in the future which majorly depends upon technology and as much as you can rely on technology, it's important to make sure that it isn't harmful to the environment which is why the prime theme of the Hackathon is "A Greener Tomorrow". Ideas are simple to generate but challenging to put into practice. If you believe you can, follow along.`,
-    imgPath: "/media/events/tantrafiesta-hackme.png",
+    imgPath:
+      "https://res.cloudinary.com/doraexp69/image/upload/v1664543139/tf2022/tantrafiesta-hackme_g9zaef.png",
     registrationLink:
       "https://unstop.com/hackathon/hackme-tantrafiesta-2022-indian-institute-of-information-technology-iiit-nagpur-434729",
     timeline: [
@@ -130,7 +132,8 @@ GeeksforGeeks Platform(Event Sponsor), presented by DotSlash Community.`,
     Designathon is a two-round design hackathon organized by
     Strokes, the design club under the hood of TantraFiesta, our annual tech-fest. 
     This event consists of 2 rounds, The UX round ( Knockout Round ) and the UI round ( Finale ). `,
-    imgPath: "/media/events/tantrafiesta-designathon.png",
+    imgPath:
+      "https://res.cloudinary.com/doraexp69/image/upload/v1664543141/tf2022/tantrafiesta-designathon_fk37py.png",
     registrationLink:
       "https://unstop.com/hackathon/design-a-thon-tantrafiesta-2022-indian-institute-of-information-technology-iiit-nagpur-440534",
     timeline: [
@@ -193,7 +196,8 @@ GeeksforGeeks Platform(Event Sponsor), presented by DotSlash Community.`,
     organizer: "Iotics",
     path: "robo-rumble",
     description: `Robo Rumble is a flagship robot competition organized by the Iotics Club of IIITN, under the banner of TantraFiesta 2k22,  the biggest annual Tech Fest of IIIT Nagpur. Here you get an exciting and thrilling experience in the view sight. Feel the rumbling of robocars on the tracks, plenty of obstacles, and the boasting show of Robo-mechanical strength in Tug of War. Each and Every second of this event will be filled with the intense mechanical roaring of the R-cars and variating projections of the winning leads.`,
-    imgPath: "/media/events/tantrafiesta-robo-rumble.png",
+    imgPath:
+      "https://res.cloudinary.com/doraexp69/image/upload/v1664543141/tf2022/tantrafiesta-robo-rumble_nz6rxi.png",
     registrationLink:
       "https://unstop.com/competition/robo-rumble-tantrafiesta-2022-indian-institute-of-information-technology-iiit-nagpur-439597",
     timeline: [
@@ -262,7 +266,8 @@ GeeksforGeeks Platform(Event Sponsor), presented by DotSlash Community.`,
     path: "clash-of-words",
     description: `It is easy to think about technology but isn't it harder to put it into words? Nevertheless, none of them ever mentioned that it’s impossible! 
     The Orator Club at IIIT Nagpur presents to you one of the most requested events of the Fest, ‘Clash Of Words’ to be conducted under the hood of Tantra Fiesta 2k22, the biggest annual Tech event of IIIT Nagpur.`,
-    imgPath: "/media/events/tantrafiesta-clash-of-words.png",
+    imgPath:
+      "https://res.cloudinary.com/doraexp69/image/upload/v1664543140/tf2022/tantrafiesta-clash-of-words_cbvfgv.png",
     registrationLink:
       "https://unstop.com/competition/clash-of-words-tech-debate-tantrafiesta-2022-indian-institute-of-information-technology-iiit-nagpur-438532",
     timeline: [

@@ -2,8 +2,63 @@ import React from "react";
 import Image from "next/image";
 import styles from "../../styles/event/EventDescription.module.css";
 import { format } from "date-fns";
-import { FacebookShareButton, FacebookIcon, WhatsappShareButton, WhatsappIcon, TwitterShareButton, TwitterIcon, LinkedinShareButton, LinkedinIcon } from "next-share";
-import {useRouter} from "next/router"
+import dynamic from "next/dynamic";
+
+const FacebookIcon= dynamic(
+  () => {
+    return import("next-share").then((mod) => mod.FacebookIcon);
+  },
+  { ssr: false }
+);
+
+const WhatsappIcon = dynamic(
+  () => {
+    return import("next-share").then((mod) => mod.WhatsappIcon);
+  },
+  { ssr: false }
+);
+
+const TwitterIcon = dynamic(
+  () => {
+    return import("next-share").then((mod) => mod.TwitterIcon);
+  },
+  { ssr: false }
+);
+
+const LinkedinIcon = dynamic(
+  () => {
+    return import("next-share").then((mod) => mod.LinkedinIcon);
+  },
+  { ssr: false }
+);
+
+const FacebookShareButton = dynamic(
+  () => {
+    return import("next-share").then((mod) => mod.FacebookShareButton);
+  },
+  { ssr: false }
+);
+
+const WhatsappShareButton = dynamic(
+  () => {
+    return import("next-share").then((mod) => mod.WhatsappShareButton);
+  },
+  { ssr: false }
+);
+
+const TwitterShareButton = dynamic(
+  () => {
+    return import("next-share").then((mod) => mod.TwitterShareButton);
+  },
+  { ssr: false }
+);
+
+const LinkedinShareButton = dynamic(
+  () => {
+    return import("next-share").then((mod) => mod.LinkedinShareButton);
+  },
+  { ssr: false }
+);
 
 interface Props {
   name: string;
@@ -11,7 +66,7 @@ interface Props {
   description: string;
   organizer: string;
   registrationLink: string;
-  registration_deadline: any
+  registration_deadline: any;
 }
 
 const EventDescription = ({
@@ -20,11 +75,8 @@ const EventDescription = ({
   description,
   organizer,
   registrationLink,
-  registration_deadline
+  registration_deadline,
 }: Props) => {
-
-  const router = useRouter();
-  
   return (
     <div className={styles["container"]}>
       <h1 className={styles["heading"]}>{name}</h1>
@@ -126,7 +178,9 @@ const EventDescription = ({
                     }
                     title={`Hey! Checkout ${name} powered by TantraFiesta. Register yourself now and get ready for exciting events.`}
                     summary={description}
-                    source={typeof window !== "undefined" ? document.domain : ""}
+                    source={
+                      typeof window !== "undefined" ? document.domain : ""
+                    }
                   >
                     <LinkedinIcon size={32} round />
                   </LinkedinShareButton>

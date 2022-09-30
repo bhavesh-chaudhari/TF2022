@@ -66,7 +66,7 @@ const Navbar = () => {
           <a className={styles["nav-logo"]}>
             <div className={styles["img"]}>
               <Image
-                src="/media/logo.png"
+                src="https://res.cloudinary.com/doraexp69/image/upload/v1664546262/tf2022/logo_jtojki.png"
                 alt="Tantrafiesta Logo"
                 layout="fill"
               ></Image>
@@ -107,8 +107,8 @@ const Navbar = () => {
                   }
                 >
                   <Link scroll={true} href={link.path} passHref>
-                      <a>{link.name}</a>
-                    </Link>
+                    <a>{link.name}</a>
+                  </Link>
                 </li>
               );
             })}

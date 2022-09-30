@@ -61,7 +61,7 @@ const HighlightedEvents = () => {
                         src={item.imgPath}
                         className={styles["image"]}
                         layout={"fill"}
-                        alt="CodeFiesta Organized by Dot Slash Community at TantraFiesta"
+                        alt={`${item.name} Organized by ${item.organizer} at TantraFiesta`}
                       />
                     </a>
                   </Link>

@@ -4,7 +4,11 @@ import Slider from "react-slick";
 import LeftActive  from "./svgs/LeftActive";
 import RightActive from "./svgs/RightActive";
 import tfInPastData from "../data/tfInPastData";
-import TfinPastCad from "./TfInPastCard";
+import dynamic from "next/dynamic";
+
+const TfinPastCard = dynamic(()=>{
+  return import("./TfInPastCard")
+})
 
 const ArrowLeft = (props: any) => {
   const { className, style, onClick } = props;
@@ -58,7 +62,7 @@ const FromTheTeam = () => {
       <div className={styles["from-carousel-container"]}>
         <Slider {...settings}>
           {tfInPastData.map((card: any) => {
-            return <TfinPastCad key={card.id} {...card}></TfinPastCad>;
+            return <TfinPastCard key={card.id} {...card}></TfinPastCard>;
           })}
         </Slider>
       </div>

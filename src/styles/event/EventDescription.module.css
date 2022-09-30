@@ -47,7 +47,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   background-color: transparent;
-  background-image: url("https://www.transparenttextures.com/patterns/hoffman.png");
+  background-image: url("https://res.cloudinary.com/doraexp69/image/upload/v1664544040/tf2022/hoffman_lywcad.png");
 }
 
 .quick-details{

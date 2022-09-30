@@ -15,7 +15,8 @@ const tfInPastData = [
   },
   {
     id: 2,
-    imgPath: "/media/tantrafiesta-2k21-theme.png",
+    imgPath:
+      "https://res.cloudinary.com/doraexp69/image/upload/v1664543127/tf2022/tantrafiesta-2k21-theme_se8mge.png",
     cardTitle: "TantraFiesta 2k21 Theme",
     cardPara: `The theme for TantraFiesta 2k21 was “Life in the Future”. The theme inspired and gave energy to all the participants of our fest by encouraging them to look at the future with an optimistic mindset. With the pandemic, college students have suffered a lot in terms of mental health and self esteem. The future looks bleak to a lot of people right now. So, “life in the future” intended to help people find a more positive mindset.`,
     animation: "fade-up",

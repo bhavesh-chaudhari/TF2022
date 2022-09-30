@@ -1,6 +1,5 @@
-import React, { ReactNode, useEffect, useRef } from "react";
+import React, { ReactNode } from "react";
 import NextImage from "next/image";
-import stars from "../../public/media/stars.png";
 import styles from "../styles/BgWrapper.module.css";
 
 interface Props {
@@ -9,17 +8,19 @@ interface Props {
 
 const BgWrapper = ({ children }: Props) => {
 
-  const wrapperRef = useRef<any>(null)
-
   return (
-    <div ref={wrapperRef} className={styles["bg-wrapper"]}>
+    <div className={styles["bg-wrapper"]}>
       <div className={styles["content-wrapper"]}>{children}</div>
-      {/* <div className={styles["earth-wrapper"]}>
-        <NextImage className={styles["earth"]} src={earth} alt="earth" />
-      </div> */}
       <div className={styles["stars-wrapper"]}>
         <div className={styles["star-image-container"]}>
-          <NextImage className={styles["stars"]} alt="stars" src={stars} />
+          <NextImage
+            className={styles["stars"]}
+            alt="stars"
+            layout="fill"
+            src={
+              "https://res.cloudinary.com/doraexp69/image/upload/v1664546187/tf2022/stars_bi7uho.png"
+            }
+          />
         </div>
       </div>
     </div>
