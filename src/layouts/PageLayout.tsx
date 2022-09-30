@@ -1,7 +1,6 @@
 import React, { ReactNode, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import Temp from "../components/Temp";
 
 interface Props {
   children?: ReactNode;
@@ -13,7 +12,6 @@ const PageLayout = ({ children }: Props) => {
       <Navbar></Navbar>
       {children}
       <Footer></Footer>
-      {/* <Temp></Temp> */}
     </>
   );
 };
