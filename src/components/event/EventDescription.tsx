@@ -4,7 +4,7 @@ import styles from "../../styles/event/EventDescription.module.css";
 import { format } from "date-fns";
 import dynamic from "next/dynamic";
 
-const FacebookIcon= dynamic(
+const FacebookIcon = dynamic(
   () => {
     return import("next-share").then((mod) => mod.FacebookIcon);
   },

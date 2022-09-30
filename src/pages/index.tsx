@@ -7,28 +7,21 @@ const AboutTantra = dynamic(() => {
   return import("../components/AboutTantra");
 });
 
-const BgWrapper = dynamic(
-  () => {
-    return import("../components/BgWrapper");
-  }
-);
+const BgWrapper = dynamic(() => {
+  return import("../components/BgWrapper");
+});
 
-const HighlightedEvents = dynamic(
-  () => {
-    return import("../components/HighlightedEvents");
-  });
+const HighlightedEvents = dynamic(() => {
+  return import("../components/HighlightedEvents");
+});
 
-const TFinPast = dynamic(
-  () => {
-    return import("../components/TFinPast");
-  }
-);
+const TFinPast = dynamic(() => {
+  return import("../components/TFinPast");
+});
 
-const VenueAndForm = dynamic(
-  () => {
-    return import("../components/VenueAndForm");
-  }
-);
+const VenueAndForm = dynamic(() => {
+  return import("../components/VenueAndForm");
+});
 
 const Home: NextPage = () => {
   return (

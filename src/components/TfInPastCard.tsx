@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
-import styles from "../styles/TfInPastCard.module.css"
+import styles from "../styles/TfInPastCard.module.css";
 
 const TfinPastCard = (props: any) => {
   const [readMore, setReadMore] = useState(true);
@@ -64,4 +64,4 @@ const TfinPastCard = (props: any) => {
   );
 };
 
-export default TfinPastCard
+export default TfinPastCard;

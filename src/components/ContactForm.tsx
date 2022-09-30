@@ -10,27 +10,27 @@ const initialFormValues = {
 
 const ContactForm = () => {
   const [formValues, setFormValues] = useState(initialFormValues);
-  const [submitted, setSubmitted] = useState(false)
-  const [loading, setLoading]  = useState(false)
+  const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
 
     // console.log(formValues);
-    setLoading(true)
+    setLoading(true);
 
     fetch("/api/mail", {
       method: "POST",
       body: JSON.stringify(formValues),
     }).then((res) => {
       // console.log(res);
-      if(res.status === 200){
-        setSubmitted(true)
+      if (res.status === 200) {
+        setSubmitted(true);
       }
-      setLoading(false)
+      setLoading(false);
     });
 
-    setFormValues(initialFormValues)
+    setFormValues(initialFormValues);
   };
 
   const handleChange = (e: any) => {
@@ -87,9 +87,7 @@ const ContactForm = () => {
           ) : (
             <button
               style={
-                submitted
-                  ? { cursor: "not-allowed" }
-                  : { cursor: "pointer" }
+                submitted ? { cursor: "not-allowed" } : { cursor: "pointer" }
               }
               disabled={submitted ? true : false}
             >

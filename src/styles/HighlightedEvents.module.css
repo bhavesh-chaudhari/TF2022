@@ -5,7 +5,7 @@
   padding: 4rem 0;
 }
 
-.content{
+.content {
   width: 80%;
 }
 
@@ -20,11 +20,11 @@
   position: relative;
 }
 
-.heading > h2{
+.heading > h2 {
   font-size: 40px;
 }
 
-.view-all{
+.view-all {
   position: absolute;
   right: 0;
   top: 40%;
@@ -40,11 +40,11 @@
   gap: 3rem;
 }
 
-.components > div{
+.components > div {
   position: relative;
 }
 
-.image-container{
+.image-container {
   transition: all 0.3s ease;
   position: relative;
   cursor: pointer;
@@ -53,11 +53,10 @@
   height: 100%;
 }
 
-.components > div > a{
+.components > div > a {
   width: 100%;
   display: inline-block;
 }
-
 
 .image-container:hover {
   transform: translate(-10px, 0rem) !important;
@@ -65,44 +64,43 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .content{
+  .content {
     width: 90%;
   }
-  .components{
+  .components {
     min-height: 340px;
     gap: 1.5rem;
   }
 }
 
-@media screen and (max-width: 900px){
-  .components{
+@media screen and (max-width: 900px) {
+  .components {
     min-height: 250px;
   }
-  
 }
 
 @media (max-width: 750px) {
-  .view-all{
+  .view-all {
     bottom: -2.5rem;
     top: auto;
     left: 50%;
     transform: translate(-50%, 0);
   }
-  .heading{
+  .heading {
     margin-bottom: 6rem;
   }
-  .heading > h2{
+  .heading > h2 {
     font-size: 28px;
   }
-  .components{
+  .components {
     display: flex;
     flex-direction: column;
     gap: 2rem;
   }
-  .image-container{
+  .image-container {
     min-height: 350px;
   }
-  .highlighted-events{
+  .highlighted-events {
     padding-bottom: 2rem;
   }
 }

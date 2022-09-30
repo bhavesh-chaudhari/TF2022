@@ -65,8 +65,8 @@
   padding-left: 4rem;
 }
 
-@media screen and (max-width: 1200px){
-  .content{
+@media screen and (max-width: 1200px) {
+  .content {
     width: 85%;
   }
 }
@@ -82,20 +82,20 @@
   }
 }
 
-@media screen and (max-width: 600px){
-  .container{
+@media screen and (max-width: 600px) {
+  .container {
     padding-bottom: 5rem;
   }
-  .content{
+  .content {
     width: 90%;
   }
-  .main{
+  .main {
     gap: 4rem;
   }
-  .map{
+  .map {
     min-height: 300px;
   }
-  .heading > h2{
+  .heading > h2 {
     font-size: 28px;
   }
 }

@@ -1,16 +1,13 @@
-import React, { ReactNode} from "react";
+import React, { ReactNode } from "react";
 import dynamic from "next/dynamic";
 
-const Navbar = dynamic(
-  () => {
-    return import("../components/Navbar");
-  });
+const Navbar = dynamic(() => {
+  return import("../components/Navbar");
+});
 
-const Footer = dynamic(
-  () => {
-    return import("../components/Footer");
-  }
-);
+const Footer = dynamic(() => {
+  return import("../components/Footer");
+});
 
 interface Props {
   children?: ReactNode;

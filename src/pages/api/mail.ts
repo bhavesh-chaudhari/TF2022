@@ -10,7 +10,7 @@ const mail = async (req: NextApiRequest, res: NextApiResponse) => {
         <p><strong>Message: </strong> ${userFeedback?.message} </p>`;
 
   // console.log(process.env.EMAIL, process.env.EMAIL_PASSWORD);
-        
+
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
@@ -34,8 +34,8 @@ const mail = async (req: NextApiRequest, res: NextApiResponse) => {
   const mailList = [
     "ts@iiitn.ac.in",
     "gs@iiitn.ac.in",
-    "tantrafiesta@iiitn.ac.in"
-  ]
+    "tantrafiesta@iiitn.ac.in",
+  ];
 
   const testMailList = [`${process.env.EMAIL}`];
 

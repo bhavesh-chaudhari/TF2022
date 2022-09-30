@@ -31,10 +31,10 @@
 }
 
 @media screen and (max-width: 800px) {
-  .heading > h2{
+  .heading > h2 {
     font-size: 28px;
   }
-  .container{
+  .container {
     padding-bottom: 2rem;
   }
 }
