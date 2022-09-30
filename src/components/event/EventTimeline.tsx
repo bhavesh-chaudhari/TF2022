@@ -6,7 +6,12 @@ const EventTimeline = ({ timeline }: { timeline: any }) => {
   const currentDate = new Date();
 
   return (
-    <div id="timeline" className={styles["container"]}>
+    <div
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      id="timeline"
+      className={styles["container"]}
+    >
       <h2 className={styles["heading"]}>Timeline</h2>
       <div className={styles["underline"]} />
       <div className={styles["content"]}>

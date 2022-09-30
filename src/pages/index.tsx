@@ -37,7 +37,7 @@ const Home: NextPage = () => {
         <title>Tantrafiesta - 2022</title>
         <meta
           name="description"
-          content="Tantrafiesta is the annual science and technology festival of the Indian Institute of Information Technology, Nagpur."
+          content="Tantrafiesta is the annual science and technology festival of the Indian Institute of Information Technology, Nagpur. Tantrafiesta aims to provide a platform in order to establish a forum that will enable the exchange of knowledge, experience, and information related to a range of emerging technologies."
         />
         <meta
           name="keywords"

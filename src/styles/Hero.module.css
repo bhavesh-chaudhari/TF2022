@@ -1095,4 +1095,32 @@ Styles for Firefox
     animation: layer4RightAnim 0.5s ease 2s 1 forwards,
       moveDownUp 3s ease-in-out 1s 1 forwards;
   }
+
+  .cloud-left {
+    top: -8%;
+    left: 11%;
+    transform: scale(0.6) !important;
+    animation: cloudLeftAnim 2s ease-out 1.3s forwards;
+  }
+
+  .title {
+    animation: titleAnim 1s ease-out 2.6s 1 forwards;
+  }
+
+  .theme {
+    animation: themeHeadingAnimF 1s ease-out 3.4s 1 forwards;
+  }
+
+  @keyframes themeHeadingAnimF {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .countdown {
+    animation: themeHeadingAnim 1s ease-out 4s 1 forwards;
+  }
 }
