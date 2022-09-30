@@ -1,6 +1,7 @@
 import * as React from "react";
+import { SVGProps } from "react";
 
-const SvgDigitalTree = (props) => (
+const SvgDigitalTree = (props: SVGProps<SVGSVGElement>) => (
   <svg
     width={488}
     height={658}

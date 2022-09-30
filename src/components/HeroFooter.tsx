@@ -8,10 +8,8 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import styles from "../styles/HeroFooter.module.css";
-import { useRouter } from "next/router";
 
 const HeroFooter = () => {
-  const router = useRouter();
 
   return (
     <div className={styles["footer"]}>
@@ -20,9 +18,6 @@ const HeroFooter = () => {
         <a rel="noreferrer" href="mailto:ts@iiitn.ac.in">
           ts@iiitn.ac.in
         </a>
-        {/* <div className={styles["icon-container"]}>
-          <FaEnvelope className={styles["mail-icon"]} />
-        </div> */}
       </div>
       <div className={styles["social-handles"]}>
         <a

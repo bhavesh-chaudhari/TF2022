@@ -76,7 +76,7 @@
 .contacts {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   gap: 1.5rem;
 }
 
@@ -108,9 +108,6 @@
 
 .social-handles {
   display: grid;
-  /* flex-direction: column;
-  align-items: start;
-  justify-content: space-between; */
   grid-template-columns: auto auto;
   margin-right: 1rem;
   gap: 1rem;

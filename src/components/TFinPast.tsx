@@ -3,7 +3,6 @@ import styles from "../styles/TFinPast.module.css"
 import Slider from "react-slick";
 import LeftActive  from "./svgs/LeftActive";
 import RightActive from "./svgs/RightActive";
-import Link from "next/link";
 import tfInPastData from "../data/tfInPastData";
 import TfinPastCad from "./TfInPastCard";
 

@@ -1,6 +1,7 @@
 import * as React from "react";
+import { SVGProps } from "react";
 
-const SvgDarkCloudLeft1 = (props) => (
+const SvgDarkCloudLeft1 = (props: SVGProps<SVGSVGElement>) => (
   <svg
     width={264}
     height={38}

@@ -1,6 +1,7 @@
 import * as React from "react";
+import { SVGProps } from "react";
 
-const SvgCloudLeft = (props) => (
+const SvgCloudLeft = (props: SVGProps<SVGSVGElement>) => (
   <svg
     width={409}
     height={408}

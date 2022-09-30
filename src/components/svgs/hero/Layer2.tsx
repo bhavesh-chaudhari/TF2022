@@ -1,6 +1,7 @@
 import * as React from "react";
+import { SVGProps } from "react";
 
-const SvgLayer2 = (props) => (
+const SvgLayer2 = (props: SVGProps<SVGSVGElement>) => (
   <svg
     width={1920}
     height={306}

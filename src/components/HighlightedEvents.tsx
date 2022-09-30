@@ -1,25 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Link from "next/link";
 import NextImage from "next/image";
-import NextLink from "next/link";
 import styles from "../styles/HighlightedEvents.module.css";
-import { useMediaQuery } from "react-responsive";
 
 const HighlightedEvents = () => {
 
-  // const [aosDir, setAosDir] = useState("fade-up")
-
-  // const isMobile = useMediaQuery({ query: "(max-width: 600px)" });
-
-  // useEffect(()=>{
-  //   if(isMobile){
-  //     setAosDir("fade-right")
-  //   }
-  //   else{
-  //     setAosDir("fade-right");
-  //   }
-  // }, [isMobile])
-  
   return (
     <div className={styles["highlighted-events"]}>
       <div className={styles["content"]}>
