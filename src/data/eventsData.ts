@@ -2,51 +2,7 @@ const YEAR = 2022;
 
 const events = [
   {
-    id: 1,
-    name: "CodeFiesta",
-    organizer: "Dot Slash Community",
-    path: "codefiesta",
-    description: `The CodeFiesta 2022, presented by DotSlash Community, is a competitive
-programming contest that offers a platform for every coding geek out there,
-to hone their coding skills and compete with the rising coders.
-The CodeFiesta is organized under the banner of TantraFiesta 2022 on the
-GeeksforGeeks Platform(Event Sponsor). The contest consists of problems
-based on Algorithmic Skills, Logic Building and Data Structures, and will
-cover some of the most interesting concepts involved in problem-solving.
-`,
-    imgPath:
-      "https://res.cloudinary.com/doraexp69/image/upload/v1664543140/tf2022/tantrafiesta-codefiesta_ignxkf.png",
-    registrationLink:
-      "https://practice.geeksforgeeks.org/contest/codefiesta-by-iiit-nagpur",
-    timeline: [
-      {
-        id: 1,
-        title: "Registration Starts",
-        date: new Date(YEAR, 8, 15, 0, 0, 0, 0),
-      },
-      {
-        id: 2,
-        title: "Coding Contest",
-        date: new Date(YEAR, 9, 12, 0, 0, 0, 0),
-        start: new Date(YEAR, 9, 12, 20, 0, 0, 0),
-        end: new Date(YEAR, 9, 12, 22, 0, 0, 0),
-      },
-    ],
-    prizes: ["Cash Prizes worth INR 75,000"],
-    registration_deadline: [
-      new Date(YEAR, 8, 15, 0, 0, 0, 0),
-      new Date(YEAR, 9, 11, 10, 0, 0, 0),
-    ],
-    meta: {
-      description: `The CodeFiesta is organized under the banner of TantraFiesta 2022 on the
-GeeksforGeeks Platform(Event Sponsor), presented by DotSlash Community.`,
-      keywords: "CodeFiesta, TantraFiesta, DotSlash Community",
-      image:
-        "https://res.cloudinary.com/doraexp69/image/upload/v1663765902/tf2022/tantrafiesta-logo.png",
-    },
-  },
-  {
-    id: 2,
+    id: 3,
     name: "HackMe",
     organizer: "Skills Nights",
     path: "hackme",
@@ -124,7 +80,136 @@ GeeksforGeeks Platform(Event Sponsor), presented by DotSlash Community.`,
     },
   },
   {
-    id: 3,
+    id: 4,
+    name: "CodeFiesta",
+    organizer: "Dot Slash Community",
+    path: "codefiesta",
+    description: `The CodeFiesta 2022, presented by DotSlash Community, is a competitive
+programming contest that offers a platform for every coding geek out there,
+to hone their coding skills and compete with the rising coders.
+The CodeFiesta is organized under the banner of TantraFiesta 2022 on the
+GeeksforGeeks Platform(Event Sponsor). The contest consists of problems
+based on Algorithmic Skills, Logic Building and Data Structures, and will
+cover some of the most interesting concepts involved in problem-solving.
+`,
+    imgPath:
+      "https://res.cloudinary.com/doraexp69/image/upload/v1664543140/tf2022/tantrafiesta-codefiesta_ignxkf.png",
+    registrationLink:
+      "https://practice.geeksforgeeks.org/contest/codefiesta-by-iiit-nagpur",
+    timeline: [
+      {
+        id: 1,
+        title: "Registration Starts",
+        date: new Date(YEAR, 8, 15, 0, 0, 0, 0),
+      },
+      {
+        id: 2,
+        title: "Coding Contest",
+        date: new Date(YEAR, 9, 12, 0, 0, 0, 0),
+        start: new Date(YEAR, 9, 12, 20, 0, 0, 0),
+        end: new Date(YEAR, 9, 12, 22, 0, 0, 0),
+      },
+    ],
+    prizes: ["Cash Prizes worth INR 75,000"],
+    registration_deadline: [
+      new Date(YEAR, 8, 15, 0, 0, 0, 0),
+      new Date(YEAR, 9, 11, 10, 0, 0, 0),
+    ],
+    meta: {
+      description: `The CodeFiesta is organized under the banner of TantraFiesta 2022 on the
+GeeksforGeeks Platform(Event Sponsor), presented by DotSlash Community.`,
+      keywords: "CodeFiesta, TantraFiesta, DotSlash Community",
+      image:
+        "https://res.cloudinary.com/doraexp69/image/upload/v1663765902/tf2022/tantrafiesta-logo.png",
+    },
+  },
+  {
+    id: 5,
+    name: "CodeMin",
+    organizer: "Dot Slash Community",
+    path: "codemin",
+    description: `CodeMin is a competitive programming contest where the participants don’t just need to solve the problems but write their code using the minimum number of characters. Solve the problems, optimize your code and shorten it. The shortest solution wins it all! 
+`,
+    imgPath: "/media/codemin.png",
+    registrationLink: "https://www.hackerrank.com/codemin2k22",
+    timeline: [
+      {
+        id: 1,
+        title: "Registration Starts",
+        date: new Date(YEAR, 8, 29, 0, 0, 0, 0),
+      },
+      {
+        id: 2,
+        title: "Registration Ends",
+        date: new Date(YEAR, 9, 13, 19, 30, 0, 0),
+      },
+      {
+        id: 3,
+        title: "Coding Contest",
+        date: new Date(YEAR, 9, 13, 0, 0, 0, 0),
+        start: new Date(YEAR, 9, 13, 20, 0, 0, 0),
+        end: new Date(YEAR, 9, 13, 22, 0, 0, 0),
+      },
+    ],
+    prizes: ["Winner: ₹10,000", "Runner Up: ₹7,500", "2nd Runner Up: ₹5,000"],
+    registration_deadline: [
+      new Date(YEAR, 8, 29, 0, 0, 0, 0),
+      new Date(YEAR, 9, 13, 19, 30, 0, 0),
+    ],
+    meta: {
+      description: `The CodeMin is organized under the banner of TantraFiesta 2022 on the
+Hackerrank, presented by DotSlash Community.`,
+      keywords: "CodeMin, TantraFiesta, DotSlash Community",
+      image: "/media/codemin.png",
+    },
+  },
+  {
+    id: 6,
+    name: "Finding Nemo",
+    organizer: "Udyam, E-Cell IIIT Nagpur",
+    path: "finding-nemo",
+    description: `Get ready to unplug, relax and refresh your creativity because
+    Udyam, the E-Cell wing of IIIT Nagpur, is pleased to announce
+    Finding Nemo, aintensive two-round treasure hunt
+    competition. This thrilling event will take place on the 15 th of
+    October. Finding Nemo is just the perfect event for you to
+    ignite the inner detective hidden deep inside you. Fire your
+    neurons to work, decode the clues, and get to the ultimate
+    treasure. It's the super hysterical ride of mysteries and
+    unrevealed secrets for the ultimate treasure-hunting event!
+`,
+    imgPath: "/media/finding-nemo.png",
+    registrationLink: null,
+    timeline: [
+      {
+        id: 1,
+        title: "Registration Starts (On Spot)",
+        date: new Date(YEAR, 9, 15, 0, 0, 0, 0),
+      },
+      {
+        id: 2,
+        title: "Round 1",
+        date: new Date(YEAR, 9, 15, 11, 0, 0, 0),
+      },
+      {
+        id: 3,
+        title: "Round 2",
+        date: new Date(YEAR, 9, 15, 15, 0, 0, 0),
+      },
+    ],
+    prizes: ["Prize Pool: ₹10,000"],
+    registration_deadline: [
+      new Date(YEAR, 8, 29, 0, 0, 0, 0),
+      new Date(YEAR, 9, 13, 19, 30, 0, 0),
+    ],
+    meta: {
+      description: `Finding Nemo is organized under the banner of TantraFiesta 2022 at the permanent campus of IIIT Nagpur, presented by Udyam, E-Cell IIIT Nagpur.`,
+      keywords: "Finding Nemo, TantraFiesta, Udyam, E-Cell IIIT Nagpur",
+      image: "/media/finding-nemo.png",
+    },
+  },
+  {
+    id: 7,
     name: "Design-A-Thon",
     organizer: "Strokes",
     path: "designathon",
@@ -191,7 +276,104 @@ GeeksforGeeks Platform(Event Sponsor), presented by DotSlash Community.`,
     },
   },
   {
-    id: 4,
+    id: 8,
+    name: "Twist 'n Turns",
+    organizer: "Eklavya",
+    path: "twist-n-turns",
+    description: `'Twist n Turns' is a Rubik's cube competition organized by the
+    sports club under the hood of TantraFiesta, our annual tech-
+    fest. No pre-registration will is required for you to participate
+    in this event. All present on the campus during Tantrafiesta
+    will be eligible to participate. You need to solve the cube as
+    fast as possible. The lightning-fast to solve will be declared the
+    winner.
+    `,
+    imgPath: "/media/twist-n-turns.png",
+    registrationLink: null,
+    timeline: [
+      {
+        id: 1,
+        title: "Registration Start (On Spot)",
+        date: new Date(YEAR, 9, 16, 12, 0, 0, 0),
+      },
+    ],
+    prizes: ["Prize pool of Rs. 21000/-"],
+    registration_deadline: null,
+    meta: {
+      description: ` Twist n Turns is a Rubik's cube competition organized by the
+      sports club under the hood of TantraFiesta, our annual tech-
+      fest.`,
+      keywords: "Twist N Turns, Tantrafiesta, Eklavya Sports Club",
+      image: "/media/twist-n-turns.png",
+    },
+  },
+  {
+    id: 9,
+    name: "Clash of Words",
+    organizer: "Orator",
+    path: "clash-of-words",
+    description: `It is easy to think about technology but isn't it harder to put it into words? Nevertheless, none of them ever mentioned that it’s impossible! 
+    The Orator Club at IIIT Nagpur presents to you one of the most requested events of the Fest, ‘Clash Of Words’ to be conducted under the hood of Tantra Fiesta 2k22, the biggest annual Tech event of IIIT Nagpur.`,
+    imgPath:
+      "https://res.cloudinary.com/doraexp69/image/upload/v1664543140/tf2022/tantrafiesta-clash-of-words_cbvfgv.png",
+    registrationLink:
+      "https://unstop.com/competition/clash-of-words-tech-debate-tantrafiesta-2022-indian-institute-of-information-technology-iiit-nagpur-438532",
+    timeline: [
+      {
+        id: 1,
+        title: "Registration begins",
+        date: new Date(YEAR, 8, 17, 12, 0, 0, 0),
+      },
+      {
+        id: 2,
+        title: "Registration ends",
+        date: new Date(YEAR, 8, 24, 12, 0, 0, 0),
+      },
+      {
+        id: 3,
+        title: "Topic Reveal",
+        date: new Date(YEAR, 8, 25, 18, 0, 0, 0),
+      },
+      {
+        id: 4,
+        title: "Round 1 Submission",
+        date: new Date(YEAR, 8, 28, 24, 0, 0, 0),
+      },
+      {
+        id: 5,
+        title: "Round 1 Results",
+        date: new Date(YEAR, 8, 30, 12, 0, 0, 0),
+      },
+      {
+        id: 6,
+        title: "Topic Reveal for Round 2",
+        date: new Date(YEAR, 9, 1, 12, 0, 0, 0),
+      },
+      {
+        id: 7,
+        title: "Offline Rounds",
+        date: new Date(YEAR, 9, 15, 12, 0, 0, 0),
+      },
+      {
+        id: 8,
+        title: "Closing Ceremony",
+        date: new Date(YEAR, 9, 16, 12, 0, 0, 0),
+      },
+    ],
+    prizes: ["Prize pool of Rs. 11000/-"],
+    registration_deadline: [
+      new Date(YEAR, 8, 17, 12, 0, 0, 0),
+      new Date(YEAR, 8, 24, 12, 0, 0, 0),
+    ],
+    meta: {
+      description: `The Orator Club at IIIT Nagpur presents one of the most requested events, ‘Clash Of Words’ to be conducted under the hood of Tantra Fiesta 2k22.`,
+      keywords: "Clash Of Words, TantraFiesta, Orator Club IIITN",
+      image:
+        "https://res.cloudinary.com/doraexp69/image/upload/v1663765902/tf2022/tantrafiesta-logo.png",
+    },
+  },
+  {
+    id: 14,
     name: "RoboRumble",
     organizer: "Iotics",
     path: "robo-rumble",
@@ -257,71 +439,6 @@ GeeksforGeeks Platform(Event Sponsor), presented by DotSlash Community.`,
       keywords: "Robo Rumble, Tantrafiesta, iotics iiitn",
       image:
         "https://res.cloudinary.com/doraexp69/image/upload/v1664606328/tf2022/tantrafiesta-robo-rumble-banner.webp",
-    },
-  },
-  {
-    id: 5,
-    name: "Clash of Words",
-    organizer: "Orator",
-    path: "clash-of-words",
-    description: `It is easy to think about technology but isn't it harder to put it into words? Nevertheless, none of them ever mentioned that it’s impossible! 
-    The Orator Club at IIIT Nagpur presents to you one of the most requested events of the Fest, ‘Clash Of Words’ to be conducted under the hood of Tantra Fiesta 2k22, the biggest annual Tech event of IIIT Nagpur.`,
-    imgPath:
-      "https://res.cloudinary.com/doraexp69/image/upload/v1664543140/tf2022/tantrafiesta-clash-of-words_cbvfgv.png",
-    registrationLink:
-      "https://unstop.com/competition/clash-of-words-tech-debate-tantrafiesta-2022-indian-institute-of-information-technology-iiit-nagpur-438532",
-    timeline: [
-      {
-        id: 1,
-        title: "Registration begins",
-        date: new Date(YEAR, 8, 17, 12, 0, 0, 0),
-      },
-      {
-        id: 2,
-        title: "Registration ends",
-        date: new Date(YEAR, 8, 24, 12, 0, 0, 0),
-      },
-      {
-        id: 3,
-        title: "Topic Reveal",
-        date: new Date(YEAR, 8, 25, 18, 0, 0, 0),
-      },
-      {
-        id: 4,
-        title: "Round 1 Submission",
-        date: new Date(YEAR, 8, 28, 24, 0, 0, 0),
-      },
-      {
-        id: 5,
-        title: "Round 1 Results",
-        date: new Date(YEAR, 8, 30, 12, 0, 0, 0),
-      },
-      {
-        id: 6,
-        title: "Topic Reveal for Round 2",
-        date: new Date(YEAR, 9, 1, 12, 0, 0, 0),
-      },
-      {
-        id: 7,
-        title: "Offline Rounds",
-        date: new Date(YEAR, 9, 15, 12, 0, 0, 0),
-      },
-      {
-        id: 8,
-        title: "Closing Ceremony",
-        date: new Date(YEAR, 9, 16, 12, 0, 0, 0),
-      },
-    ],
-    prizes: ["Prize pool of Rs. 11000/-"],
-    registration_deadline: [
-      new Date(YEAR, 8, 17, 12, 0, 0, 0),
-      new Date(YEAR, 8, 24, 12, 0, 0, 0),
-    ],
-    meta: {
-      description: `The Orator Club at IIIT Nagpur presents one of the most requested events, ‘Clash Of Words’ to be conducted under the hood of Tantra Fiesta 2k22.`,
-      keywords: "Clash Of Words, TantraFiesta, Orator Club IIITN",
-      image:
-        "https://res.cloudinary.com/doraexp69/image/upload/v1663765902/tf2022/tantrafiesta-logo.png",
     },
   },
   {

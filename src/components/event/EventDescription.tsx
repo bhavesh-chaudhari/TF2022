@@ -124,7 +124,7 @@ const EventDescription = ({
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Register Now
+                  {registrationLink ? "Register Now" : "On Spot Registration"}
                 </a>
               </div>
               <h4>Share with friends</h4>
