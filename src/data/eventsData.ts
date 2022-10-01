@@ -340,7 +340,7 @@ GeeksforGeeks Platform(Event Sponsor), presented by DotSlash Community.`,
       {
         id: 1,
         title: "Registration begins",
-        date: new Date(YEAR, 9, 8, 12, 0, 0, 0),
+        date: new Date(YEAR, 8, 28, 12, 0, 0, 0),
       },
       {
         id: 2,
@@ -355,7 +355,7 @@ GeeksforGeeks Platform(Event Sponsor), presented by DotSlash Community.`,
     ],
     prizes: ["Winner: ₹1000/-", "Runner up: ₹500/-", "3rd Place: ₹250/-"],
     registration_deadline: [
-      new Date(YEAR, 9, 8, 12, 0, 0, 0),
+      new Date(YEAR, 8, 28, 12, 0, 0, 0),
       new Date(YEAR, 9, 12, 12, 0, 0, 0),
     ],
     meta: {

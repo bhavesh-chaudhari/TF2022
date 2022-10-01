@@ -116,7 +116,7 @@ const Navbar = () => {
           <div className={styles["mobile-menu-logo"]}>
             <div className={styles["mobile-menu-logo-content"]}>
               <Image
-                src="/media/logo.png"
+                src="https://res.cloudinary.com/doraexp69/image/upload/v1664546262/tf2022/logo_jtojki.png"
                 height={100}
                 width={100}
                 alt="logo"
