@@ -4,7 +4,7 @@ import BgWrapper from "../components/BgWrapper";
 import Head from "next/head";
 import { format } from "date-fns";
 import Script from "next/script";
-import {useRouter} from "next/router"
+import { useRouter } from "next/router";
 
 interface EventProps {
   children: ReactNode;
@@ -14,7 +14,7 @@ interface EventProps {
 const EventLayout = ({ children, event }: EventProps) => {
   const { meta } = event;
 
-  const router = useRouter()
+  const router = useRouter();
 
   const structuredData = {
     "@context": "http://schema.org",

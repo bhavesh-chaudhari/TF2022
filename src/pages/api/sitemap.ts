@@ -12,6 +12,7 @@ const mysitemap = async (req: NextApiRequest, res: NextApiResponse) => {
     { url: "/events/robo-rumble", changefreq: "daily", priority: 0.8 },
     { url: "/events/clash-of-words", changefreq: "daily", priority: 0.8 },
     { url: "/events/designathon", changefreq: "daily", priority: 0.8 },
+    { url: "/events/maymay", changefreq: "daily", priority: 0.8 },
   ];
 
   // Create a stream to write to
