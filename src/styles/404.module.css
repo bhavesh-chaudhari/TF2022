@@ -1,24 +1,24 @@
-.container{
-    padding-top: 65px;
-    min-height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: black;
+.container {
+  padding-top: 65px;
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: black;
 }
 
-.heading > h1{
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    color: #2b9348;
+.heading > h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: #2b9348;
 }
 
-.heading > h1 > span{
-    color: #d2d41f;
+.heading > h1 > span {
+  color: #d2d41f;
 }
 
-.back > a{
-    border-bottom: 1px solid black;
-    color: white;
+.back > a {
+  border-bottom: 1px solid black;
+  color: white;
 }

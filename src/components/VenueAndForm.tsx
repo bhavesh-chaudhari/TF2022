@@ -7,7 +7,10 @@ const VenueAndForm = () => {
 
   useEffect(() => {
     const onScroll = (event: Event) => {
-      if (window.scrollY > window.innerHeight && window.scrollY < window.innerHeight + 100) {
+      if (
+        window.scrollY > window.innerHeight &&
+        window.scrollY < window.innerHeight + 100
+      ) {
         setRenderMap(true);
       }
     };

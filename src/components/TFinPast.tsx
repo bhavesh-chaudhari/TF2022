@@ -1,14 +1,14 @@
 import React from "react";
-import styles from "../styles/TFinPast.module.css"
+import styles from "../styles/TFinPast.module.css";
 import Slider from "react-slick";
-import LeftActive  from "./svgs/LeftActive";
+import LeftActive from "./svgs/LeftActive";
 import RightActive from "./svgs/RightActive";
 import tfInPastData from "../data/tfInPastData";
 import dynamic from "next/dynamic";
 
-const TfinPastCard = dynamic(()=>{
-  return import("./TfInPastCard")
-})
+const TfinPastCard = dynamic(() => {
+  return import("./TfInPastCard");
+});
 
 const ArrowLeft = (props: any) => {
   const { className, style, onClick } = props;
@@ -55,9 +55,14 @@ const FromTheTeam = () => {
   };
 
   return (
-    <div data-aos="fade-up" data-aos-duration="800" id="past-glimpse" className={styles["container"]}>
+    <div
+      data-aos="fade-up"
+      data-aos-duration="800"
+      id="past-glimpse"
+      className={styles["container"]}
+    >
       <div className={styles["heading"]}>
-        <h2 className="yellow-bottom" >Past Glimpse</h2>
+        <h2 className="yellow-bottom">Past Glimpse</h2>
       </div>
       <div className={styles["from-carousel-container"]}>
         <Slider {...settings}>

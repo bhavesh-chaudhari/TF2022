@@ -109,11 +109,11 @@
   display: none;
 }
 
-@media screen and (max-width: 1200px){
-  .navbar{
+@media screen and (max-width: 1200px) {
+  .navbar {
     width: 90%;
   }
-  .nav-links ul{
+  .nav-links ul {
     gap: 2rem;
   }
 }

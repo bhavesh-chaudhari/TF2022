@@ -4,7 +4,6 @@ import NextImage from "next/image";
 import styles from "../styles/HighlightedEvents.module.css";
 
 const HighlightedEvents = () => {
-
   return (
     <div className={styles["highlighted-events"]}>
       <div className={styles["content"]}>

@@ -8,7 +8,7 @@
   margin-top: 65px;
 }
 
-.content{
+.content {
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -23,7 +23,7 @@
   margin-bottom: 2.5rem;
 }
 
-.heading > h2{
+.heading > h2 {
   font-size: 40px;
 }
 
@@ -39,24 +39,24 @@
   border-bottom: none;
   padding: 2rem 2rem;
   border-radius: 20px;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
 }
 
 @media screen and (max-width: 1200px) {
-  .content{
+  .content {
     width: 90%;
   }
-  
 }
 
 @media (max-width: 600px) {
-  .heading > h2{
+  .heading > h2 {
     font-size: 28px;
   }
   .description {
     font-size: 1rem;
   }
-  .about-tantra{
+  .about-tantra {
     padding-bottom: 2rem;
   }
 }

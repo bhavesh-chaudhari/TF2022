@@ -161,7 +161,7 @@
 }
 
 @media screen and (max-width: 810px) {
-  .container{
+  .container {
     padding-top: 1rem;
     padding-bottom: 2rem;
     margin-top: 0;
@@ -181,7 +181,7 @@
     gap: 3rem;
     width: 100%;
   }
-  .card{
+  .card {
     min-width: 300px;
   }
   .cards > div:nth-child(odd) {

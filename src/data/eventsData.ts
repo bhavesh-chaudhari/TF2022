@@ -324,6 +324,45 @@ GeeksforGeeks Platform(Event Sponsor), presented by DotSlash Community.`,
         "https://res.cloudinary.com/doraexp69/image/upload/v1663765902/tf2022/tantrafiesta-logo.png",
     },
   },
+  {
+    id: 6,
+    name: "MayMay",
+    organizer: "Probe, Student Media Body",
+    path: "maymay",
+    description: `PROBE, The Student Media Body of IIITN, brings you MayMay, a meme-making fun competition. 
+    If some scenes ooze out your unnoticed comic humor, then this event is meant just for you to showcase your skills. 
+    If you believe you can make people laugh with your relatable-to-life memes, go on Create, share, and make people laugh.`,
+    imgPath: "/media/maymay.png",
+    registrationLink:
+      "https://unstop.com/hackathon/maymay-meme-humour-event-tantrafiesta-2022-indian-institute-of-information-technology-iiit-nagpur-443597",
+    timeline: [
+      {
+        id: 1,
+        title: "Registration begins",
+        date: new Date(YEAR, 9, 8, 12, 0, 0, 0),
+      },
+      {
+        id: 2,
+        title: "Registration ends",
+        date: new Date(YEAR, 9, 12, 24, 0, 0, 0),
+      },
+      {
+        id: 3,
+        title: "Meme Submission",
+        date: new Date(YEAR, 9, 12, 24, 0, 0, 0),
+      },
+    ],
+    prizes: ["Winner: ₹1000/-", "Runner up: ₹500/-", "3rd Place: ₹250/-"],
+    registration_deadline: [
+      new Date(YEAR, 9, 8, 12, 0, 0, 0),
+      new Date(YEAR, 9, 12, 12, 0, 0, 0),
+    ],
+    meta: {
+      description: `The Probe Student Media Body at IIIT Nagpur presents one of the most requested events, ‘MayMay’ to be conducted under the hood of Tantra Fiesta 2022.`,
+      keywords: "MayMay, TantraFiesta, Probe Student Media Body IIITN",
+      image: "/media/maymay.png",
+    },
+  },
 ];
 
 export default events;

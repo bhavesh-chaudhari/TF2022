@@ -20,7 +20,7 @@ const Navbar = () => {
       id: 2,
       path: "/events",
       name: "Events",
-      type: "page"
+      type: "page",
     },
     {
       id: 3,
@@ -37,7 +37,7 @@ const Navbar = () => {
       (navEl as any).current.style.opacity = 0;
 
       const onScroll = (event: Event) => {
-        if (window.scrollY > window.innerHeight - 1 ) {
+        if (window.scrollY > window.innerHeight - 1) {
           (navEl as any).current.style.visibility = "visible";
           (navEl as any).current.style.opacity = 1;
           (navEl as any).current.classList.add(styles["fadeIn"]);

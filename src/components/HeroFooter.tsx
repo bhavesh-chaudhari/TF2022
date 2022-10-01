@@ -10,7 +10,6 @@ import {
 import styles from "../styles/HeroFooter.module.css";
 
 const HeroFooter = () => {
-
   return (
     <div className={styles["footer"]}>
       <div className={styles["contact-us"]}>

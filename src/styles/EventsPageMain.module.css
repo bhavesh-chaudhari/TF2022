@@ -6,7 +6,7 @@
   margin-top: 65px;
 }
 
-.content{
+.content {
   width: 80%;
 }
 
@@ -17,7 +17,7 @@
   margin-bottom: 4rem;
 }
 
-.heading > h1{
+.heading > h1 {
   font-size: 44px;
 }
 
@@ -35,7 +35,7 @@
   height: 100%;
 }
 
-.image-container{
+.image-container {
   transition: all 0.3s ease;
   position: relative;
   cursor: pointer;
@@ -51,41 +51,40 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .content{
+  .content {
     width: 90%;
   }
-  .components{
+  .components {
     min-height: 340px;
     gap: 1.5rem;
   }
 }
 
-@media screen and (max-width: 900px){
-  .components{
+@media screen and (max-width: 900px) {
+  .components {
     min-height: 250px;
   }
-  
 }
 
 @media (max-width: 900px) {
-  .highlighted-events{
+  .highlighted-events {
     margin-bottom: 3rem;
   }
-  .heading > h1{
+  .heading > h1 {
     font-size: 30px;
   }
-  .components{
+  .components {
     display: flex;
     align-content: center;
     flex-direction: column;
     gap: 2rem;
   }
-  .image-container{
+  .image-container {
     min-height: 350px;
     width: 100%;
     max-width: 450px;
   }
-  .highlighted-events{
+  .highlighted-events {
     padding-bottom: 2rem;
   }
 }

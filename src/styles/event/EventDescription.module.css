@@ -50,14 +50,14 @@
   background-image: url("https://res.cloudinary.com/doraexp69/image/upload/v1664544040/tf2022/hoffman_lywcad.png");
 }
 
-.quick-details{
+.quick-details {
   display: flex;
   flex-direction: column;
   background: rgba(0, 0, 0, 0.3);
   padding-top: 3rem;
 }
 
-.quick-details > h3{
+.quick-details > h3 {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
   position: relative;
@@ -65,7 +65,7 @@
   text-align: center;
 }
 
-.quick-details > h3::after{
+.quick-details > h3::after {
   position: absolute;
   content: "";
   width: 100%;
@@ -76,7 +76,7 @@
   left: 0;
 }
 
-.quick-details > ul{
+.quick-details > ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -87,19 +87,19 @@
   margin-bottom: 1rem;
 }
 
-.quick-details > ul > li{
+.quick-details > ul > li {
   font-size: 18px;
 }
 
-.quick-details > ul > li > a >  span{
+.quick-details > ul > li > a > span {
   font-size: 14px;
 }
 
-.quick-details > ul > li > a{
+.quick-details > ul > li > a {
   transition: all 0.3s ease;
 }
 
-.quick-details > ul > li > a:hover{
+.quick-details > ul > li > a:hover {
   color: #eeef20;
 }
 
@@ -120,21 +120,21 @@
   text-align: center;
 }
 
-.link-container{
+.link-container {
   display: flex;
   flex-direction: column;
-   background: rgba(0, 0, 0, 0.3);
-   padding-top: 3rem;
+  background: rgba(0, 0, 0, 0.3);
+  padding-top: 3rem;
 }
 
-.link-container > h3{
+.link-container > h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   position: relative;
   text-align: center;
 }
 
-.link-container > h3::after{
+.link-container > h3::after {
   position: absolute;
   content: "";
   width: 100%;
@@ -145,11 +145,11 @@
   left: 0;
 }
 
-.links > h4{
+.links > h4 {
   margin-top: 1rem;
 }
 
-.links{
+.links {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -174,14 +174,15 @@
   text-align: center;
 }
 
-.link a, .link button{
-  padding: 5px 1rem !important;  
+.link a,
+.link button {
+  padding: 5px 1rem !important;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.link button svg{
+.link button svg {
   transform: scale(0.9);
   margin-right: 10px;
 }
@@ -191,73 +192,73 @@
   box-shadow: #eeef20 3px 3px 0px 0px;
 }
 
-.registration-link{
+.registration-link {
   background: #2b9348;
 }
 
-.share{
+.share {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
 }
 
-.share > .link{
+.share > .link {
   width: 40%;
 }
 
-@media screen and (max-width: 1200px){
-  .img-bg{
+@media screen and (max-width: 1200px) {
+  .img-bg {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
   }
-  .img-container{
-    grid-area: 1/1/span 1/ span 2;
+  .img-container {
+    grid-area: 1/1 / span 1 / span 2;
     max-width: 500px;
     left: 50%;
     transform: translate(-50%, 0);
   }
-  .link-container{
-    grid-area: 2/2/span 1/ span 1;
+  .link-container {
+    grid-area: 2/2 / span 1 / span 1;
   }
-  .quick-details{
-    grid-area: 2/1/span 1/ span 1;
+  .quick-details {
+    grid-area: 2/1 / span 1 / span 1;
   }
-  .quick-details > ul{
+  .quick-details > ul {
     text-align: center;
   }
 }
 
-@media screen and (max-width: 800px){
-  .content{
+@media screen and (max-width: 800px) {
+  .content {
     width: 90%;
   }
-  .img-bg{
+  .img-bg {
     grid-template-rows: auto auto auto;
     grid-template-columns: auto;
   }
- .img-container{
-    grid-area: 1/1/span 1/ span 1;
+  .img-container {
+    grid-area: 1/1 / span 1 / span 1;
     max-width: 500px;
     min-width: 230px;
     height: 340px;
   }
-  .link-container{
-    grid-area: 2/1/span 1/ span 1;
+  .link-container {
+    grid-area: 2/1 / span 1 / span 1;
   }
-  .links{
+  .links {
     margin-bottom: 0;
   }
-  .quick-details{
-    grid-area: 3/1/span 1/ span 1;
+  .quick-details {
+    grid-area: 3/1 / span 1 / span 1;
   }
-  .quick-details > ul{
+  .quick-details > ul {
     padding: 0;
     text-align: left;
     padding-left: 3rem;
     margin-bottom: 2rem;
   }
-  .quick-details > h3{
+  .quick-details > h3 {
     text-align: left;
     padding-left: 2rem;
   }
@@ -275,14 +276,14 @@
     text-transform: uppercase;
     text-align: center;
   }
-  .content{
+  .content {
     width: 90%;
   }
-  .img-bg{
+  .img-bg {
     padding: 2rem 1rem;
     padding: 0;
   }
-  .desc{
+  .desc {
     width: 97%;
     text-align: left;
   }

@@ -6,8 +6,7 @@ const HighlightedSpeakers = () => {
     <div className={styles["highlighted-speakers"]}>
       <h1 className={styles["heading"]}>SPEAKERS AT TF2022</h1>
       <div className={styles["underline"]}></div>
-      <div className={styles["components"]}>
-      </div>
+      <div className={styles["components"]}></div>
     </div>
   );
 };
