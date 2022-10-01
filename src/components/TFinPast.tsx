@@ -32,7 +32,7 @@ const ArrowRight = (props: any) => {
   );
 };
 
-const FromTheTeam = () => {
+const FromTheTeam = (): JSX.Element => {
   const settings = {
     dots: true,
     swipeToSlide: true,

@@ -76,7 +76,7 @@ const EventDescription = ({
   organizer,
   registrationLink,
   registration_deadline,
-}: Props) => {
+}: Props): JSX.Element => {
   return (
     <div className={styles["container"]}>
       <h1 className={styles["heading"]}>{name}</h1>

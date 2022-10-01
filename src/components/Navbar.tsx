@@ -4,8 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Navbar.module.css";
 
-const Navbar = () => {
-  const [show, setShow] = useState(false);
+const Navbar = (): JSX.Element => {
+  const [show, setShow] = useState<boolean>(false);
 
   const router = useRouter();
   const navEl = useRef(null);
