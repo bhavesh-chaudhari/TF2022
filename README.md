@@ -8,7 +8,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/bhavesh-chaudhari/TF2022/">
+  <a href="https://www.tantrafiesta.in/">
     <img src="https://res.cloudinary.com/doraexp69/image/upload/v1662120132/tf2022/300547035_1156325745263673_5914964069821144507_n_ukmnyg.jpg" alt="Logo" width="150" height="150">
   </a>
 
