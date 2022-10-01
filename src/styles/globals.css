@@ -11,6 +11,11 @@ body {
   scroll-behavior: smooth;
 }
 
+body{
+  overflow-x: hidden;
+  width: 100vw;
+}
+
 :target {
   scroll-margin-top: 160px;
 }

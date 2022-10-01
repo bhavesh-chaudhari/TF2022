@@ -31,7 +31,7 @@ const VenueAndForm = () => {
               {renderMap ? (
                 <iframe
                   src={
-                    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3546.548469752466!2d79.02471591472347!3d20.95014039583395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0529518230f%3A0x45b76be0621cbb88!2sIIIT%20Nagpur!5e1!3m2!1sen!2sin!4v1664371684981!5m2!1sen!2sin"
+                    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.0591310121663!2d79.02471591472347!3d20.950140395833948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0529518230f%3A0x45b76be0621cbb88!2sIIIT%20Nagpur!5e0!3m2!1sen!2sin!4v1664568581327!5m2!1sen!2sin"
                   }
                   style={{ border: 0 }}
                   allowFullScreen
