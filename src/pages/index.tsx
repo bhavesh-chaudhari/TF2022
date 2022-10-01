@@ -34,7 +34,7 @@ const Home: NextPage = () => {
         />
         <meta
           name="keywords"
-          content="Tantrafiesta 2022, tf2022, Tantra, HackMe Tantrafiesta, Tantrafiesta IIIT Nagpur, IIIT Nagpur's Technical fest, Events in Nagpur, technical fest, iiit tech fest"
+          content="Tantrafiesta 2022, tf2022, tf2k22, Tantrafiesta IIIT Nagpur, IIIT Nagpur's Technical fest, Events in Nagpur, iiit tech fest, tantrafiesta website"
         />
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />

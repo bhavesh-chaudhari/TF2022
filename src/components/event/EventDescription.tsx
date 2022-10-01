@@ -176,7 +176,7 @@ const EventDescription = ({
                         ? String(window.location)
                         : ""
                     }
-                    title={`Hey! Checkout ${name} powered by TantraFiesta. Register yourself now and get ready for exciting events.`}
+                    title={`${name} - TanraFiesta 2k22`}
                     summary={description}
                     source={
                       typeof window !== "undefined" ? document.domain : ""

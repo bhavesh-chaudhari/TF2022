@@ -67,7 +67,7 @@ const Navbar = () => {
             <div className={styles["img"]}>
               <Image
                 src="https://res.cloudinary.com/doraexp69/image/upload/v1664546262/tf2022/logo_jtojki.png"
-                alt="Tantrafiesta Logo"
+                alt="Tantrafiesta"
                 layout="fill"
               ></Image>
             </div>

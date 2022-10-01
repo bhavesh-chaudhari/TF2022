@@ -120,7 +120,7 @@ GeeksforGeeks Platform(Event Sponsor), presented by DotSlash Community.`,
       description: `HackMe is a national-level hackathon aiming to spark original and fruitful thinking under the banner of TantraFiesta 2022.`,
       keywords: "HackMe, Tantrafiesta, Skills Nights IIITN",
       image:
-        "https://res.cloudinary.com/doraexp69/image/upload/v1664477847/tf2022/631e28d79621a_hackme_pcsehb.webp",
+        "https://res.cloudinary.com/doraexp69/image/upload/v1664606328/tf2022/tantrafiesta-hackme-banner.webp",
     },
   },
   {
@@ -145,7 +145,7 @@ GeeksforGeeks Platform(Event Sponsor), presented by DotSlash Community.`,
       {
         id: 2,
         title: "Registration ends",
-        date: new Date(YEAR, 9, 8, 12, 0, 0, 0),
+        date: new Date(YEAR, 9, 6, 12, 0, 0, 0),
       },
       {
         id: 3,
@@ -180,14 +180,14 @@ GeeksforGeeks Platform(Event Sponsor), presented by DotSlash Community.`,
     ],
     registration_deadline: [
       new Date(YEAR, 8, 25, 12, 0, 0, 0),
-      new Date(YEAR, 9, 8, 12, 0, 0, 0),
+      new Date(YEAR, 9, 6, 12, 0, 0, 0),
     ],
     meta: {
       description: ` Designathon is a two-round design hackathon organized by
     Strokes, the design club under the hood of TantraFiesta.`,
       keywords: "Designathon, Tantrafiesta, Strokes IIITN",
       image:
-        "https://res.cloudinary.com/doraexp69/image/upload/v1664477943/tf2022/63301ea2aa567_design-a-thon_kff0cs.webp",
+        "https://res.cloudinary.com/doraexp69/image/upload/v1664606328/tf2022/tantrafiesta-designathon-banner.webp",
     },
   },
   {
@@ -256,7 +256,7 @@ GeeksforGeeks Platform(Event Sponsor), presented by DotSlash Community.`,
       description: `Robo Rumble is a flagship robot competition organized by the Iotics Club of IIITN, under the banner of TantraFiesta 2k22`,
       keywords: "Robo Rumble, Tantrafiesta, iotics iiitn",
       image:
-        "https://res.cloudinary.com/doraexp69/image/upload/v1664477947/tf2022/632a041a85107_robo-rumble_fo81eg.webp",
+        "https://res.cloudinary.com/doraexp69/image/upload/v1664606328/tf2022/tantrafiesta-robo-rumble-banner.webp",
     },
   },
   {
@@ -327,12 +327,13 @@ GeeksforGeeks Platform(Event Sponsor), presented by DotSlash Community.`,
   {
     id: 6,
     name: "MayMay",
-    organizer: "Probe, Student Media Body",
+    organizer: "Probe, Student Media Body of IIITN",
     path: "maymay",
     description: `PROBE, The Student Media Body of IIITN, brings you MayMay, a meme-making fun competition. 
     If some scenes ooze out your unnoticed comic humor, then this event is meant just for you to showcase your skills. 
     If you believe you can make people laugh with your relatable-to-life memes, go on Create, share, and make people laugh.`,
-    imgPath: "/media/maymay.png",
+    imgPath:
+      "https://res.cloudinary.com/doraexp69/image/upload/v1664606764/tf2022/tantrafiesta-maymay.png",
     registrationLink:
       "https://unstop.com/hackathon/maymay-meme-humour-event-tantrafiesta-2022-indian-institute-of-information-technology-iiit-nagpur-443597",
     timeline: [
@@ -360,7 +361,8 @@ GeeksforGeeks Platform(Event Sponsor), presented by DotSlash Community.`,
     meta: {
       description: `The Probe Student Media Body at IIIT Nagpur presents one of the most requested events, ‘MayMay’ to be conducted under the hood of Tantra Fiesta 2022.`,
       keywords: "MayMay, TantraFiesta, Probe Student Media Body IIITN",
-      image: "/media/maymay.png",
+      image:
+        "https://res.cloudinary.com/doraexp69/image/upload/v1664606328/tf2022/tantrafiesta-maymay-banner.webp",
     },
   },
 ];

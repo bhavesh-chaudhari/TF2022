@@ -20,7 +20,7 @@ const Footer = () => {
               <div className={styles["img"]}>
                 <NextImage
                   src="https://res.cloudinary.com/doraexp69/image/upload/v1664546262/tf2022/logo_jtojki.png"
-                  alt="Tantrafiesta Logo"
+                  alt="Tantrafiesta"
                   layout="fill"
                 ></NextImage>
               </div>
@@ -34,7 +34,7 @@ const Footer = () => {
               <div className={`${styles["img"]} ${styles["iiitn-logo"]}`}>
                 <NextImage
                   src="https://res.cloudinary.com/doraexp69/image/upload/v1664546184/tf2022/iiitn_splyrz.png"
-                  alt="IIITN Logo"
+                  alt="IIITN"
                   layout="fill"
                 ></NextImage>
               </div>
