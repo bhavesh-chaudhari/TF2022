@@ -372,141 +372,127 @@ Hackerrank, presented by DotSlash Community.`,
         "https://res.cloudinary.com/doraexp69/image/upload/v1663765902/tf2022/tantrafiesta-logo.png",
     },
   },
-  { 
-    id:10,
-    name:"The Four Knights Game",
-    organizer:"Eklavya, Sports Club IIITN",
-    path:"the-four-knights-game",
-    description:`Shatranj is a two-day chess tournament where participants from around the country
+  {
+    id: 10,
+    name: "The Four Knights Game",
+    organizer: "Eklavya, Sports Club IIITN",
+    path: "four-knights-game",
+    description: `Shatranj is a two-day chess tournament where participants from around the country
     compete and rise to victory.`,
-    imgpath:"https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/banner/6335358441f7f_the-four-knights-game.png?d=1920x557",
-    registrationLink:"https://unstop.com/p/the-four-knights-game-tantrafiesta-2022-indian-institute-of-information-technology-iiit-nagpur-446269",
-    timeline:[
+    imgPath: "/media/four-knights-game.png",
+    registrationLink:
+      "https://unstop.com/p/the-four-knights-game-tantrafiesta-2022-indian-institute-of-information-technology-iiit-nagpur-446269",
+    timeline: [
       {
-        id:1,
-        title:"Registration begins",
-        date: new Date(YEAR,8,30,12,0,0,0),
-
+        id: 1,
+        title: "Registration begins",
+        date: new Date(YEAR, 8, 30, 12, 0, 0, 0),
       },
       {
-        id:2,
-        title:"Registration ends",
-        date: new Date(YEAR,9,5,12,0,0,0),
-
+        id: 2,
+        title: "Registration ends",
+        date: new Date(YEAR, 9, 5, 12, 0, 0, 0),
       },
       {
-        id:3,
-        title:"Round 1",
-        date: new Date(YEAR,9,10,12,0,0,0),
-        
+        id: 3,
+        title: "Round 1",
+        date: new Date(YEAR, 9, 10, 12, 0, 0, 0),
       },
       {
-        id:4,
-        title:"Round 2",
-        date: new Date(YEAR,9,14,12,0,0,0),
-        
-      }
-
+        id: 4,
+        title: "Round 2",
+        date: new Date(YEAR, 9, 14, 12, 0, 0, 0),
+      },
     ],
-    prizes:["Worth Rs.6000/-"],
-    registration_deadline:[
-      new Date(YEAR,9,5,12,0,0,0)
+    prizes: ["Worth Rs.6000/-"],
+    registration_deadline: [
+      new Date(YEAR, 8, 30, 12, 0, 0, 0),
+      new Date(YEAR, 9, 5, 12, 0, 0, 0),
     ],
-    meta:{
-      description:`Shatranj is a two-day chess tournament where participants from around the country
+    meta: {
+      description: `Shatranj is a two-day chess tournament where participants from around the country
       compete and rise to victory.`,
-      keywords:`The Four Knights Game, Tantrafiesta, chess tournament iiitn`,
-      image:"https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/banner/6335358441f7f_the-four-knights-game.png?d=1920x557"
-
-    }
-
-    
-
+      keywords: `The Four Knights Game, Tantrafiesta, chess tournament iiitn`,
+      image: "/media/four-knights-game.png",
+    },
   },
   {
-    id:11,
-    name:"Tour de Force ( Valorant )",
-    organizer:"Eklavya, Sports Club IIITN",
-    path:"tour-de-force",
-    description:`Tour De Force is our annual valorant championship organized under tantrafiesta 2k22. It is a
+    id: 11,
+    name: "Tour de Force ( Valorant )",
+    organizer: "Eklavya, Sports Club IIITN",
+    path: "tour-de-force",
+    description: `Tour De Force is our annual valorant championship organized under tantrafiesta 2k22. It is a
     single elimination tournament with a staggering prize pool of 11k, along with the finale on the
     16th of October.`,
-    imgpath:"https://d8it4huxumps7.cloudfront.net/uploads/images/festival/banner/6322460a4d045_instagram_post_-_35.png?d=1920x446",
-    registrationLink:"https://forms.gle/NTd928XD14B4Mmwp7",
-    timeline:[
+    imgPath: "/media/tour-de-france.png",
+    registrationLink: "https://forms.gle/NTd928XD14B4Mmwp7",
+    timeline: [
       {
-        id:1,
-        title:"Registration begins",
-        date: new Date(YEAR,9,1,12,0,0,0),
-
+        id: 1,
+        title: "Registration begins",
+        date: new Date(YEAR, 9, 1, 12, 0, 0, 0),
       },
       {
-        id:2,
-        title:"Registration ends",
-        date: new Date(YEAR,9,8,12,0,0,0),
-
+        id: 2,
+        title: "Registration ends",
+        date: new Date(YEAR, 9, 8, 12, 0, 0, 0),
       },
       {
-        id:3,
-        title:"Finale",
-        date: new Date(YEAR,9,16,12,0,0,0),
-        
-      }
-      
+        id: 3,
+        title: "Finale",
+        date: new Date(YEAR, 9, 16, 12, 0, 0, 0),
+      },
     ],
-    prizes:["Worth Rs.11000/-"],
-    registration_deadline:[
-      new Date(YEAR,9,8,12,0,0,0)
+    prizes: ["Worth Rs.11000/-"],
+    registration_deadline: [
+      new Date(YEAR, 9, 1, 12, 0, 0, 0),
+      new Date(YEAR, 9, 8, 12, 0, 0, 0),
     ],
-    meta:{
-      description:`Tour De Force is our annual valorant championship organized under tantrafiesta 2k22. It is a
+    meta: {
+      description: `Tour De Force is our annual valorant championship organized under tantrafiesta 2k22. It is a
       single elimination tournament with a staggering prize pool of 11k, along with the finale on the
       16th of October.`,
-      keywords:`Tour De Force,Tantrafiesta,Valorant iiitn`,
-      image:"https://d8it4huxumps7.cloudfront.net/uploads/images/festival/banner/6322460a4d045_instagram_post_-_35.png?d=1920x446"
-
-    }
+      keywords: `Tour De Force,Tantrafiesta,Valorant`,
+      image: "/media/tour-de-france.png",
+    },
   },
   {
-    id:12,
-    name:"Fall guy",
-    organizer:"Eklavya, Sports Club IIITN",
-    path:"fall-guy",
-    description:`Fall Guys is a platform battle royale game involving up to 60 players who control
+    id: 12,
+    name: "Fall guy",
+    organizer: "Eklavya, Sports Club IIITN",
+    path: "fall-guy",
+    description: `Fall Guys is a platform battle royale game involving up to 60 players who control
     jellybean-like creatures and compete against each other in a series of randomly selected
     mini-games, such as obstacle courses or tag. Come and join us for this fun little game with
     prizes up to Rs.3,000.`,
-    imgpath:"",
-    registrationLink:"",
-    timeline:[
+    imgPath: "/media/fall-guys.png",
+    registrationLink: "",
+    timeline: [
       {
-        id:1,
-        title:"Registration begins",
-        date: new Date(YEAR,9,16,12,0,0,0),
-
+        id: 1,
+        title: "Registration begins",
+        date: new Date(YEAR, 9, 16, 12, 0, 0, 0),
       },
-      
+
       {
-        id:2,
-        title:"Games",
-        date: new Date(YEAR,9,16,12,0,0,0),
-        
-      }
-      
+        id: 2,
+        title: "Games",
+        date: new Date(YEAR, 9, 16, 12, 0, 0, 0),
+      },
     ],
-    prizes:["Worth Rs.2000/-"],
-    registration_deadline:[
-      new Date(YEAR,9,16,12,0,0,0)
+    prizes: ["Worth Rs.2000/-"],
+    registration_deadline: [
+      new Date(YEAR, 9, 16, 12, 0, 0, 0),
+      new Date(YEAR, 9, 16, 12, 0, 0, 0),
     ],
-    meta:{
-      description:`Fall Guys is a platform battle royale game involving up to 60 players who control
+    meta: {
+      description: `Fall Guys is a platform battle royale game involving up to 60 players who control
       jellybean-like creatures and compete against each other in a series of randomly selected
       mini-games, such as obstacle courses or tag. Come and join us for this fun little game with
       prizes up to Rs.3,000.`,
-      keywords:`Fall Guy,Tantrafiesta,Eklavya iiitn`,
-      image:""
-
-    }
+      keywords: `Fall Guy,Tantrafiesta,Eklavya iiitn`,
+      image: "",
+    },
   },
   {
     id: 13,
@@ -618,7 +604,6 @@ Hackerrank, presented by DotSlash Community.`,
         "https://res.cloudinary.com/doraexp69/image/upload/v1664606328/tf2022/tantrafiesta-robo-rumble-banner.webp",
     },
   },
-  
   {
     id: 15,
     name: "Quizzes",
@@ -628,31 +613,28 @@ Hackerrank, presented by DotSlash Community.`,
     the scoreboard. This year's TantraFiesta brings you a unique opportunity to grab a quick
     cash prize.
     `,
-    imgPath:
-      "/media/event-name.png",
-    registrationLink:
-      "dummy",
+    imgPath: "/media/event-name.png",
+    registrationLink: null,
     timeline: [
       {
         id: 1,
         title: "Green Technology",
-       
+        date: new Date(YEAR, 9, 15, 22, 0, 0, 0),
       },
       {
         id: 2,
         title: " Movies and Entertainment",
-       
+        date: new Date(YEAR, 9, 15, 22, 0, 0, 0),
       },
       {
         id: 3,
         title: "Quiz Day",
-        date: new Date(YEAR,9,15,22,0,0,0)
-       
+        date: new Date(YEAR, 9, 15, 22, 0, 0, 0),
       },
-      
     ],
     prizes: ["Winner: Rs.2000/-"],
     registration_deadline: [
+      new Date(YEAR, 9, 15, 12, 0, 0, 0),
       new Date(YEAR, 9, 15, 12, 0, 0, 0),
     ],
     meta: {
@@ -660,8 +642,7 @@ Hackerrank, presented by DotSlash Community.`,
       the scoreboard. This year's TantraFiesta brings you a unique opportunity to grab a quick
       cash prize.`,
       keywords: "QUIZZ, Tantrafiesta,iiitn",
-      image:
-        "",
+      image: "",
     },
   },
   {
@@ -674,37 +655,32 @@ Hackerrank, presented by DotSlash Community.`,
     green tech amongst the upcoming generation along with rewards for their hard work and
     innovation.    
     `,
-    imgPath:
-      "/media/event-name.png",
-    registrationLink:
-      "dummy",
+    imgPath: "/media/event-name.png",
+    registrationLink: "dummy",
     timeline: [
       {
         id: 1,
         title: "Registration Start",
-        date: new Date(YEAR,8,27,12,0,0,0)
-
-       
+        date: new Date(YEAR, 8, 27, 12, 0, 0, 0),
       },
       {
         id: 2,
         title: "Registration End",
-        date: new Date(YEAR,9,5,12,0,0,0)
-       
+        date: new Date(YEAR, 9, 5, 12, 0, 0, 0),
       },
       {
         id: 3,
         title: "Science Exhibition",
-        date: new Date(YEAR,9,16,12,0,0,0)
-       
+        date: new Date(YEAR, 9, 16, 12, 0, 0, 0),
       },
-      
     ],
-    prizes: ["1 st Place: INR 10,000 Cash, Trophy and Certificate.",
-    "2 nd Place: INR 7,500 Cash, Trophy, and Certificate.",
-    "3 rd Place: INR 5,000 Cash, Trophy, and Certificate."
+    prizes: [
+      "1 st Place: INR 10,000 Cash, Trophy and Certificate.",
+      "2 nd Place: INR 7,500 Cash, Trophy, and Certificate.",
+      "3 rd Place: INR 5,000 Cash, Trophy, and Certificate.",
     ],
     registration_deadline: [
+      new Date(YEAR, 8, 27, 12, 0, 0, 0),
       new Date(YEAR, 9, 5, 12, 0, 0, 0),
     ],
     meta: {
@@ -713,15 +689,15 @@ Hackerrank, presented by DotSlash Community.`,
       green tech amongst the upcoming generation along with rewards for their hard work and
       innovation.`,
       keywords: "Scienfiesta, Tantrafiesta,Science Exhibition iiitn",
-      image:
-        "",
-    },},
-    {
-      id: 17,
-      name: "Game Jam",
-      organizer: "Dimensions",
-      path: "game-jam",
-      description: `Game Jam is an exciting single-round online mind-boggling competition where the teams
+      image: "",
+    },
+  },
+  {
+    id: 17,
+    name: "Game Jam",
+    organizer: "Dimensions",
+    path: "game-jam",
+    description: `Game Jam is an exciting single-round online mind-boggling competition where the teams
       (of 1-2 students) will be building a one-level 2D game (similar to Arcade, Platformer, etc.)
       that is to be judged on the basis of predefined parameters by the organizing committee.
       The games developed will then be given out to the audience(both offline and online) to
@@ -731,51 +707,42 @@ Hackerrank, presented by DotSlash Community.`,
       team would be rewarded and they take away the magnificent cash prize and other goodies
       back home.
       `,
-      imgPath:
-        "/media/event-name.png",
-      registrationLink:
-        "dummy",
-      timeline: [
-        {
-          id: 1,
-          title: "Registration Start",
-          date: new Date(YEAR,8,30,18,0,0,0)
-  
-         
-        },
-        {
-          id: 2,
-          title: "Registration End",
-          date: new Date(YEAR,9,7,16,0,0,0)
-         
-        },
-        {
-          id: 3,
-          title: "Theme Reveal",
-          date: new Date(YEAR,9,7,22,0,0,0)
-         
-        },
-        {
-          id: 4,
-          title: "Submision Ends",
-          date: new Date(YEAR,9,9,12,0,0,0)
-         
-        },
-        {
-          id: 5,
-          title: "Result Announcement",
-          date: new Date(YEAR,9,16,12,0,0,0)
-         
-        },
-        
-      ],
-      prizes: ["Prizes Worth : Rs.7000/-"
-      ],
-      registration_deadline: [
-        new Date(YEAR, 9, 7, 16, 0, 0, 0),
-      ],
-      meta: {
-        description: `Game Jam is an exciting single-round online mind-boggling competition where the teams
+    imgPath: "/media/gamejam.png",
+    registrationLink: "dummy",
+    timeline: [
+      {
+        id: 1,
+        title: "Registration Start",
+        date: new Date(YEAR, 8, 30, 18, 0, 0, 0),
+      },
+      {
+        id: 2,
+        title: "Registration End",
+        date: new Date(YEAR, 9, 7, 16, 0, 0, 0),
+      },
+      {
+        id: 3,
+        title: "Theme Reveal",
+        date: new Date(YEAR, 9, 7, 22, 0, 0, 0),
+      },
+      {
+        id: 4,
+        title: "Submision Ends",
+        date: new Date(YEAR, 9, 9, 12, 0, 0, 0),
+      },
+      {
+        id: 5,
+        title: "Result Announcement",
+        date: new Date(YEAR, 9, 16, 12, 0, 0, 0),
+      },
+    ],
+    prizes: ["Prizes Worth : Rs.7000/-"],
+    registration_deadline: [
+      new Date(YEAR, 8, 30, 18, 0, 0, 0),
+      new Date(YEAR, 9, 7, 16, 0, 0, 0),
+    ],
+    meta: {
+      description: `Game Jam is an exciting single-round online mind-boggling competition where the teams
         (of 1-2 students) will be building a one-level 2D game (similar to Arcade, Platformer, etc.)
         that is to be judged on the basis of predefined parameters by the organizing committee.
         The games developed will then be given out to the audience(both offline and online) to
@@ -784,10 +751,10 @@ Hackerrank, presented by DotSlash Community.`,
         best one. It's solely on the basis of the number of votes a particular game gets, the winning
         team would be rewarded and they take away the magnificent cash prize and other goodies
         back home`,
-        keywords: "Game Jam, Tantrafiesta,Dimensions Gmae Jam iiitn",
-        image:
-          "/media/event-name.png",
-      },}
+      keywords: "Game Jam, Tantrafiesta,Dimensions Gmae Jam iiitn",
+      image: "/media/event-name.png",
+    },
+  },
 ];
 
 export default events;
