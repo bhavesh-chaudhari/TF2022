@@ -80,7 +80,7 @@
   position: absolute;
   right: 0;
   top: 108%;
-  width: 8%;
+  width: 9%;
   height: 3px;
   transform: translate(100%, -50%) rotate(20deg);
   background: #eeef20;
@@ -204,5 +204,11 @@
   }
   .card > h3 {
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .card {
+    min-width: 0;
   }
 }

@@ -10,7 +10,7 @@ const HighlightedEvents = () => {
   return (
     <>
       <Head>
-        <title>Events - Tantrafiesta 2022</title>
+        <title>Events - TantraFiesta 2022</title>
         <meta
           name="description"
           content="Checkout the events in Tantrafiesta 2022. Tantrafiesta hosts a plethora of social initiatives and outreach programs such as hackathons, coding contests, robo-races, debates, and seminars that help inspire the next generation of scientists and engineers."
