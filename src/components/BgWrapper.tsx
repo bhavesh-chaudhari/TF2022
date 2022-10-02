@@ -6,7 +6,7 @@ interface Props {
   children?: ReactNode;
 }
 
-const BgWrapper = ({ children }: Props) => {
+const BgWrapper = ({ children }: Props): JSX.Element => {
   return (
     <div className={styles["bg-wrapper"]}>
       <div className={styles["content-wrapper"]}>{children}</div>

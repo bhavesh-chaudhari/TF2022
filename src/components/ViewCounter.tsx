@@ -1,7 +1,7 @@
 import useSWR from "swr";
 import fetcher from "../utils/fetcher";
 
-const ViewCounter = ({ state }: { state: boolean }) => {
+const ViewCounter = ({ state }: { state: boolean }): JSX.Element => {
   const { data } = useSWR<{ views: number }>(`/api/v1/views`, fetcher);
   const views = data?.views;
 

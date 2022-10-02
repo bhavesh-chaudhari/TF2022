@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 import styles from "../styles/HeroFooter.module.css";
 
-const HeroFooter = () => {
+const HeroFooter = (): JSX.Element => {
   return (
     <div className={styles["footer"]}>
       <div className={styles["contact-us"]}>

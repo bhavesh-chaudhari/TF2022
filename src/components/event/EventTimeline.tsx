@@ -2,7 +2,19 @@ import React from "react";
 import { format } from "date-fns";
 import styles from "../../styles/event/EventTimeline.module.css";
 
-const EventTimeline = ({ timeline }: { timeline: any }) => {
+interface Props {
+  timeline: [
+    {
+      id: number, 
+      title: string,
+      date: Date,
+      start?: Date,
+      end?: Date
+    }
+  ]
+}
+
+const EventTimeline = ({ timeline }: Props): JSX.Element => {
   const currentDate = new Date();
 
   return (
@@ -17,8 +29,7 @@ const EventTimeline = ({ timeline }: { timeline: any }) => {
       <div className={styles["content"]}>
         <div className={styles["timeline"]}>
           <div className={styles["cards"]}>
-            {timeline.map((item: any) => {
-              // console.log(currentDate > new Date(item.date));
+            {timeline.map((item) => {
               return (
                 <div
                   className={

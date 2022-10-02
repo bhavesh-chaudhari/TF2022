@@ -49,7 +49,7 @@ const renderer = ({
   }
 };
 
-const HeroCountDown = () => {
+const HeroCountDown = (): JSX.Element => {
   return (
     <div>
       <Countdown

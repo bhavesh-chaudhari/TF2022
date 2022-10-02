@@ -22,7 +22,7 @@ import HeroCountDown from "./HeroCountDown";
 import { BsChevronDoubleDown } from "react-icons/bs";
 import ViewCounter from "./ViewCounter";
 
-const Hero = () => {
+const Hero = (): JSX.Element => {
   const [greenState, setGreenState] = useState<any>(false);
   const containerRef = useRef<any>(null);
 

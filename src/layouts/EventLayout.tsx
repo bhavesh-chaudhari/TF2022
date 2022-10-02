@@ -5,6 +5,11 @@ import Head from "next/head";
 import { format } from "date-fns";
 import Script from "next/script";
 import { useRouter } from "next/router";
+import dynamic from "next/dynamic";
+
+const ContactForm = dynamic(() => {
+  return import("../components/ContactForm");
+});
 
 interface EventProps {
   children: ReactNode;
@@ -21,6 +26,9 @@ const EventLayout = ({ children, event }: EventProps) => {
     "@type": "Event",
     name: event.name,
     startDate: format(new Date(event.registration_deadline[0]), "yyyy-MM-dd"),
+    endDate: format(new Date(event.registration_deadline[1]), "yyyy-MM-dd"),
+    eventStatus: "https://schema.org/EventScheduled",
+    eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
     location: {
       "@type": "Place",
       name: "IIIT Nagpur",
@@ -37,15 +45,24 @@ const EventLayout = ({ children, event }: EventProps) => {
     description: event.description,
     url: `https://tantrafiesta.in/${router.asPath}`,
     performer: {
+      "@type": "PerformingGroup",
+      name: "TantraFiesta Participants",
+    },
+    organizer: {
       "@type": "Organization",
       name: event.organizer,
+      url: "https://www.tantrafiesta.in/",
+    },
+    offers: {
+      "@type": "Offer",
+      price: "Free",
     },
   };
 
   return (
     <>
       <Head>
-        <title>{event.name} - Tantrafiesta 2022</title>
+        <title>{event.name} - TantraFiesta 2022</title>
         <meta name="description" content={meta.description} />
         <meta
           name="keywords"
@@ -70,6 +87,9 @@ const EventLayout = ({ children, event }: EventProps) => {
       </Head>
       <BgWrapper>
         <div className={styles["container"]}>{children}</div>
+        <div data-aos="fade-up" data-aos-duration="1000" className={styles["form"]}>
+          <ContactForm></ContactForm>
+        </div>
       </BgWrapper>
       <Script
         id={`event-${event.id}`}

@@ -3,7 +3,7 @@ import Link from "next/link";
 import NextImage from "next/image";
 import styles from "../styles/HighlightedEvents.module.css";
 
-const HighlightedEvents = () => {
+const HighlightedEvents = (): JSX.Element => {
   return (
     <div className={styles["highlighted-events"]}>
       <div className={styles["content"]}>

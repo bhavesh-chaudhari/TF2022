@@ -9,6 +9,15 @@ const nextConfig = {
   images: {
     domains: ["res.cloudinary.com"],
   },
+  async redirects(){
+    return [
+      {
+        source: "/events/[event]",
+        destination: "/events",
+        permanent: false,
+      },
+    ];
+  }
 };
 
 const withPWA = require("next-pwa")({

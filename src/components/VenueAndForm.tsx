@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "../styles/VenueAndForm.module.css";
 import ContactForm from "./ContactForm";
 
-const VenueAndForm = () => {
+const VenueAndForm = (): JSX.Element => {
   const [renderMap, setRenderMap] = useState(false);
 
   useEffect(() => {
