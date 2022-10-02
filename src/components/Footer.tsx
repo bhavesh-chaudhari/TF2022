@@ -10,7 +10,7 @@ import {
 } from "react-icons/fa";
 import styles from "../styles/Footer.module.css";
 
-const Footer = () => {
+const Footer = (): JSX.Element => {
   return (
     <div className={styles["footer"]}>
       <div className={styles["logo-container"]}>

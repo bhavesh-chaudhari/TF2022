@@ -2,10 +2,17 @@ import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import styles from "../styles/TfInPastCard.module.css";
 
-const TfinPastCard = (props: any) => {
+interface Props {
+  imgPath?: string,
+  cardTitle: string,
+  cardPara: string,
+  hasVideo?: boolean
+}
+
+const TfinPastCard = (props: Props): JSX.Element => {
   const [readMore, setReadMore] = useState(true);
 
-  const { imgPath, cardTitle, cardPara, animation, hasVideo } = props;
+  const { imgPath, cardTitle, cardPara, hasVideo } = props;
 
   const media = useRef(null);
   const content = useRef(null);
@@ -43,7 +50,7 @@ const TfinPastCard = (props: any) => {
               srcDoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/0v4iftGneYk?autoplay=1><img src=https://img.youtube.com/vi/0v4iftGneYk/hqdefault.jpg alt='Video The Dark Knight Rises: What Went Wrong? – Wisecrack Edition'><span>▶</span></a>"
             ></iframe>
           ) : (
-            <Image layout="fill" src={imgPath} alt={`${cardTitle}`} />
+            <Image layout="fill" src={imgPath!} alt={`${cardTitle}`} />
           )}
         </div>
         <div ref={content} className={styles["card-content"]}>

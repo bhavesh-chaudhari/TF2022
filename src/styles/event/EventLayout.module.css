@@ -3,6 +3,13 @@
   margin-bottom: 2rem;
 }
 
+.form{
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
 @media screen and (max-width: 600px) {
   .container {
     margin-bottom: 0;

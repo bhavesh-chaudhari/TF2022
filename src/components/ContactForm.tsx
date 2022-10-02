@@ -8,7 +8,7 @@ const initialFormValues = {
   message: "",
 };
 
-const ContactForm = () => {
+const ContactForm = (): JSX.Element => {
   const [formValues, setFormValues] = useState(initialFormValues);
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../styles/AboutTantra.module.css";
 
-const AboutTantra = () => {
+const AboutTantra = (): JSX.Element => {
   return (
     <div id="about-tantra" className={styles["about-tantra"]}>
       <div className={styles["content"]}>

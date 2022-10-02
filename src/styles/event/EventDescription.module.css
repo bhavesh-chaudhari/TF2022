@@ -283,6 +283,9 @@
     padding: 2rem 1rem;
     padding: 0;
   }
+  .quick-details > ul{
+    padding-right: 12px;
+  }
   .desc {
     width: 97%;
     text-align: left;

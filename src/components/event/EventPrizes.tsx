@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../../styles/event/EventPrizes.module.css";
 
-const EventPrizes = ({ prizes }: { prizes: string[] }) => {
+const EventPrizes = ({ prizes }: { prizes: string[] }): JSX.Element => {
   return (
     <div
       data-aos="zoom-in"

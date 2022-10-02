@@ -1,18 +1,23 @@
 const { SitemapStream, streamToPromise } = require("sitemap");
 const { Readable } = require("stream");
 import { NextApiRequest, NextApiResponse } from "next";
+import events from "../../data/eventsData";
 
 const mysitemap = async (req: NextApiRequest, res: NextApiResponse) => {
   // An array with your links
+
+  const eventPageLinks = events.map(event=>{
+    return {
+      url: `/events/${event.path}`,
+      changefreq: "daily",
+      priority: 0.9,
+    };
+  })
+  
   const links = [
     { url: "/", changefreq: "daily", priority: 1 },
     { url: "/events", changefreq: "daily", priority: 0.9 },
-    { url: "/events/hackme", changefreq: "daily", priority: 0.8 },
-    { url: "/events/codefiesta", changefreq: "daily", priority: 0.8 },
-    { url: "/events/robo-rumble", changefreq: "daily", priority: 0.8 },
-    { url: "/events/clash-of-words", changefreq: "daily", priority: 0.8 },
-    { url: "/events/designathon", changefreq: "daily", priority: 0.8 },
-    { url: "/events/maymay", changefreq: "daily", priority: 0.8 },
+    ...eventPageLinks
   ];
 
   // Create a stream to write to
