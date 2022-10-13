@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@prisma/client": "^4.3.1",
+    "@vercel/og": "^0.0.18",
     "aos": "^2.3.4",
     "date-fns": "^2.29.3",
     "next": "12.2.5",

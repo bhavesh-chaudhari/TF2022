@@ -130,7 +130,8 @@ GeeksforGeeks Platform(Event Sponsor), presented by DotSlash Community.`,
     path: "codemin",
     description: `CodeMin is a competitive programming contest where the participants don’t just need to solve the problems but write their code using the minimum number of characters. Solve the problems, optimize your code and shorten it. The shortest solution wins it all! 
 `,
-    imgPath: "/media/codemin.png",
+    imgPath:
+      "https://res.cloudinary.com/doraexp69/image/upload/v1664796048/tf2022/tantrafiesta-codemin.png",
     registrationLink: "https://www.hackerrank.com/codemin2k22",
     timeline: [
       {
@@ -178,7 +179,7 @@ Hackerrank, presented by DotSlash Community.`,
     treasure. It's the super hysterical ride of mysteries and
     unrevealed secrets for the ultimate treasure-hunting event!
 `,
-    imgPath: "/media/finding-nemo.png",
+    imgPath: "",
     registrationLink: null,
     timeline: [
       {
@@ -205,7 +206,7 @@ Hackerrank, presented by DotSlash Community.`,
     meta: {
       description: `Finding Nemo is organized under the banner of TantraFiesta 2022 at the permanent campus of IIIT Nagpur, presented by Udyam, E-Cell IIIT Nagpur.`,
       keywords: "Finding Nemo, TantraFiesta, Udyam, E-Cell IIIT Nagpur",
-      image: "/media/finding-nemo.png",
+      image: "",
     },
   },
   {
@@ -288,7 +289,7 @@ Hackerrank, presented by DotSlash Community.`,
     fast as possible. The lightning-fast to solve will be declared the
     winner.
     `,
-    imgPath: "/media/twist-n-turns.png",
+    imgPath: "",
     registrationLink: null,
     timeline: [
       {
@@ -298,13 +299,16 @@ Hackerrank, presented by DotSlash Community.`,
       },
     ],
     prizes: ["Prize pool of Rs. 21000/-"],
-    registration_deadline: null,
+    registration_deadline: [
+      new Date(YEAR, 9, 16, 12, 0, 0, 0),
+      new Date(YEAR, 9, 16, 12, 0, 0, 0),
+    ],
     meta: {
       description: ` Twist n Turns is a Rubik's cube competition organized by the
       sports club under the hood of TantraFiesta, our annual tech-
       fest.`,
       keywords: "Twist N Turns, Tantrafiesta, Eklavya Sports Club",
-      image: "/media/twist-n-turns.png",
+      image: "",
     },
   },
   {
@@ -377,9 +381,10 @@ Hackerrank, presented by DotSlash Community.`,
     name: "The Four Knights Game",
     organizer: "Eklavya, Sports Club IIITN",
     path: "four-knights-game",
-    description: `Shatranj is a two-day chess tournament where participants from around the country
+    description: `The Four Knights Game is a two-day chess tournament where participants from around the country
     compete and rise to victory.`,
-    imgPath: "/media/four-knights-game.png",
+    imgPath:
+      "https://res.cloudinary.com/doraexp69/image/upload/v1664796050/tf2022/tantrafiesta-four-knights-game.png",
     registrationLink:
       "https://unstop.com/p/the-four-knights-game-tantrafiesta-2022-indian-institute-of-information-technology-iiit-nagpur-446269",
     timeline: [
@@ -410,21 +415,22 @@ Hackerrank, presented by DotSlash Community.`,
       new Date(YEAR, 9, 5, 12, 0, 0, 0),
     ],
     meta: {
-      description: `Shatranj is a two-day chess tournament where participants from around the country
+      description: `The Four Knights Game is a two-day chess tournament where participants from around the country
       compete and rise to victory.`,
       keywords: `The Four Knights Game, Tantrafiesta, chess tournament iiitn`,
-      image: "/media/four-knights-game.png",
+      image: "",
     },
   },
   {
     id: 11,
-    name: "Tour de Force ( Valorant )",
+    name: "Tour de Force",
     organizer: "Eklavya, Sports Club IIITN",
     path: "tour-de-force",
     description: `Tour De Force is our annual valorant championship organized under tantrafiesta 2k22. It is a
     single elimination tournament with a staggering prize pool of 11k, along with the finale on the
     16th of October.`,
-    imgPath: "/media/tour-de-france.png",
+    imgPath:
+      "https://res.cloudinary.com/doraexp69/image/upload/v1664796055/tf2022/tantrafiesta-tour-de-force.png",
     registrationLink: "https://forms.gle/NTd928XD14B4Mmwp7",
     timeline: [
       {
@@ -452,8 +458,8 @@ Hackerrank, presented by DotSlash Community.`,
       description: `Tour De Force is our annual valorant championship organized under tantrafiesta 2k22. It is a
       single elimination tournament with a staggering prize pool of 11k, along with the finale on the
       16th of October.`,
-      keywords: `Tour De Force,Tantrafiesta,Valorant`,
-      image: "/media/tour-de-france.png",
+      keywords: `Tour De Force, Tantrafiesta, Valorant TantraFiesta`,
+      image: "",
     },
   },
   {
@@ -465,8 +471,8 @@ Hackerrank, presented by DotSlash Community.`,
     jellybean-like creatures and compete against each other in a series of randomly selected
     mini-games, such as obstacle courses or tag. Come and join us for this fun little game with
     prizes up to Rs.3,000.`,
-    imgPath: "/media/fall-guys.png",
-    registrationLink: "",
+    imgPath: "",
+    registrationLink: null,
     timeline: [
       {
         id: 1,
@@ -613,7 +619,7 @@ Hackerrank, presented by DotSlash Community.`,
     the scoreboard. This year's TantraFiesta brings you a unique opportunity to grab a quick
     cash prize.
     `,
-    imgPath: "/media/event-name.png",
+    imgPath: "",
     registrationLink: null,
     timeline: [
       {
@@ -641,22 +647,22 @@ Hackerrank, presented by DotSlash Community.`,
       description: `Who doesn't love to play a short little quiz? And that too when it rewards you for beating
       the scoreboard. This year's TantraFiesta brings you a unique opportunity to grab a quick
       cash prize.`,
-      keywords: "QUIZZ, Tantrafiesta,iiitn",
+      keywords: "QUIZZ, Tantrafiesta, iiitn",
       image: "",
     },
   },
   {
     id: 16,
-    name: "Scienfiesta",
+    name: "Sciencefiesta",
     organizer: "IIITN",
-    path: "scienfiesta",
-    description: `Scienfiesta, is an awareness program targeted at schools to promote sustainable
+    path: "sciencefiesta",
+    description: `Sciencefiesta, is an awareness program targeted at schools to promote sustainable
     technology and its use with the help of an exhibition. We at TantraFiesta ought to promote
     green tech amongst the upcoming generation along with rewards for their hard work and
     innovation.    
     `,
-    imgPath: "/media/event-name.png",
-    registrationLink: "dummy",
+    imgPath: "",
+    registrationLink: null,
     timeline: [
       {
         id: 1,
@@ -688,7 +694,7 @@ Hackerrank, presented by DotSlash Community.`,
       technology and its use with the help of an exhibition. We at TantraFiesta ought to promote
       green tech amongst the upcoming generation along with rewards for their hard work and
       innovation.`,
-      keywords: "Scienfiesta, Tantrafiesta,Science Exhibition iiitn",
+      keywords: "Scienfiesta, Tantrafiesta, Science Exhibition iiitn",
       image: "",
     },
   },
@@ -707,8 +713,10 @@ Hackerrank, presented by DotSlash Community.`,
       team would be rewarded and they take away the magnificent cash prize and other goodies
       back home.
       `,
-    imgPath: "/media/gamejam.png",
-    registrationLink: "dummy",
+    imgPath:
+      "https://res.cloudinary.com/doraexp69/image/upload/v1664796052/tf2022/tantrafiesta-gamejam.png",
+    registrationLink:
+      "https://unstop.com/hackathon/game-jam-tantrafiesta-2022-indian-institute-of-information-technology-iiit-nagpur-446271",
     timeline: [
       {
         id: 1,
@@ -751,8 +759,9 @@ Hackerrank, presented by DotSlash Community.`,
         best one. It's solely on the basis of the number of votes a particular game gets, the winning
         team would be rewarded and they take away the magnificent cash prize and other goodies
         back home`,
-      keywords: "Game Jam, Tantrafiesta,Dimensions Gmae Jam iiitn",
-      image: "/media/event-name.png",
+      keywords: "Game Jam, Tantrafiesta, Dimensions Gmae Jam iiitn",
+      image:
+        "https://res.cloudinary.com/doraexp69/image/upload/v1664796153/tf2022/tantrafiesta-gamejam-banner.webp",
     },
   },
 ];

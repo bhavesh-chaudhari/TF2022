@@ -1,0 +1,17 @@
+.container{
+    background: #2a9244;
+    min-height: 360px;
+    width: 30%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding-bottom: 8px;
+    overflow: hidden;
+}
+
+.content{
+    border-bottom: 4.5px solid #ebec1f;
+    background: linear-gradient(139.92deg, #333940 -15.52%, #1D2527 51.72%, #0C1618 102.49%);
+    width: 100%;
+}

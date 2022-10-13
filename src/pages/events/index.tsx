@@ -5,6 +5,7 @@ import events from "../../data/eventsData";
 import styles from "../../styles/EventsPageMain.module.css";
 import BgWrapper from "../../components/BgWrapper";
 import Head from "next/head";
+import EventCard from "../../components/EventCard";
 
 const HighlightedEvents = () => {
   return (
@@ -17,7 +18,7 @@ const HighlightedEvents = () => {
         />
         <meta
           name="keywords"
-          content="events tantrafiesta, tf2022 events, tf2k22, hackme, robo rumble, codefiesta"
+          content="events tantrafiesta, tf2022 events, tf2k22, hackme, robo rumble, codefiesta, designathon, iiitn tantrafiesta"
         />
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
@@ -55,16 +56,18 @@ const HighlightedEvents = () => {
             <div className={styles["components"]}>
               {events.map((item) => {
                 return (
-                  <Link key={item.id} href={`/events/${item.path}`} passHref>
+                    item.imgPath ? <Link key={item.id} href={`/events/${item.path}`} passHref>
                     <a className={styles["image-container"]}>
                       <NextImage
                         src={item.imgPath}
                         className={styles["image"]}
                         layout={"fill"}
-                        alt={`${item.name} Organized by ${item.organizer} at TantraFiesta`}
+                        alt={`${item.name} Organized by ${item.organizer} at TantraFiesta 2022, Indian Institute of Information Technology Nagpur`}
                       />
                     </a>
-                  </Link>
+                  </Link> : 
+                  // <EventCard key={item.id} {...item} ></EventCard>
+                  null
                 );
               })}
             </div>
