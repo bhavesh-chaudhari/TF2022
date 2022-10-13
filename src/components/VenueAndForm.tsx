@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
 import styles from "../styles/VenueAndForm.module.css";
 import ContactForm from "./ContactForm";
+import { useRouter } from "next/router";
 
 const VenueAndForm = (): JSX.Element => {
   const [renderMap, setRenderMap] = useState(false);
+
+  const router = useRouter()
 
   useEffect(() => {
     const onScroll = (event: Event) => {
@@ -22,8 +25,14 @@ const VenueAndForm = (): JSX.Element => {
     };
   }, []);
 
+  useEffect(()=>{
+    if(window.scrollY > window.innerHeight){
+        setRenderMap(true);
+    }
+  }, [router.pathname])
+
   return (
-    <div className={styles["container"]}>
+    <div id="venue" className={styles["container"]}>
       <div className={styles["content"]}>
         <div className={styles["heading"]}>
           <h2 className="yellow-bottom">Venue</h2>

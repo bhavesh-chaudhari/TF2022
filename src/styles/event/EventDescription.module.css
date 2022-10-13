@@ -59,6 +59,7 @@
 
 .quick-details > h3 {
   font-size: 1.5rem;
+  font-family: "Montserrat";
   margin-bottom: 1.5rem;
   position: relative;
   padding: 0 1rem;
@@ -89,6 +90,7 @@
 
 .quick-details > ul > li {
   font-size: 18px;
+  font-family: "Lato";
 }
 
 .quick-details > ul > li > a > span {
@@ -116,7 +118,7 @@
 .desc {
   font-size: 18px;
   width: 100%;
-  line-height: 1.8rem;
+  line-height: 2rem;
   text-align: center;
 }
 
@@ -129,6 +131,7 @@
 
 .link-container > h3 {
   font-size: 1.5rem;
+  font-family: "Montserrat";
   margin-bottom: 1rem;
   position: relative;
   text-align: center;

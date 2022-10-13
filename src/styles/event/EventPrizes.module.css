@@ -15,6 +15,9 @@
 
 .heading {
   width: 80%;
+  font-family: "Montserrat";
+  font-weight: 800;
+  text-transform: uppercase;
   text-align: center;
 }
 

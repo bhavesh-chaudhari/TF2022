@@ -88,10 +88,18 @@ const EventDescription = ({
               <li>Organized by {organizer}</li>
               {registration_deadline ? (
                 <li>
-                  Registrations up from{" "}
-                  {format(new Date(registration_deadline[0]), "do MMMM yyyy")}{" "}
-                  until{" "}
-                  {format(new Date(registration_deadline[1]), "do MMMM yyyy")}
+                  {registration_deadline[0] === registration_deadline[1]
+                    ? "Registration will be done on the spot"
+                    : `Registrations up from
+                  ${format(
+                    new Date(registration_deadline[0]),
+                    "do MMMM yyyy"
+                  )}
+                  until
+                  ${format(
+                    new Date(registration_deadline[1]),
+                    "do MMMM yyyy"
+                  )}`}
                 </li>
               ) : null}
               <li>
@@ -107,12 +115,14 @@ const EventDescription = ({
             </ul>
           </div>
           <div className={styles["img-container"]}>
-            <Image
-              src={imgPath}
-              alt={`${name} organized by ${organizer}`}
-              layout="fill"
-              draggable={"false"}
-            ></Image>
+            {imgPath ? (
+              <Image
+                src={imgPath}
+                alt={`${name} organized by ${organizer}`}
+                layout="fill"
+                draggable={"false"}
+              ></Image>
+            ) : null}
           </div>
           <div className={styles["link-container"]}>
             <h3>Quick Links</h3>
@@ -124,7 +134,7 @@ const EventDescription = ({
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Register Now
+                  {registrationLink ? "Register Now" : "On Spot Registration"}
                 </a>
               </div>
               <h4>Share with friends</h4>

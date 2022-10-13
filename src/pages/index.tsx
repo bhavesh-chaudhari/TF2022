@@ -91,7 +91,6 @@ const Home: NextPage = () => {
           property="og:image"
           content="https://res.cloudinary.com/doraexp69/image/upload/v1663765902/tf2022/tantrafiesta-logo.png"
         ></meta>
-
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://tantrafiesta.in/" />
         <meta property="twitter:title" content="Tantrafiesta - 2022" />

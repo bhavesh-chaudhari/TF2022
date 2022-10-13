@@ -27,6 +27,16 @@ const Navbar = (): JSX.Element => {
       path: "/#past-glimpse",
       name: "Past Glimpse",
     },
+    {
+      id: 3,
+      path: "/#venue",
+      name: "Venue",
+    },
+    {
+      id: 3,
+      path: "/sponsors",
+      name: "Sponsors",
+    },
   ];
 
   useEffect(() => {

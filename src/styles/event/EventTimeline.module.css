@@ -1,5 +1,5 @@
 .container {
-  margin-top: 5rem;
+  margin-top: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -152,6 +152,13 @@
   border: 3px solid #2b9348 !important;
   width: 16px !important;
   height: 16px !important;
+}
+
+@media screen and (max-width: 1200px){
+  .card{
+    max-width: 350px;
+  }
+  
 }
 
 @media screen and (min-width: 600px) {
