@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "../styles/ContactForm.module.css";
 import { PulseLoader } from "react-spinners";
 
@@ -12,6 +12,7 @@ const ContactForm = (): JSX.Element => {
   const [formValues, setFormValues] = useState(initialFormValues);
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [page, setPage] = useState<any>(null);
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
@@ -19,9 +20,11 @@ const ContactForm = (): JSX.Element => {
     // console.log(formValues);
     setLoading(true);
 
+    const valuesToSend = { ...formValues, page: page };
+
     fetch("/api/mail", {
       method: "POST",
-      body: JSON.stringify(formValues),
+      body: JSON.stringify(valuesToSend),
     }).then((res) => {
       // console.log(res);
       if (res.status === 200) {
@@ -39,6 +42,10 @@ const ContactForm = (): JSX.Element => {
 
     setFormValues({ ...formValues, [name]: value });
   };
+
+  useEffect(() => {
+    setPage(document.title);
+  }, []);
 
   return (
     <div className={styles["container"]}>

@@ -3,10 +3,10 @@ import Image from "next/image";
 import styles from "../styles/TfInPastCard.module.css";
 
 interface Props {
-  imgPath?: string,
-  cardTitle: string,
-  cardPara: string,
-  hasVideo?: boolean
+  imgPath?: string;
+  cardTitle: string;
+  cardPara: string;
+  hasVideo?: boolean;
 }
 
 const TfinPastCard = (props: Props): JSX.Element => {

@@ -13,10 +13,10 @@ const SponsorSection = (props: any) => {
       <div
         data-aos="fade-up"
         data-aos-duration="400"
-        data-aos-once={id === 2 ? true : false }
+        data-aos-once={id === 2 ? true : false}
         className={styles["sponsors-heading"]}
       >
-        <h2 >{title}</h2>
+        <h2>{title}</h2>
       </div>
       <div className={styles["section-content"]}>
         {sponsors.map((sponsor: any) => {

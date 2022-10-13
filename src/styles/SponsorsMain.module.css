@@ -73,19 +73,17 @@
   align-items: center;
 }
 
-
-@media screen and (max-width: 700px){
-    .heading > h1{
-        font-size: 34px;
-    }
-    .sponsors-heading > h2{
-        font-size: 24px;
-    }
-    .section-content{
-        gap: 2.5rem;
-    }
-    .content{
-        gap: 4rem;
-    }
-    
+@media screen and (max-width: 700px) {
+  .heading > h1 {
+    font-size: 34px;
+  }
+  .sponsors-heading > h2 {
+    font-size: 24px;
+  }
+  .section-content {
+    gap: 2.5rem;
+  }
+  .content {
+    gap: 4rem;
+  }
 }

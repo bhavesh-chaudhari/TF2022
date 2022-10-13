@@ -6,14 +6,14 @@ import events from "../../data/eventsData";
 const mysitemap = async (req: NextApiRequest, res: NextApiResponse) => {
   // An array with your links
 
-  const eventPageLinks = events.map(event=>{
+  const eventPageLinks = events.map((event) => {
     return {
       url: `/events/${event.path}`,
       changefreq: "daily",
       priority: 0.9,
     };
-  })
-  
+  });
+
   const links = [
     { url: "/", changefreq: "daily", priority: 1 },
     { url: "/events", changefreq: "daily", priority: 0.9 },

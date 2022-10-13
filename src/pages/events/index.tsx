@@ -55,8 +55,8 @@ const HighlightedEvents = () => {
             </div>
             <div className={styles["components"]}>
               {events.map((item) => {
-                return (
-                    item.imgPath ? <Link key={item.id} href={`/events/${item.path}`} passHref>
+                return item.imgPath ? (
+                  <Link key={item.id} href={`/events/${item.path}`} passHref>
                     <a className={styles["image-container"]}>
                       <NextImage
                         src={item.imgPath}
@@ -65,10 +65,9 @@ const HighlightedEvents = () => {
                         alt={`${item.name} Organized by ${item.organizer} at TantraFiesta 2022, Indian Institute of Information Technology Nagpur`}
                       />
                     </a>
-                  </Link> : 
-                  // <EventCard key={item.id} {...item} ></EventCard>
-                  null
-                );
+                  </Link>
+                ) : // <EventCard key={item.id} {...item} ></EventCard>
+                null;
               })}
             </div>
           </div>

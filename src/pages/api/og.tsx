@@ -10,14 +10,14 @@ export default function handler(req: NextRequest) {
     const { searchParams } = new URL(req.url);
 
     // ?title=<title>
-     const hasTitle = searchParams.has("title");
-     const hasPath = searchParams.has("path");
-     const title = hasTitle
-       ? searchParams.get("title")?.slice(0, 100)
-       : "TantraFiesta | 2022";
-     const path = hasPath
-       ? searchParams.get("path")?.slice(0, 100)
-       : "www.tantrafiesta.in";
+    const hasTitle = searchParams.has("title");
+    const hasPath = searchParams.has("path");
+    const title = hasTitle
+      ? searchParams.get("title")?.slice(0, 100)
+      : "TantraFiesta | 2022";
+    const path = hasPath
+      ? searchParams.get("path")?.slice(0, 100)
+      : "www.tantrafiesta.in";
 
     return new ImageResponse(
       (

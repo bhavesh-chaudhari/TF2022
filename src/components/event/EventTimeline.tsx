@@ -5,13 +5,13 @@ import styles from "../../styles/event/EventTimeline.module.css";
 interface Props {
   timeline: [
     {
-      id: number, 
-      title: string,
-      date: Date,
-      start?: Date,
-      end?: Date
+      id: number;
+      title: string;
+      date: Date;
+      start?: Date;
+      end?: Date;
     }
-  ]
+  ];
 }
 
 const EventTimeline = ({ timeline }: Props): JSX.Element => {

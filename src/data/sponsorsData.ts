@@ -111,4 +111,4 @@ const sponsorsData = [
   },
 ];
 
-export default sponsorsData
+export default sponsorsData;

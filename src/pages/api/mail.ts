@@ -7,7 +7,8 @@ const mail = async (req: NextApiRequest, res: NextApiResponse) => {
   const output = `<h2>New Inquiry: </h2><br>
         <p><strong>Name: </strong> ${userFeedback?.name} </p>
         <p><strong>Email: </strong> ${userFeedback?.email} </p>
-        <p><strong>Message: </strong> ${userFeedback?.message} </p>`;
+        <p><strong>Message: </strong> ${userFeedback?.message} </p>
+        <p><strong>From Page: </strong> ${userFeedback?.page} </p>`;
 
   // console.log(process.env.EMAIL, process.env.EMAIL_PASSWORD);
 

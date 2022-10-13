@@ -75,7 +75,14 @@ const EventLayout = ({ children, event }: EventProps) => {
           content={`${event.name} - Tantrafiesta 2022`}
         />
         <meta property="og:description" content={meta.description}></meta>
-        <meta property="og:image" content={meta.image ? meta.image : "https://res.cloudinary.com/doraexp69/image/upload/v1664723738/tf2022/tantrafiesta-banner.png"}></meta>
+        <meta
+          property="og:image"
+          content={
+            meta.image
+              ? meta.image
+              : "https://res.cloudinary.com/doraexp69/image/upload/v1664723738/tf2022/tantrafiesta-banner.png"
+          }
+        ></meta>
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://tantrafiesta.in/" />
         <meta
@@ -83,11 +90,22 @@ const EventLayout = ({ children, event }: EventProps) => {
           content={`${event.name} - Tantrafiesta 2022`}
         />
         <meta property="twitter:description" content={meta.description} />
-        <meta property="twitter:image" content={meta.image ? meta.image : "https://res.cloudinary.com/doraexp69/image/upload/v1664723738/tf2022/tantrafiesta-banner.png"}></meta>
+        <meta
+          property="twitter:image"
+          content={
+            meta.image
+              ? meta.image
+              : "https://res.cloudinary.com/doraexp69/image/upload/v1664723738/tf2022/tantrafiesta-banner.png"
+          }
+        ></meta>
       </Head>
       <BgWrapper>
         <div className={styles["container"]}>{children}</div>
-        <div data-aos="fade-up" data-aos-duration="1000" className={styles["form"]}>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className={styles["form"]}
+        >
           <ContactForm></ContactForm>
         </div>
       </BgWrapper>

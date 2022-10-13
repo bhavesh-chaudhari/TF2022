@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 const VenueAndForm = (): JSX.Element => {
   const [renderMap, setRenderMap] = useState(false);
 
-  const router = useRouter()
+  const router = useRouter();
 
   useEffect(() => {
     const onScroll = (event: Event) => {
@@ -25,11 +25,11 @@ const VenueAndForm = (): JSX.Element => {
     };
   }, []);
 
-  useEffect(()=>{
-    if(window.scrollY > window.innerHeight){
-        setRenderMap(true);
+  useEffect(() => {
+    if (window.scrollY > window.innerHeight) {
+      setRenderMap(true);
     }
-  }, [router.pathname])
+  }, [router.pathname]);
 
   return (
     <div id="venue" className={styles["container"]}>

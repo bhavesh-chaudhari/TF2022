@@ -91,10 +91,7 @@ const EventDescription = ({
                   {registration_deadline[0] === registration_deadline[1]
                     ? "Registration will be done on the spot"
                     : `Registrations up from
-                  ${format(
-                    new Date(registration_deadline[0]),
-                    "do MMMM yyyy"
-                  )}
+                  ${format(new Date(registration_deadline[0]), "do MMMM yyyy")}
                   until
                   ${format(
                     new Date(registration_deadline[1]),
