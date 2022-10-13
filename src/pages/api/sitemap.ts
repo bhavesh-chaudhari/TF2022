@@ -17,7 +17,8 @@ const mysitemap = async (req: NextApiRequest, res: NextApiResponse) => {
   const links = [
     { url: "/", changefreq: "daily", priority: 1 },
     { url: "/events", changefreq: "daily", priority: 0.9 },
-    ...eventPageLinks
+    { url: "/sponsors", changefreq: "daily", priority: 0.9 },
+    ...eventPageLinks,
   ];
 
   // Create a stream to write to
