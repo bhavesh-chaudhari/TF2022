@@ -28,12 +28,12 @@ const Navbar = (): JSX.Element => {
       name: "Speakers",
     },
     {
-      id: 3,
+      id: 4,
       path: "/#venue",
       name: "Venue",
     },
     {
-      id: 3,
+      id: 5,
       path: "/sponsors",
       name: "Sponsors",
     },

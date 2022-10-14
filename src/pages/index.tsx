@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import format from "date-fns/format";
 import Script from "next/script";
 import SpeakersMain from "../components/SpeakersMain";
+// import VenueAndForm from "../components/VenueAndForm";
 
 const AboutTantra = dynamic(() => {
   return import("../components/AboutTantra");
