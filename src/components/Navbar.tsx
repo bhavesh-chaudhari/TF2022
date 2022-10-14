@@ -24,8 +24,8 @@ const Navbar = (): JSX.Element => {
     },
     {
       id: 3,
-      path: "/#past-glimpse",
-      name: "Past Glimpse",
+      path: "/#speakers",
+      name: "Speakers",
     },
     {
       id: 3,

@@ -102,9 +102,6 @@ const ContactForm = (): JSX.Element => {
             </button>
           )}
         </form>
-        <div className={styles["note"]}>
-          <p>We will reach out to you soon</p>
-        </div>
       </div>
     </div>
   );

@@ -35,8 +35,8 @@ const sponsorsData = [
         sponsorLink: "https://chanakyaiasacademy.com/",
         image: {
           path: "/media/sponsors/chanakya-ias-academy.png",
-          width: 250,
-          height: 250,
+          width: 230,
+          height: 230,
         },
       },
     ],

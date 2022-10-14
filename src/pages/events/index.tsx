@@ -57,7 +57,12 @@ const HighlightedEvents = () => {
               {events.map((item) => {
                 return item.imgPath ? (
                   <Link key={item.id} href={`/events/${item.path}`} passHref>
-                    <a className={styles["image-container"]}>
+                    <a
+                      data-aos="zoom-in-right"
+                      data-aos-offset={-100}
+                      data-aos-duration={1200}
+                      className={styles["image-container"]}
+                    >
                       <NextImage
                         src={item.imgPath}
                         className={styles["image"]}

@@ -104,6 +104,13 @@ cover some of the most interesting concepts involved in problem-solving.
       },
       {
         id: 2,
+        title: "Registration Ends",
+        date: new Date(YEAR, 9, 12, 0, 0, 0, 0),
+        start: new Date(YEAR, 9, 12, 0, 0, 0, 0),
+        end: new Date(YEAR, 9, 12, 0, 0, 0, 0),
+      },
+      {
+        id: 3,
         title: "Coding Contest",
         date: new Date(YEAR, 9, 12, 0, 0, 0, 0),
         start: new Date(YEAR, 9, 12, 20, 0, 0, 0),
