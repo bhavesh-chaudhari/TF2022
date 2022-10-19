@@ -1,0 +1,105 @@
+.container{
+    display: flex;
+    justify-content: stretch;
+    flex-direction: column;
+    background: linear-gradient(0deg, #1D2527 50.05%, #245C37 144.69%);;
+    width: 23%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    min-height: 330px;
+    overflow: hidden;
+    position: relative;
+}
+
+.container::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 10px;
+    width: 100%;
+    background: #edea1c;
+}
+
+.container::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 6px;
+    width: 100%;
+    background: #2b9246;
+    z-index: 1;
+}
+
+.container:hover{
+    border: 1px solid gray;
+    transform: scale(1.02);
+}
+
+.media{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #edea1c;
+}
+
+.media > svg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+}
+
+.image{
+    max-height: 200px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+
+.image.speaker-2{
+    transform: translate(0, 10%) scaleX(1);
+}
+
+.image.speaker-3{
+    transform: translate(0, 18%) scale(1.3);
+}
+
+.image.speaker-4{
+    transform: translate(0, 15%);
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+.name > h4{
+    color: #edea1c;
+    font-size: 17px;
+}
+
+
+@media screen and (max-width: 1300px){
+    .container{
+        width: 48%;
+        max-width: 400px;
+        min-width: 300px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .container{
+        width: 90%;
+        min-height: 0;
+    }
+}

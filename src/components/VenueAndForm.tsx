@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "../styles/VenueAndForm.module.css";
 import ContactForm from "./ContactForm";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 const VenueAndForm = (): JSX.Element => {
   const [renderMap, setRenderMap] = useState(false);
@@ -38,7 +39,9 @@ const VenueAndForm = (): JSX.Element => {
           <h2 className="yellow-bottom">Venue</h2>
         </div>
         <div className={styles["main"]}>
-          <div className={styles["address"]}>
+          <div
+            className={styles["address"]}
+          >
             <div className={styles["map"]}>
               {renderMap ? (
                 <iframe
@@ -54,14 +57,39 @@ const VenueAndForm = (): JSX.Element => {
             </div>
             <p>
               <b>Address:</b>
-            </p>
-            <p>
-              Survey No. 140,141/1 behind Br. Sheshrao Wankhade Shetkari Sahkari
-              Soot Girni, Village - Waranga, PO - Dongargaon(Butibori), Tehsil-
-              Nagpur (Rural), District Nagpur, Maharashtra- 441108
+              <br />
+              <span>
+                Survey No. 140,141/1 behind Br. Sheshrao Wankhade Shetkari
+                Sahkari Soot Girni, Village - Waranga, PO -
+                Dongargaon(Butibori), Tehsil- Nagpur (Rural), District Nagpur,
+                Maharashtra- 441108
+              </span>
             </p>
           </div>
-          <div className={styles["form"]}>
+          <div
+            id="event-map"
+            className={styles["event-map"]}
+          >
+            <Image
+              src={"/media/event-map-1.jpg"}
+              layout="fill"
+              alt="TantraFiesta 2022's Event Map"
+              draggable="false"
+            ></Image>
+          </div>
+          <div
+            className={styles["campus-image"]}
+          >
+            <Image
+              src={"/media/campus-pic.jpg"}
+              layout="fill"
+              alt="iiitn's campus"
+              draggable="false"
+            ></Image>
+          </div>
+          <div
+            className={styles["form"]}
+          >
             <ContactForm></ContactForm>
           </div>
         </div>

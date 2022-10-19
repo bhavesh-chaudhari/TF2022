@@ -23,6 +23,37 @@ Countdown Styles
   color: #2e692e;
 }
 
+.live-heading{
+  text-align: center;
+  color: #55b553;
+  margin-top: 1rem;
+}
+
+.live-heading > p{
+  margin-top: 10px;
+  color: black;
+  font-weight: 600;
+}
+
+.live-heading > a{
+  display: inline-block;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.live-heading > a > svg{
+  width: 22px;
+  fill: red;
+  height: 18px;
+}
+
+.live-heading > a > span{
+  margin-left: 2px;
+}
+
 @media screen and (max-width: 480px) {
   .countdown-heading {
     font-size: 2.5rem;

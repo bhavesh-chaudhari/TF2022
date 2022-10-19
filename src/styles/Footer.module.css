@@ -80,11 +80,16 @@
   gap: 1.5rem;
 }
 
+.contact{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
 .contact > h3 {
   color: #eeef20;
   font-family: "Montserrat";
   text-transform: uppercase;
-  margin-bottom: 5px;
 }
 
 .contact > p {

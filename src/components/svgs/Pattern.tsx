@@ -2,7 +2,7 @@ import * as React from "react";
 import { SVGProps } from "react";
 
 const SvgPattern = (props: SVGProps<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1422 800" {...props}>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1422 800" preserveAspectRatio="none" {...props}>
     <g strokeWidth={3.5} stroke="#eeef20" fill="none" strokeLinecap="round">
       <path d="m0 0 54 54" />
       <path opacity={0.96} d="m54 0 54 54" />

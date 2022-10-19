@@ -4,6 +4,8 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import format from "date-fns/format";
 import Script from "next/script";
+import SpeakersMain from "../components/SpeakersMain";
+// import VenueAndForm from "../components/VenueAndForm";
 
 const AboutTantra = dynamic(() => {
   return import("../components/AboutTantra");
@@ -108,6 +110,7 @@ const Home: NextPage = () => {
         <BgWrapper>
           <AboutTantra />
           <HighlightedEvents />
+          <SpeakersMain></SpeakersMain>
           <TFinPast />
           <VenueAndForm></VenueAndForm>
         </BgWrapper>

@@ -9,7 +9,7 @@ const SponsorSection = (props: any) => {
   const { id, title, sponsors } = props;
 
   return (
-    <div className={styles["section-container"]}>
+    <section className={styles["section-container"]}>
       <div
         data-aos="fade-up"
         data-aos-duration="400"
@@ -41,7 +41,7 @@ const SponsorSection = (props: any) => {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -25,6 +25,23 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
+  gap: 2.5rem;
+}
+
+.event-map{
+  position: relative;
+  grid-area: 1/2/span 1/ span 1;
+  min-height: 400px;
+   border-radius: 10px;
+  overflow: hidden;
+}
+
+.campus-image{
+  position: relative;
+  grid-area: 2/1/span 1/ span 1;
+  border-radius: 10px;
+  overflow: hidden;
+  min-height: 400px;
 }
 
 .address {
@@ -45,7 +62,7 @@
 }
 
 .map {
-  min-height: 365px;
+  min-height: 300px;
   border: 2px solid #d2d41f;
   width: 100%;
   position: relative;
@@ -62,9 +79,7 @@
 }
 
 .form {
-  grid-area: 1/2 / span 1 / span 1;
-  padding: 0 2rem;
-  padding-left: 4rem;
+  grid-area: 2/2 / span 1 / span 1;
 }
 
 @media screen and (max-width: 1200px) {
@@ -92,12 +107,15 @@
     width: 90%;
   }
   .main {
-    gap: 4rem;
+    gap: 2rem;
   }
   .map {
     min-height: 300px;
   }
   .heading > h2 {
     font-size: 28px;
+  }
+  .campus-image, .event-map{
+    min-height: 330px;
   }
 }

@@ -17,7 +17,7 @@ body {
 }
 
 :target {
-  scroll-margin-top: 160px;
+  scroll-margin-top: 100px;
 }
 
 a {
