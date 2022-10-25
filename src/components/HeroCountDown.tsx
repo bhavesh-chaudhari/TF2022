@@ -23,7 +23,7 @@ const renderer = ({
     return (
       <div className={styles["live-heading"]}>
         <h2>15th and 16th October</h2>
-        <p>Live Now</p>
+        <p>Live</p>
         <a>
           {/* <LocationPin></LocationPin> */}
           <span>at IIIT Nagpur&apos;s Campus</span>
